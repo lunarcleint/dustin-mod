@@ -35,9 +35,7 @@ function create() {
     add(timeBar); hudElements.push(timeBar);
     add(timeBarBG); hudElements.push(timeBarBG);
 
-    timeTxt = new FunkinText(timeBar.x, timeBarBG.y+2, 0, "0:00 / 0:00", 16);
-    timeTxt.textField.antiAliasType = 0/*ADVANCED*/;
-    timeTxt.textField.sharpness = 400/*MAX ON OPENFL*/;
+    timeTxt = textCrispy(new FunkinText(timeBar.x, timeBarBG.y+2, 0, "0:00 / 0:00", 16));
     add(timeTxt); hudElements.push(timeTxt);
 
     timeTxt.cameras = [camHUD]; timeTxt.scrollFactor.set();

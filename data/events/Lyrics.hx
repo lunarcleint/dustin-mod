@@ -82,7 +82,7 @@ function addText(setText)
         }
         
     }
-    var text = new FlxText(0, 500);
+    var text = textCrispy(new FlxText(0, 500));
     text.setFormat(getFont(), lyricsConfig.size, lyricsConfig.color, FlxTextAlign.CENTER, FlxTextBorderStyle.OUTLINE, lyricsConfig.borderColor);
     text.borderSize = lyricsConfig.borderSize;
     text.text = setText;

@@ -1,15 +1,8 @@
 {
-	"opponentModeAllowed": false,
-	"difficulties": [
-		"hard"
-	],
-	"icon": "face",
-	"coopAllowed": false,
-	"name": "thermal-shock",
-	"color": "#9271FD",
 	"customValues": {
 		"customName": "thermal shOck",
 		"titleCardSubtext": "* by Audieun/pause(0.5)/\n* ft. Chezzar & Mar Mar",
+		"mainColor": "#FFADD5",
 		"credits": {
 			"CHART": "CORVA",
 			"BACKGROUND": "JFLOID",
@@ -22,12 +15,21 @@
 			"song": "thermal-shock",
 			"sound": "swapsans"
 		},
-		"mainColor": "#FFADD5",
-		"stats": "* CHARA 32 ATK 26 DEF\n* The fallen human.\n* You can see their true eyes."
+		"stats": "* CHARA - 32 ATK 26 DEF\n* The fallen human.\n* You can see their true eyes."
 	},
+	"color": "#9271FD",
+	"opponentModeAllowed": false,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "face",
+	"coopAllowed": false,
 	"stepsPerBeat": 4,
-	"displayName": "thermal shock",
+	"displayName": "Thermal Shock",
 	"needsVoices": true,
 	"beatsPerMeasure": 4,
+	"variants": [
+		"final hours"
+	],
 	"bpm": 140
 }

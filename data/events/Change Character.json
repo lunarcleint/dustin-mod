@@ -1,14 +1,19 @@
 {
-    "params": [
-        {
-            "name": "Character",
-            "type": " StrumLine",
-            "defaultValue": 0
-        },
-        {
-            "name": "New Character",
-            "type": "String",
-            "defaultValue": "dad"
-        }
-    ]
+	"params": [
+		{
+			"name": "Strumline",
+			"type": "StrumLine",
+			"defaultValue": 0
+		},
+		{
+			"name": "Character Name",
+			"type": "Character",
+			"defaultValue": "bf"
+		},
+		{
+			"name": "Character Index",
+			"type": "Int(0, 64, 1)",
+			"defaultValue": "0"
+		}
+	]
 }

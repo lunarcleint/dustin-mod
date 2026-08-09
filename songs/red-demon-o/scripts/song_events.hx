@@ -45,6 +45,8 @@ function create() {
 			spirits.color = FlxColor.fromRGB(112,112,112);
 		spirits.y -= 200;
 	}
+
+	dustinPauseScript = "red-demon-o";
 }
 
 function onPostNoteCreation(e) {
@@ -61,8 +63,8 @@ var radial:CustomShader;
 var radial2:CustomShader;
 
 var warp:CustomShader;
-var fillShader = new CustomShader("impact_frames_col");
-var fillShaderBG = new CustomShader("impact_frames_col");
+public var fillShader = new CustomShader("impact_frames_col");
+public var fillShaderBG = new CustomShader("impact_frames_col");
 
 var timing:Float = 0.005;
 var fillColorBGLerp:FlxInterpolateColor = new FlxInterpolateColor(0xff000000);
@@ -97,21 +99,13 @@ function postCreate() {
 	radial = new CustomShader("radial");
 	radial.center = [0.5, 0.5];
     radial.blur = 0;
-    if (Options.gameplayShaders) camGame.addShader(radial);
 
 	radial2 = new CustomShader("radial");
 	radial2.center = [0.5, 0.5];
     radial2.blur = 0;
-    if (Options.gameplayShaders) camHUD.addShader(radial2);
-	if (Options.gameplayShaders) camCharacters.addShader(radial2);
 
 	warp = new CustomShader("warp");
 	warp.distortion = 0;
-    if (Options.gameplayShaders && FlxG.save.data.warp) camGame.addShader(warp);
-    if (Options.gameplayShaders && FlxG.save.data.warp) camCharacters.addShader(warp);
-
-	if (Options.gameplayShaders && FlxG.save.data.particles) camGame.addShader(snowShader);
-    if (Options.gameplayShaders && FlxG.save.data.particles) camCharacters.addShader(snowShader2);
 
 	for(snow in [snowShader, snowShader2]) {
 		snow.snowMeltRect = [-700, 800, 1500, 100]; 
@@ -127,8 +121,27 @@ function postCreate() {
 	water2 = new CustomShader("waterDistortion");
     water2.strength = 0;
 	water2.time = 0;
-    if (Options.gameplayShaders && FlxG.save.data.water) camGame.addShader(water);
-    if (Options.gameplayShaders && FlxG.save.data.water) camCharacters.addShader(water2);
+
+	if (Options.gameplayShaders) {
+		camGame.addShader(radial);
+		camHUD.addShader(radial2);
+		camCharacters.addShader(radial2);
+
+		if (FlxG.save.data.warp) {
+			camGame.addShader(warp);
+			camCharacters.addShader(warp);
+		}
+
+		if (FlxG.save.data.particles) {
+			camGame.addShader(snowShader);
+    		camCharacters.addShader(snowShader2);	
+		}
+
+		if (FlxG.save.data.water) {
+			camGame.addShader(water);
+    		camCharacters.addShader(water2);	
+		}
+	}
 
 	flickerSprite = new FunkinSprite().makeSolid(FlxG.width, FlxG.height, 0xFF000000);
     flickerSprite.scrollFactor.set(0, 0);
@@ -137,7 +150,8 @@ function postCreate() {
     flickerSprite.alpha = 0.025;
     add(flickerSprite);
 
-    FlxFlicker.flicker(flickerSprite, 9999999, 0.04);
+	if(!FlxG.save.data.antiFlash)
+    	FlxFlicker.flicker(flickerSprite, 9999999, 0.04);
 }
 
 function onSongStart() {
@@ -285,27 +299,21 @@ function beatHit(beat:Int) {
 
 function onCountdown(event) event.sprite?.cameras = [camCharacters];
 
-function postUpdate(elapsed:Float) {
-	water.time += elapsed;
-	water2.time += elapsed;
+var timer:Float = 0;
+function update(elapsed:Float) {
+	timer += elapsed;
+	water.time = timer;
+	water2.time = timer;
 
 	for(bar in [cinematicBar1, cinematicBar2]) {
 		if(bar.camera != camHUD3) {
 			bar.camera = camHUD3;
 		}
 	}
-	camCharacters.scroll = FlxG.camera.scroll;
-    camCharacters.zoom = FlxG.camera.zoom;
-    camCharacters.angle = FlxG.camera.angle;
-
-	for(snow in [snowShader, snowShader2]) {
-		snow.cameraPosition = [FlxG.camera.scroll.x * .4, FlxG.camera.scroll.y * .4];
-	}
 
     for (strum in strumLines)
         for (char in strum.characters)
-            // if (char.curCharacter != "spirits")
-				char.cameras = [camCharacters];
+			char.cameras = [camCharacters];
 
 	radial.blur = FlxMath.lerp(radial.blur, blurIntensity, (Math.PI * elapsed) * 0.45);
 	radial2.blur = FlxMath.lerp(radial2.blur, blurIntensity * 0.3, (Math.PI * elapsed) * 0.45);
@@ -316,6 +324,12 @@ function postUpdate(elapsed:Float) {
 
 	fillShader.impactCol = [((fillColorLerp.color >> 16) & 0xff)/255, ((fillColorLerp.color >> 8) & 0xff)/255, (fillColorLerp.color & 0xff)/255];
 	fillShaderBG.impactCol = [((fillColorBGLerp.color >> 16) & 0xff)/255, ((fillColorBGLerp.color >> 8) & 0xff)/255, (fillColorBGLerp.color & 0xff)/255];
+}
+
+function postUpdate(elapsed) {
+	for(snow in [snowShader, snowShader2])
+		snow.cameraPosition = [FlxG.camera.scroll.x * .4, FlxG.camera.scroll.y * .4];
+	DustinUtil.copyCamera(FlxG.camera, camCharacters);
 }
 
 public function setIntensity(value:Float) {

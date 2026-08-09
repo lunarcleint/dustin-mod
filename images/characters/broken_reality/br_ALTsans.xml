@@ -1,58 +1,59 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="br_ALTsans.png">
-	<!-- Created with Adobe Animate version 24.0.7.61 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="ALTdown0000" x="4" y="4" width="907" height="720" frameX="-1" frameY="0" frameWidth="908" frameHeight="722"/>
-	<SubTexture name="ALTdown0001" x="4" y="4" width="907" height="720" frameX="-1" frameY="0" frameWidth="908" frameHeight="722"/>
-	<SubTexture name="ALTdown0002" x="915" y="4" width="907" height="720" frameX="0" frameY="-2" frameWidth="908" frameHeight="722"/>
-	<SubTexture name="ALTdown0003" x="915" y="4" width="907" height="720" frameX="0" frameY="-2" frameWidth="908" frameHeight="722"/>
-	<SubTexture name="ALTdown0004" x="915" y="4" width="907" height="720" frameX="0" frameY="-2" frameWidth="908" frameHeight="722"/>
-	<SubTexture name="ALTdown0005" x="915" y="4" width="907" height="720" frameX="0" frameY="-2" frameWidth="908" frameHeight="722"/>
-	<SubTexture name="ALTdown0006" x="915" y="4" width="907" height="720" frameX="0" frameY="-2" frameWidth="908" frameHeight="722"/>
-	<SubTexture name="ALTdown0007" x="915" y="4" width="907" height="720" frameX="0" frameY="-2" frameWidth="908" frameHeight="722"/>
-	<SubTexture name="ALTdown0008" x="915" y="4" width="907" height="720" frameX="0" frameY="-2" frameWidth="908" frameHeight="722"/>
-	<SubTexture name="ALTidle0000" x="1826" y="4" width="861" height="795" frameX="-4" frameY="-7" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0001" x="1826" y="4" width="861" height="795" frameX="-4" frameY="-7" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0002" x="2691" y="4" width="875" height="801" frameX="0" frameY="0" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0003" x="2691" y="4" width="875" height="801" frameX="0" frameY="0" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0004" x="4" y="809" width="842" height="744" frameX="-14" frameY="-40" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0005" x="4" y="809" width="842" height="744" frameX="-14" frameY="-40" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0006" x="850" y="809" width="819" height="723" frameX="-24" frameY="-49" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0007" x="850" y="809" width="819" height="723" frameX="-24" frameY="-49" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0008" x="1673" y="809" width="820" height="725" frameX="-24" frameY="-47" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0009" x="1673" y="809" width="820" height="725" frameX="-24" frameY="-47" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0010" x="1673" y="809" width="820" height="725" frameX="-24" frameY="-47" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0011" x="1673" y="809" width="820" height="725" frameX="-24" frameY="-47" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0012" x="1673" y="809" width="820" height="725" frameX="-24" frameY="-47" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTidle0013" x="1673" y="809" width="820" height="725" frameX="-24" frameY="-47" frameWidth="875" frameHeight="802"/>
-	<SubTexture name="ALTleft0000" x="2497" y="809" width="907" height="720"/>
-	<SubTexture name="ALTleft0001" x="2497" y="809" width="907" height="720"/>
-	<SubTexture name="ALTleft0002" x="4" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTleft0003" x="4" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTleft0004" x="4" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTleft0005" x="4" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTleft0006" x="4" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTleft0007" x="4" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTleft0008" x="4" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTleft0009" x="4" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0000" x="915" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0001" x="915" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0002" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0003" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0004" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0005" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0006" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0007" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0008" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0009" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0010" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTright0011" x="1826" y="1557" width="907" height="720"/>
-	<SubTexture name="ALTup0000" x="2737" y="1557" width="907" height="720" frameX="0" frameY="-1" frameWidth="907" frameHeight="721"/>
-	<SubTexture name="ALTup0001" x="2737" y="1557" width="907" height="720" frameX="0" frameY="-1" frameWidth="907" frameHeight="721"/>
-	<SubTexture name="ALTup0002" x="4" y="2281" width="907" height="720" frameX="0" frameY="0" frameWidth="907" frameHeight="721"/>
-	<SubTexture name="ALTup0003" x="4" y="2281" width="907" height="720" frameX="0" frameY="0" frameWidth="907" frameHeight="721"/>
-	<SubTexture name="ALTup0004" x="4" y="2281" width="907" height="720" frameX="0" frameY="0" frameWidth="907" frameHeight="721"/>
-	<SubTexture name="ALTup0005" x="4" y="2281" width="907" height="720" frameX="0" frameY="0" frameWidth="907" frameHeight="721"/>
-	<SubTexture name="ALTup0006" x="4" y="2281" width="907" height="720" frameX="0" frameY="0" frameWidth="907" frameHeight="721"/>
-	<SubTexture name="ALTup0007" x="4" y="2281" width="907" height="720" frameX="0" frameY="0" frameWidth="907" frameHeight="721"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Tex-Packer-EX v0.7.1 https://kitzsh.github.io/tex-packer-ex
+-->
+<TextureAtlas imagePath="br_ALTsans.png" width="6829" height="714">
+  <SubTexture name="ALTdown0000.png" x="6338" y="5"  width="486" height="558" frameX="-186" frameY="-159" frameWidth="908" frameHeight="722"/>
+  <SubTexture name="ALTdown0001.png" x="6338" y="5"  width="486" height="558" frameX="-186" frameY="-159" frameWidth="908" frameHeight="722"/>
+  <SubTexture name="ALTdown0002.png" x="5829" y="5"  width="499" height="566" frameX="-178" frameY="-151" frameWidth="908" frameHeight="722"/>
+  <SubTexture name="ALTdown0003.png" x="5829" y="5"  width="499" height="566" frameX="-178" frameY="-151" frameWidth="908" frameHeight="722"/>
+  <SubTexture name="ALTdown0004.png" x="5829" y="5"  width="499" height="566" frameX="-178" frameY="-151" frameWidth="908" frameHeight="722"/>
+  <SubTexture name="ALTdown0005.png" x="5829" y="5"  width="499" height="566" frameX="-178" frameY="-151" frameWidth="908" frameHeight="722"/>
+  <SubTexture name="ALTdown0006.png" x="5829" y="5"  width="499" height="566" frameX="-178" frameY="-151" frameWidth="908" frameHeight="722"/>
+  <SubTexture name="ALTdown0007.png" x="5829" y="5"  width="499" height="566" frameX="-178" frameY="-151" frameWidth="908" frameHeight="722"/>
+  <SubTexture name="ALTdown0008.png" x="5829" y="5"  width="499" height="566" frameX="-178" frameY="-151" frameWidth="908" frameHeight="722"/>
+  <SubTexture name="ALTidle0000.png" x="5417" y="5"  width="402" height="614" frameX="-262" frameY="-146" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0001.png" x="5417" y="5"  width="402" height="614" frameX="-262" frameY="-146" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0002.png" x="5006" y="5"  width="401" height="616" frameX="-263" frameY="-144" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0003.png" x="5006" y="5"  width="401" height="616" frameX="-263" frameY="-144" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0004.png" x="4600" y="5"  width="396" height="625" frameX="-265" frameY="-136" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0005.png" x="4600" y="5"  width="396" height="625" frameX="-265" frameY="-136" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0006.png" x="3605" y="5"  width="390" height="632" frameX="-268" frameY="-129" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0007.png" x="3605" y="5"  width="390" height="632" frameX="-268" frameY="-129" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0008.png" x="3205" y="5"  width="390" height="633" frameX="-268" frameY="-128" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0009.png" x="3205" y="5"  width="390" height="633" frameX="-268" frameY="-128" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0010.png" x="3205" y="5"  width="390" height="633" frameX="-268" frameY="-128" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0011.png" x="3205" y="5"  width="390" height="633" frameX="-268" frameY="-128" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0012.png" x="3205" y="5"  width="390" height="633" frameX="-268" frameY="-128" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTidle0013.png" x="3205" y="5"  width="390" height="633" frameX="-268" frameY="-128" frameWidth="875" frameHeight="802"/>
+  <SubTexture name="ALTleft0000.png" x="1992" y="5" width="582" height="642" rotated="true"  frameX="-48" frameY="-130" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTleft0001.png" x="1992" y="5" width="582" height="642" rotated="true"  frameX="-48" frameY="-130" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTleft0002.png" x="4005" y="5" width="585" height="630" rotated="true"  frameX="-46" frameY="-128" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTleft0003.png" x="4005" y="5" width="585" height="630" rotated="true"  frameX="-46" frameY="-128" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTleft0004.png" x="4005" y="5" width="585" height="630" rotated="true"  frameX="-46" frameY="-128" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTleft0005.png" x="4005" y="5" width="585" height="630" rotated="true"  frameX="-46" frameY="-128" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTleft0006.png" x="4005" y="5" width="585" height="630" rotated="true"  frameX="-46" frameY="-128" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTleft0007.png" x="4005" y="5" width="585" height="630" rotated="true"  frameX="-46" frameY="-128" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTleft0008.png" x="4005" y="5" width="585" height="630" rotated="true"  frameX="-46" frameY="-128" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTleft0009.png" x="4005" y="5" width="585" height="630" rotated="true"  frameX="-46" frameY="-128" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0000.png" x="1369" y="5" width="613" height="650" rotated="true"  frameX="-245" frameY="-103" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0001.png" x="1369" y="5" width="613" height="650" rotated="true"  frameX="-245" frameY="-103" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0002.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0003.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0004.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0005.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0006.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0007.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0008.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0009.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0010.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTright0011.png" x="2584" y="5" width="611" height="635" rotated="true"  frameX="-248" frameY="-106" frameWidth="907" frameHeight="720"/>
+  <SubTexture name="ALTup0000.png" x="5" y="5"  width="682" height="704" frameX="-134" frameY="-12" frameWidth="907" frameHeight="721"/>
+  <SubTexture name="ALTup0001.png" x="5" y="5"  width="682" height="704" frameX="-134" frameY="-12" frameWidth="907" frameHeight="721"/>
+  <SubTexture name="ALTup0002.png" x="697" y="5"  width="662" height="691" frameX="-136" frameY="-23" frameWidth="907" frameHeight="721"/>
+  <SubTexture name="ALTup0003.png" x="697" y="5"  width="662" height="691" frameX="-136" frameY="-23" frameWidth="907" frameHeight="721"/>
+  <SubTexture name="ALTup0004.png" x="697" y="5"  width="662" height="691" frameX="-136" frameY="-23" frameWidth="907" frameHeight="721"/>
+  <SubTexture name="ALTup0005.png" x="697" y="5"  width="662" height="691" frameX="-136" frameY="-23" frameWidth="907" frameHeight="721"/>
+  <SubTexture name="ALTup0006.png" x="697" y="5"  width="662" height="691" frameX="-136" frameY="-23" frameWidth="907" frameHeight="721"/>
+  <SubTexture name="ALTup0007.png" x="697" y="5"  width="662" height="691" frameX="-136" frameY="-23" frameWidth="907" frameHeight="721"/>
 </TextureAtlas>

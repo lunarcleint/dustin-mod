@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="1135" y="560" sprite="perseverance/pico_pixel" scale="7" antialiasing="false" camx="-340" camy="30" icon="perseverance-sans" color="#000000" holdTime="16">
+	<anim name="idle" anim="idle" fps="12"/>
+	<anim name="singDOWN" anim="down" x="-1" fps="12"/>
+	<anim name="singRIGHT" anim="right" x="-1" fps="12"/>
+	<anim name="singLEFT" anim="left" x="-1" fps="12"/>
+	<anim name="singUP" anim="up" fps="12"/>
+</character>

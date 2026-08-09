@@ -1,0 +1,46 @@
+{
+    "beforeStoryMode": [
+        {"text": "WELCOME.", "face": "talk"},
+        {"text": "DO NOT BE IMPATIENT.", "face": "talk"},
+        {"text": "THE TIME FOR THIS\nWILL COME.", "face": "focus"},
+        {"text": "FOR NOW,\nENJOY THE VESSEL\nI HAVE PREPARED.", "face": "surprised"}
+    ],
+
+    "afterStoryMode": [
+        {"text": "INTERESTING.\nTRULY INTERESTING.", "face": "talk"},
+        {"text": "YOU ARE SEEKING MORE,\nARE YOU NOT?", "face": "focus"},
+        {"text": "OF COURSE. OF COURSE.", "face": "surprised"},
+        {"text": "THEN, THERE IS MORE THAT\nI CAN SHOW YOU.\nWHAT I HAVE DISCOVERED HERE.", "face": "talk"},
+        {"text": "I AM SURE THAT MY FINDINGS\nWILL PROVE TO BE\nVERY, VERY INTERESTING.", "face": "talk"}
+    ],
+
+    "bothEndings": [
+        {"text": "INTERESTING, TRULY,\nINTERESTING.", "face": "talk"},
+        {"text": "HOW FAR WILL\nCURIOSITY DRIVE YOU?", "face": "surprised"},
+        {"text": "HOW DEEP WILL YOU GO?", "face": "focus"}
+    ],
+
+    "return": [
+        {"text": "WELCOME.", "face": "talk"}
+    ],
+
+    "boughtItAll": [
+        {"text": "NOW.", "face": "talk"},
+        {"text": "I HAVE NOTHING MORE TO\nOFFER YOU.", "face": "talk"},
+        {"text": "ENJOY MY VESSELS.", "face": "laugh"},
+        {"text": "I WILL BE WATCHING FROM THE DARK.", "face": "focus"}
+    ],
+
+    "buySuccess": [
+        {"text": "THANK YOU.", "face": "surprised"}
+    ],
+
+    "buyCancel": [
+        {"text": "YOUR CHOICE.", "face": "focus"}
+    ],
+
+    "buyFail": [
+        {"text": "IT SEEMS LIKE YOU DON'T HAVE ENOUGH EXP.", "face": "focus"},
+        {"text": "DON'T WORRY,\nI'LL SAVE THIS ONE JUST FOR YOU.", "face": "scary"}
+    ]
+}

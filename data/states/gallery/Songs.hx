@@ -11,6 +11,8 @@ import flixel.tweens.FlxTweenType;
 import flixel.tweens.FlxEase;
 import flixel.math.FlxMath;
 
+importScript("data/scripts/galleryBG");
+
 var images:Array<String>;
 var curSelected:Int = 0;
 static var galleryMusicStarted:Bool = false;
@@ -38,6 +40,9 @@ var infX:Float, infY:Float;
 
 
 function create():Void {
+
+    createGalleryBG();
+    
     var raw = Assets.getText(Paths.json("config/songstuff"));
     var data = Json.parse(raw);
     var imageNames = [];
@@ -83,19 +88,19 @@ function create():Void {
     imageDisplay.updateHitbox();
     add(imageDisplay);
 
-    leftArrow = new FlxText(0, 0, 50, "<", 80, true);
+    leftArrow = textCrispy(new FlxText(0, 0, 50, "<", 80, true));
     leftArrow.setFormat(Paths.font("8bit-jve.ttf"), 80, FlxColor.WHITE, FlxTextAlign.CENTER);
     leftArrow.x = 50;
     leftArrow.y = FlxG.height / 2 - leftArrow.height / 2;
     add(leftArrow);
 
-    rightArrow = new FlxText(0, 0, 50, ">", 80, true);
+    rightArrow = textCrispy(new FlxText(0, 0, 50, ">", 80, true));
     rightArrow.setFormat(Paths.font("8bit-jve.ttf"), 80, FlxColor.WHITE, FlxTextAlign.CENTER);
     rightArrow.x = FlxG.width - 50 - rightArrow.width;
     rightArrow.y = FlxG.height / 2 - rightArrow.height / 2;
     add(rightArrow);
 
-    sText = new FlxText(0, 500, 500, "PRESS ENTER TO SHOW STORY", 40, true);
+    sText = textCrispy(new FlxText(0, 500, 500, "PRESS ENTER TO SHOW STORY", 40, true));
     sText.setFormat(Paths.font("8bit-jve.ttf"), 40, FlxColor.WHITE, FlxTextAlign.CENTER);
     sText.x = FlxG.width / 2 - sText.width / 2;
     sText.y = FlxG.height - 30 - sText.height;
@@ -127,7 +132,7 @@ function create():Void {
     infoBackground.set_alpha(0);
     add(infoBackground);
 
-    titleText = new FlxText(infX + 20, offY + 20, infW - 40, "", 60);
+    titleText = textCrispy(new FlxText(infX + 20, offY + 20, infW - 40, "", 60));
     titleText.setFormat(Paths.font("8bit-jve.ttf"), 60, FlxColor.WHITE, FlxTextAlign.CENTER);
     titleText.set_alpha(0);
     add(titleText);
@@ -138,7 +143,7 @@ function create():Void {
     add(titleUnderline);
     titleUnderline.x = titleText.x + (titleText.width - titleUnderline.width) / 2;
 
-    storyText = new FlxText(infX + 40, offY + 100, infW - 80, "", 25, true);
+    storyText = textCrispy(new FlxText(infX + 40, offY + 100, infW - 80, "", 25, true));
     storyText.setFormat(Paths.font("8bit-jve.ttf"), 25, FlxColor.WHITE, FlxTextAlign.CENTER);
     storyText.wordWrap = true;
     storyText.set_alpha(0);

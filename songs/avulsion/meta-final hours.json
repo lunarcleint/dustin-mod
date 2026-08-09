@@ -1,0 +1,32 @@
+{
+	"customValues": {
+		"customName": "avulsiOn",
+		"titleCardSubtext": "* by Mar Mar/pause(0.5)/\n* ft. Chezzar & Skie",
+		"gameover": {
+			"quote": "you won't be using this for much longer.",
+			"isMonster": false,
+			"sound": "sans",
+			"song": "avulsion"
+		},
+		"credits": {
+			"SPRITES": "YEEZUS (HORRORSPINN), SAMUEL PASTEL",
+			"BACKGROUND": "HLOARTS",
+			"CHART": "GOJIMANPLAYS",
+			"SONG": "MAR MAR, CHEZZAR, SKIE"
+		},
+		"stats": "* SANS 91 ATK 76 DEF \n* His look pierces through your mind.\n* He holds a strange remote."
+	},
+	"color": "#FFFFFF",
+	"instSuffix": "-Final Hours",
+	"opponentModeAllowed": true,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "Icon",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Avulsion",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 165
+}

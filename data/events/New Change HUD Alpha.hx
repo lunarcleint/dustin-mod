@@ -1,3 +1,5 @@
+import funkin.editors.charter.Charter;
+
 var hudTween:FlxTween;
 
 function onEvent(eventEvent) {
@@ -15,7 +17,7 @@ function onEvent(eventEvent) {
             timeBarBG, timeTxt, timeBar
         ];
 
-        if (params[0] == false) {
+        if (params[0] == false || (PlayState.chartingMode && Charter.startHere && eventEvent.event.time < Charter.startTime)) {
             // Set alpha directly
             healthBar.alpha = targetAlpha;
             healthBarBG.alpha = targetAlpha;

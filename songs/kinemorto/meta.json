@@ -4,22 +4,22 @@
 		"characterY": null,
 		"character": null,
 		"credits": {
-			"CHART": "CURIOUS",
-			"BACKGROUND": "JFLOID",
 			"SPRITES": "WEEDEET, CHUF, CHEZZAR, ALHAMBRITO119",
+			"BACKGROUND": "JFLOID",
+			"CHART": "CURIOUS",
 			"SONG": "CHEZZAR, DAVID0414"
 		},
 		"mainColor": null,
 		"customName": "kinemOrto",
 		"titleCardSubtext": "* by Chezzar/pause(0.5)/\n* ft. David0414",
 		"gameover": {
-			"quote": "BOYFRIEND, you need to wake up!",
 			"isMonster": false,
-			"sound": "gf",
-			"song": "kinemorto"
+			"quote": "BOYFRIEND, you need to wake up!",
+			"song": "kinemorto",
+			"sound": "gf"
 		},
-		"stats": "* PAPYRUS  8 ATK  2 DEF\n* He likes to say NYEH HEH HEH.\n* Will capture the human.",
-		"characterX": null
+		"characterX": null,
+		"stats": "* PAPYRUS - 8 ATK 2 DEF\n* He likes to say NYEH HEH HEH.\n* Will capture the human."
 	},
 	"opponentModeAllowed": false,
 	"icon": "face",

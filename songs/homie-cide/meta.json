@@ -3,20 +3,20 @@
 	"customValues": {
 		"customName": "hOmie-cide",
 		"titleCardSubtext": "* by Chezzar/pause(0.5)/\n* ft. Skie",
+		"mainColor": "#FFADD5",
 		"credits": {
-			"SPRITES": "CHEZZAR, FIZZYPOP, ALHAMBRITO119",
-			"BACKGROUND": "FROSTIC",
 			"CHART": "FROSTIC",
+			"BACKGROUND": "FROSTIC",
+			"SPRITES": "CHEZZAR, FIZZYPOP, ALHAMBRITO119",
 			"SONG": "CHEZZAR, SKIE"
 		},
 		"gameover": {
-			"quote": "brother... i'm sorry.",
 			"isMonster": true,
-			"sound": "swappaps",
-			"song": "homie-cide"
+			"quote": "brother... i'm sorry.",
+			"song": "homie-cide",
+			"sound": "swappaps"
 		},
-		"mainColor": "#FFADD5",
-		"stats": "* PAPYRUS 44 ATK 25 DEF\n* He has been getting EXP.\n* You cannot recognize him."
+		"stats": "* PAPYRUS - 44 ATK 25 DEF\n* He has been getting EXP.\n* You cannot recognize him."
 	},
 	"opponentModeAllowed": false,
 	"icon": "face",

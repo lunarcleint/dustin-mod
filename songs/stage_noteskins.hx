@@ -2,6 +2,9 @@
 public var finalNotesScale:Float = 0.65;
 static var noteSkin:String = "default";
 static var splashSkin:String = null;
+var confirmSkin:Map<String, Dynamic> = [];
+
+using StringTools;
 
 function create() {
 	noteSkin = "default"; splashSkin = null;
@@ -27,13 +30,14 @@ function onStrumCreation(event) {
 
 function onPostStrumCreation(e) {
 	var trueScale:Float = __usePixel ? 6 : 1;
+	e.strum.scrollFactor.set(1, 1);
 	e.strum.scale.set(trueScale, trueScale); e.strum.updateHitbox();
 	e.strum.setGraphicSize(Std.int((e.strum.width * finalNotesScale)));
 	e.strum.updateHitbox();
 }
 
 function onNoteCreation(e) {
-	if (e.noteType != null && Assets.exists(Paths.image("game/notes/types/" + e.noteType)))
+	if((e.noteType != null || (e.noteType == "No Animation" || e.noteType == "No Anim Note")) && Assets.exists(Paths.image("game/notes/types/" + e.noteType)))
 		e.noteSprite = "game/notes/types/" + e.noteType;
 	else {
 		e.noteScale = finalNotesScale;
@@ -56,7 +60,28 @@ function onNoteCreation(e) {
 	}
 }
 
+var dirOffsets:Array<Array<Int>> = [[-5,-10], [-10,-10], [-10,-10], [-5,-10]];
+var dir:Array = ["left", "down", "up", "right"];
+
 function onPostNoteCreation(e) {
+	if(e.noteType != null && e.noteType.contains("NOTE") && confirmSkin[e.noteType] == null) {
+		if(Assets.exists(Paths.image("game/notes/types/" + e.noteType))) {
+			confirmSkin[e.noteType] = [];
+			for(i in 0...e.note.strumLine.members.length) {
+				var spr:FlxSprite = new FlxSprite(0, 0);
+				spr.ID = i;
+				spr.active = spr.visible = false;
+				spr.frames = Paths.getFrames("game/notes/types/" + e.noteType);
+				spr.updateHitbox();
+				spr.setGraphicSize(Std.int((spr.width * finalNotesScale)));
+				spr.animation.addByPrefix("confirm", dir[i] + " confirm", 24, false);
+				spr.animation.play("confirm", true);
+				spr.camera = e.note.strumLine.camera;
+				add(spr);
+				confirmSkin[e.noteType].push(spr);
+			}
+		}
+	}
 	e.note.splash = splashSkin;
 	switch (noteSkin) {
 		case "default":
@@ -66,5 +91,33 @@ function onPostNoteCreation(e) {
 	}
 }
 
-function onNoteHit(e)
+function postUpdate() {
+	for(type in confirmSkin.keys()) {
+		for(i => note in confirmSkin[type]) {
+			if(note.active) {
+				note.setPosition(
+					playerStrums.members[i].x - ((playerStrums.members[i].width / 2) * (finalNotesScale / 2)) + dirOffsets[i][0],
+					playerStrums.members[i].y -  ((playerStrums.members[i].height / 2) * (finalNotesScale / 2)) + dirOffsets[i][1]
+				);
+				if(playerStrums.members[i].getAnim() == "static") {
+					note.active = note.visible = false;
+					playerStrums.members[i].visible = true;
+				}
+			}
+		}
+	}
+}
+
+function onNoteHit(e) {
 	if (splashSkin == null) e.showSplash = false;
+	if (e.note.strumLine == playerStrums && (e.note.extra["hurtNote"] == null || validHurtNoteHit(e.note))) {
+		if(confirmSkin[e.note.noteType] != null) {
+			confirmSkin[e.note.noteType][e.note.strumID].active = true;
+			confirmSkin[e.note.noteType][e.note.strumID].animation.play("confirm", true);
+			confirmSkin[e.note.noteType][e.note.strumID].updateHitbox();
+			confirmSkin[e.note.noteType][e.note.strumID].centerOffsets();
+			confirmSkin[e.note.noteType][e.note.strumID].visible = true;
+			playerStrums.members[e.note.strumID].visible = false;
+		}
+	}
+}

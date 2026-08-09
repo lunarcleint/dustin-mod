@@ -46,65 +46,56 @@ class MainChara extends flixel.FlxSprite {
     public var moving:Bool = false;
     public var facing:Int = null;
     public override function update(elapsed:Float) {
-        previous.x = x; previous.y = y;
-        if (moving) {
-            animFacing = switch (facing) {
-                case 0: "d";
-                case 1: "r";
-                case 2: "u";
-                default: "l";
-            };
-            animation.play(animFacing, animation.name != animFacing);
-        }
-
-        turned = 1; moving = false;
+        previous.set(x, y);
+        turned = 1;
+        moving = false;
+    
         if (FlxG.keys.pressed.LEFT) {
-            if ((previous.x == (x + 3))) x -= 2;
-            else x -= 3;
+            x -= (previous.x == x + 3) ? 2 : 3;
             moving = true;
-            if (FlxG.keys.pressed.UP && facing == 2) turned = 0;
-            if (FlxG.keys.pressed.DOWN && facing == 0) turned = 0;
+            if ((FlxG.keys.pressed.UP && facing == 2) || (FlxG.keys.pressed.DOWN && facing == 0)) turned = 0;
             if (turned == 1) facing = 3;
         }
         if (FlxG.keys.pressed.UP) {
             y -= 3;
             moving = true;
-            if (FlxG.keys.pressed.RIGHT && facing == 1) turned = 0;
-            if (FlxG.keys.pressed.LEFT && facing == 3) turned = 0;
+            if ((FlxG.keys.pressed.RIGHT && facing == 1) || (FlxG.keys.pressed.LEFT && facing == 3)) turned = 0;
             if (turned == 1) facing = 2;
         }
         if (FlxG.keys.pressed.RIGHT && !FlxG.keys.pressed.LEFT) {
-            if ((previous.x == (x - 3))) x += 2;
-            else x += 3;
+            x += (previous.x == x - 3) ? 2 : 3;
             moving = true;
-            if (FlxG.keys.pressed.UP && facing == 2) turned = 0;
-            if (FlxG.keys.pressed.DOWN && facing == 0) turned = 0;
+            if ((FlxG.keys.pressed.UP && facing == 2) || (FlxG.keys.pressed.DOWN && facing == 0)) turned = 0;
             if (turned == 1) facing = 1;
         }
         if (FlxG.keys.pressed.DOWN && !FlxG.keys.pressed.UP) {
             y += 3;
             moving = true;
-            if (FlxG.keys.pressed.RIGHT && facing == 1) turned = 0;
-            if (FlxG.keys.pressed.LEFT && facing == 3) turned = 0;
+            if ((FlxG.keys.pressed.RIGHT && facing == 1) || (FlxG.keys.pressed.LEFT && facing == 3)) turned = 0;
             if (turned == 1) facing = 0;
         }
-        update_delta();
-        if (allowCollisions)
-            update_collisions();
-
-        if (!moving) {
+    
+        if (moving) {
+            var animFacing = switch (facing) {
+                case 0: "d"; 
+                case 1: "r"; 
+                case 2: "u"; 
+                default: "l";
+            };
+            animation.play(animFacing, animation.name != animFacing);
+        } else {
             animation.stop();
             animation?.curAnim?.curFrame = 1;
         }
-
+    
+        update_delta();
+        if (allowCollisions) update_collisions();
+    
         super.update(elapsed);
-
-        var camera:FlxCamera = cameras[0];
+    
+        var camera = cameras[0];
         if (camera != null)
-            camera.scroll.set(
-                x+(width/2)-(FlxG.width/2),
-                y+(height/2)-(FlxG.height/2)
-            );
+            camera.scroll.set(x + (width / 2) - (FlxG.width / 2), y + (height / 2) - (FlxG.height / 2));
     }
 
     public function update_delta() {

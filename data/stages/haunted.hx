@@ -1,25 +1,40 @@
 //
-var ogbg_start_left;
-var ogbg_start_right;
-var ogfg_start_left;
-var ogfg_start_right;
-var ogboyfriend;
-var ogdad;
-var p;
+
+import Reflect;
+import funkin.game.HudCamera;
+
+var forceScroll; // a script for downscroll to work on camgame
+
 function create() {
+
     bloom_new = new CustomShader("bloom_new");
     bloom_new.size = 50; bloom_new.brightness = 1.2;
     bloom_new.directions = 16; bloom_new.quality = 5;
     bloom_new.threshold = .85;
 
-    if (Options.gameplayShaders && FlxG.save.data.bloom) camGame.addShader(bloom_new);
-    if (Options.gameplayShaders && FlxG.save.data.bloom) camHUD.addShader(bloom_new);
+    if (Options.gameplayShaders && FlxG.save.data.bloom) {
+        camGame.addShader(bloom_new);
+        camHUD.addShader(bloom_new);
+    }
 }
 
-var blackBG;
-var blackBG2;
-var blackBG3;
+var blackBG:FlxSprite;
+var blackBG2:FlxSprite;
+var blackBG3:FlxSprite;
+
 function postCreate() {
+    if(camHUD.downscroll) {
+        forceScroll = importScript("data/scripts/mechanics/strumDirectionChange");
+        negMultY = desiredMultY = -1;
+        forcedScrollOffset = 325;
+        for (i in 0...4) {
+            strumOffset.set(0,camHUD.height - (strumLines.members[1].members[0].y) - (strumLines.members[1].members[i].height / 2));
+            strumOffsetLerp.set(0,camHUD.height - (strumLines.members[1].members[0].y) - (strumLines.members[1].members[i].height / 2));
+        }
+        ignoreHUDScroll = true;
+        applyDirectionStrum(cpuStrums);
+    }
+    
     //
     gf.alpha = 0;
 
@@ -35,7 +50,7 @@ function postCreate() {
     //
 
     remove(boyfriend);
-    remove(dad);
+    remove(dad, true);
 
     remove(bg_start_left);
     remove(bg_start_right);
@@ -48,9 +63,7 @@ function postCreate() {
     blackBG2.makeGraphic(4000, 4000, 0xFF000000); 
     blackBG2.scrollFactor.set(1, 1);
     blackBG2.cameras = [camGame]; 
-    blackBG2.setPosition(0, 0); 
-
-    
+    blackBG2.setPosition(0, 0);     
     
     add(blackBG2);
     
@@ -58,17 +71,34 @@ function postCreate() {
     add(bg_start_right);
     add(haunted_sans_bg_left);
     
-    
-    
-    
     add(dad);
+
     add(haunted_sans_bg_right);
     add(haunted_sans_bg_middle);
-    
-    add(boyfriend);
-    
-    
+
+
+    /*fgBorder = new FlxSprite(fg_start_right.x, fg_start_right.y);
+    fgBorder.makeGraphic(fg_start_right.width, fg_start_right.height, FlxColor.BLACK); 
+    fgBorder.cameras = [camGame];
+
+    fg_start_right.onDraw = (spr) -> {
+        spr.draw();
+        fgBorder.x = spr.x + spr.width;
+        fgBorder.draw();
+        fgBorder.setPosition(spr.x + spr.width, spr.y);
+        fgBorder.draw();
+        fgBorder.setPosition(spr.x, spr.y + spr.height);
+        fgBorder.draw();
+        fgBorder.setPosition(spr.x, spr.y - spr.height);
+        fgBorder.draw();
+        fgBorder.setPosition(fg_start_left.x, fg_start_left.y + spr.height);
+        fgBorder.draw();
+        fgBorder.setPosition(fg_start_left.x, fg_start_left.y - spr.height);
+        fgBorder.draw();
+    }*/
     remove(fg_start_left);
+    add(boyfriend);
+
     remove(fg_start_right);
     remove(haunted_fault);
 
@@ -90,23 +120,20 @@ function postCreate() {
         timeBarBG, timeTxt, timeBar
     ];
     
+    remove(strumLines);
+    insert(members.indexOf(boyfriend) + 2, strumLines);
+    strumOverlay?.cameras = [camGame];
     
     for (strum in cpuStrums.members) {
         if (strum != null)
-            strum.cameras = [camGame];
+            strum.camera = camGame;
         strum.scrollFactor.set(1, 1);
-        
-        remove(strum);
-        add(strum);
     }
     
     for (strum in playerStrums.members) {
         if (strum != null)
-            strum.cameras = [camGame];
+            strum.camera = camGame;
         strum.scrollFactor.set(1, 1);
-        
-        remove(strum);
-        add(strum);
     }
     
     for (strumLine in strumLines)
@@ -115,114 +142,114 @@ function postCreate() {
             add(note);
         }
         
-        for (strum in playerStrums.members) {
-            strum.alpha = 0;
-            strum.visible = false;
+    for (strum in playerStrums.members) {
+        strum.alpha = 0;
+        strum.visible = false;
+    }
+    
+    for (strum in cpuStrums.members) {
+        strum.alpha = 0;
+        strum.visible = false;
+    }
+        
+    for (strumLine in strumLines)
+        for (note in strumLine.notes) {
+            note.alpha = 0;
+            note.visible = false;
         }
         
-        for (strum in cpuStrums.members) {
-            strum.alpha = 0;
-            strum.visible = false;
-        }
-        
-        for (strumLine in strumLines)
-            for (note in strumLine.notes) {
-                note.alpha = 0;
-                note.visible = false;
-            }
             
             
-            
-            for (element in customUI) {
-                element.angle = 90;
-                element.y -= 290;
-                element.scale.set(0.6, 0.6);
-                
-                if (camHUD.downscroll) {
-                    element.y += 20;
-                }
-            }
-            
-            dustinHealthBar.y -= 30;
-            
-            for (element in customUItime) {
-                element.visible = false;
-            }
-            
-            dustiniconP1.visible = false;
-            dustiniconP2.visible = false;
-            dustinHealthBG.alpha = 0;
-            dustinHealthBar.alpha = 0;
+        for (element in customUI) {
+            element.angle = 90;
+            element.y -= 290;
+            element.scale.set(0.6, 0.6);
             
             if (camHUD.downscroll) {
-                scoreTxt.y -= 650;
-                accuracyTxt.y -= 650;
-                missesTxt.y -= 650;
+                element.y += 20;
             }
+        }
             
-            
-            
-            
-            blackBG = new FlxSprite();
-            blackBG.makeGraphic(4000, 4000, 0xFF000000); 
-            blackBG.scrollFactor.set(1, 1);
-            blackBG.cameras = [camGame]; 
-            blackBG.setPosition(0, 1050); 
-            
-            add(blackBG);
-            
-            blackBG3 = new FlxSprite();
-            blackBG3.makeGraphic(2000, 2000, 0xFF000000); 
-            blackBG3.scrollFactor.set(1, 1);
-            blackBG3.cameras = [camGame]; 
-            blackBG3.setPosition(0, -2000); 
-            
-            add(blackBG3);
-            
-            
-            add(fg_start_left);
-            add(fg_start_right);
-            add(haunted_fault);
-            add(haunted_weak);
-            add(haunted_punch);
+        dustinHealthBar.y -= 30;
+        
+        for (element in customUItime) {
+            element.visible = false;
+        }
+        
+        dustiniconP1.visible = false;
+        dustiniconP2.visible = false;
+        dustinHealthBG.alpha = 0;
+        dustinHealthBar.alpha = 0;
+        
+        if (camHUD.downscroll) {
+            scoreTxt.y -= 650;
+            accuracyTxt.y -= 650;
+            missesTxt.y -= 650;
+        }
+        
+        
+        
+        
+        blackBG = new FlxSprite();
+        blackBG.makeGraphic(4000, 4000, 0xFF000000); 
+        blackBG.scrollFactor.set(1, 1);
+        blackBG.cameras = [camGame]; 
+        blackBG.setPosition(0, 1050); 
+        
+        add(blackBG);
+        
+        blackBG3 = new FlxSprite();
+        blackBG3.makeGraphic(2000, 2000, 0xFF000000); 
+        blackBG3.scrollFactor.set(1, 1);
+        blackBG3.cameras = [camGame]; 
+        blackBG3.setPosition(0, -2000); 
+        
+        add(blackBG3);
+        
+        
+        add(fg_start_left);
+        add(fg_start_right);
+        add(haunted_fault);
+        add(haunted_weak);
+        add(haunted_punch);
 
-            add(haunted_paps_jjk);
-            add(haunted_sans_jjk);
-            add(haunted_bf_jjk);
-            
-            ogbg_start_left = bg_start_left.x;
-            ogbg_start_right = bg_start_right.x;
-            ogfg_start_left = fg_start_left.x;
-            ogfg_start_right = fg_start_right.x;
-            ogboyfriend = boyfriend.x;
-            ogdad = dad.x;
-            
-            bg_start_left.x -= 1200;
-            bg_start_right.x += 1200;
-            fg_start_left.x -= 1200;
-            fg_start_right.x += 1200;
-            boyfriend.x += 1200;
-            dad.x -= 1200;
-            camGame.fade(FlxColor.BLACK, 0);
+        add(haunted_paps_jjk);
+        add(haunted_sans_jjk);
+        add(haunted_bf_jjk);
+        
+        ogbg_start_left = bg_start_left.x;
+        ogbg_start_right = bg_start_right.x;
+        ogfg_start_left = fg_start_left.x;
+        ogfg_start_right = fg_start_right.x;
+        ogboyfriend = boyfriend.x;
+        ogdad = dad.x;
+        
+        bg_start_left.x -= 1200;
+        bg_start_right.x += 1200;
+        fg_start_left.x -= 1200;
+        fg_start_right.x += 1200;
+        boyfriend.x += 1200;
+        dad.x -= 1200;
+        camGame.fade(FlxColor.BLACK, 0);
 
-            remove(ratingsGroup);
-            
-            haunted_papyrus_stare.visible = false;
-            haunted_bf_stare.visible = false;
-            
-            haunted_fault.visible = false;
-            haunted_weak.visible = false;
-            haunted_punch.visible = false;
+        haunted_papyrus_stare.visible = false;
+        haunted_bf_stare.visible = false;
+        
+        haunted_fault.visible = false;
+        haunted_weak.visible = false;
+        haunted_punch.visible = false;
 
-            haunted_paps_jjk.visible = false;
-            haunted_sans_jjk.visible = false;
-            haunted_bf_jjk.visible = false;
-            
-            haunted_sans_bg_left.visible = false;
-            haunted_sans_bg_right.visible = false;
-            haunted_sans_bg_middle.visible = false;
-            
+        haunted_paps_jjk.visible = false;
+        haunted_sans_jjk.visible = false;
+        haunted_bf_jjk.visible = false;
+        
+        haunted_sans_bg_left.visible = false;
+        haunted_sans_bg_right.visible = false;
+        haunted_sans_bg_middle.visible = false;
 
+        ratingsGroup.cameras = [FlxG.camera];
+        remove(ratingsGroup, true);
+        add(ratingsGroup);
 }
 
 function stepHit(step:Int) {
@@ -298,6 +325,9 @@ function stepHit(step:Int) {
                         timeBarBG, timeTxt, timeBar
                 ];
 
+            remove(strumLines);
+            insert(members.indexOf(scoreTxt), strumLines);
+
             for (strum in cpuStrums.members)
                 if (strum != null)
                     strum.alpha = 0;
@@ -309,6 +339,21 @@ function stepHit(step:Int) {
                 strum.alpha = 0.8;  
             }
 
+            ratingsGroup.cameras = [camHUD];
+            strumOverlay?.cameras = [camHUD];
+
+            if(camHUD.downscroll) {
+                for (i in 0...4) {
+                    strumOffset.set(0, 0);
+                    strumOffset.copyTo(strumOffsetLerp);
+                    forcedScrollOffset = 0;
+                    negMultY = 1; desiredMultY = 1;
+                    removeDirectionStrum(playerStrums);
+                    removeDirectionStrum(cpuStrums);
+                    forceScroll = null;
+                };
+            }
+
              for (strumLine in strumLines)
                 for (note in strumLine.notes) 
                     note.alpha = 0.8;
@@ -316,7 +361,6 @@ function stepHit(step:Int) {
             for (element in customUI) {
                     FlxTween.tween(element, {x: element.x - 550}, 3, {ease: FlxEase.quintOut});
                 }
-
         case 802:
             haunted_papyrus_stare.visible = true;
             haunted_papyrus_stare.x -= 2000;
@@ -346,6 +390,9 @@ function stepHit(step:Int) {
             haunted_sans_bg_left.visible = true;
             haunted_sans_bg_right.visible = true;
             haunted_sans_bg_middle.visible = true;
+
+            remove(boyfriend, true);
+            insert(members.indexOf(haunted_sans_bg_right) + 1, boyfriend);
     
 
 

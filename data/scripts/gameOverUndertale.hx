@@ -1,6 +1,7 @@
 //
 PlayState.instance.scripts.importScript("data/scripts/FunkinTypeText");
 
+import sys.FileSystem;
 import Reflect;
 
 var game_over:FunkinText;
@@ -20,6 +21,10 @@ var heartbrokenBaseY;
 var glitch:CustomShader;
 var bloom:CustomShader;
 
+var pauseInfo = PlayState.instance.scripts.publicVariables.get("pauseInfo");
+
+using StringTools;
+
 function create(e) {
     for (cam in FlxG.cameras.list) {
         cam.visible = false;
@@ -35,20 +40,24 @@ function create(e) {
     glitch.SPEED = 1;
     glitch.AMT = 0.7;
 
-    FlxG.sound.play(Paths.sound('startBreak'), 1);
+    var soulType:Null<Bool> = pauseInfo.isMonster;
+
+    if(soulType != null) FlxG.sound.play(Paths.sound('startBreak'), 1);
     e.cancel();
     FlxG.cameras.add(gameOverCam = new FlxCamera(), false);
 
     var textSpeach;
-    var textSound;
+    var textSound = soundName == null ? "default" : soundName + "_talk";
+    
     switch(soundName) {
-        case "gf": textSpeach = "8bit-jve.ttf"; textSound = "gf_talk";
-        case "paps": textSpeach = "papyrus.ttf"; textSound = "papyrus_talk";
-        case "sans": textSpeach = "pixel-comic.ttf"; textSound = "sans_talk";
-        case "swapsans": textSpeach = "pixel-comic.ttf"; textSound = "swapsans_talk";
-        case "swappaps": textSpeach = "papyrus.ttf"; textSound = "swappaps_talk";
-        case "fellsans": textSpeach = "pixel-comic.ttf"; textSound = "fellsans_talk";
-        default: textSpeach = "8bit-jve.ttf"; textSound = "gf_talk";
+        case "gf": textSpeach = "8bit-jve.ttf";
+        case "paps": textSpeach = "papyrus.ttf";
+        case "sans": textSpeach = "pixel-comic.ttf";
+        case "swapsans": textSpeach = "pixel-comic.ttf";
+        case "swappaps": textSpeach = "papyrus.ttf";
+        case "fellsans": textSpeach = "pixel-comic.ttf";
+        case "alphys": textSpeach = "8bit-jve.ttf";
+        default: textSpeach = "8bit-jve.ttf";
     }
 
     game_over = new FunkinSprite().loadGraphic(Paths.image("game/gameover/gay_over"));
@@ -61,6 +70,23 @@ function create(e) {
     game_over.screenCenter();
     if (songName == "genocides")
         game_over.y += 30;
+
+    {
+        var path =  Paths.getAssetsRoot().replace("./mods/dustin", "assets/") + "songs/" + PlayState.SONG.meta.name + "/quotes.txt";
+        trace(Assets.exists(path));
+        if(Assets.exists(path)) {
+            var quoteType:String = "LOOP";
+            var quotes:Array<String> = CoolUtil.coolTextFile(path);
+            if(quotes[0].startsWith("type:")) {
+                quoteType = quotes[0].replace("type:", "").toUpperCase();
+                quotes.remove(quotes[0]);
+            }
+            if(quoteType == "RANDOM")
+                quoteString = quotes[FlxG.random.int(0, quotes.length - 1)].replace("\\n", "\n");
+            trace(quoteType);
+            trace(quoteString);
+        }
+    }
 
     quoteTextObj = newFunkinTypeText(0, 500, FlxG.width, quoteString != null ? quoteString : "Don't lose hope!");
     quoteText = quoteTextObj.flxtext;
@@ -87,10 +113,18 @@ function create(e) {
         game_over.color = fellColor;
     }
     
-    var soulType:Bool = PlayState.SONG.meta?.customValues?.gameover?.isMonster == true;
-    var heartPath:String = soulType ? "game/gameover/monster_heart" : "game/gameover/heart";
-    heart = new FunkinSprite().loadGraphic(Paths.image(heartPath));
-    heart.scale.set(0.05, 0.05);
+    var useBraveHeart:Bool =
+        PlayState.SONG.meta.name.toLowerCase() == "lorem-ipsum";
+
+    var heartPath:String = useBraveHeart
+        ? "game/gameover/brave_heart"
+        : (soulType
+            ? "game/gameover/monster_heart"
+            : "game/gameover/heart");
+    heart = new FunkinSprite();
+    if(soulType != null) heart.loadGraphic(Paths.image(heartPath));
+    else heart.alpha = 0;
+    heart.scale.set(3.2, 3.2);
     heart.updateHitbox();
     heart.antialiasing = false;
     heart.cameras = [gameOverCam];
@@ -100,9 +134,15 @@ function create(e) {
     var positionToTween = heart.y + 80;
     heart.y = heart.y + (songName == "genocides" ? 500 : 400);
 
-    var heartPath2:String = soulType ? "game/gameover/monster_heart_broken" : "game/gameover/heart_broken";
-    heartbroken = new FunkinSprite().loadGraphic(Paths.image(heartPath2));
-    heartbroken.scale.set(0.05, 0.05);
+    var heartPath2:String = useBraveHeart
+        ? "game/gameover/brave_heart_broken"
+        : (soulType
+            ? "game/gameover/monster_heart_broken"
+            : "game/gameover/heart_broken");
+    heartbroken = new FunkinSprite();
+    if(soulType != null) heartbroken.loadGraphic(Paths.image(heartPath2));
+    else heartbroken.alpha = 0;
+    heartbroken.scale.set(3.2, 3.2);
     heartbroken.updateHitbox();
     heartbroken.antialiasing = false;
     heartbroken.cameras = [gameOverCam];
@@ -121,38 +161,50 @@ function create(e) {
     whiteFlash.cameras = [gameOverCam];
     add(whiteFlash);
 
-    FlxTween.tween(heart, {y: positionToTween}, 2, {
+    if(soulType != null) {
+        FlxTween.tween(heart, {y: positionToTween}, 2, {
             ease: FlxEase.quartInOut,
         });
 
-    new FlxTimer().start(1.5, function() {
-        gameOverCam.shake(0.005, 0.5);
-    });
-
-    new FlxTimer().start(2, function() {
-        FlxG.sound.playMusic(Paths.music('gameovers/' + songName), 0.8);
-        FlxG.sound.play(Paths.sound('endBreak'), 0.8);
-
-        if (songName == "kinemorto" && FlxG.random.float() < 0.1)
-            FlxG.sound.play(Paths.sound('umano'), 0.8);
-
-
-        if (Options.gameplayShaders && FlxG.save.data.bloom) gameOverCam.addShader(bloom);
-        if (Options.gameplayShaders && FlxG.save.data.glitch) gameOverCam.addShader(glitch);
-
-        FlxTween.num(2, 0, 2, {ease: FlxEase.quintOut}, function(num) {
-            bloom.size = 20 * num;
-            bloom.brightness = 1 + (20 * num);
-            glitch.AMT = 0.1 * num;
-            glitch.SPEED = 2 * num;
+        new FlxTimer().start(1.5, function() {
+            gameOverCam.shake(0.005, 0.5);
         });
+    }
 
-        gameOverCam.shake(0.04, 0.2);
+    new FlxTimer().start(soulType != null ? 2 : .5, function() {
+        FlxG.sound.playMusic(Paths.music('gameovers/' + songName), 0.8);
+        if(soulType != null) {
+            FlxG.sound.play(Paths.sound('endBreak'), 0.8);
+
+            if (songName == "kinemorto" && FlxG.random.float() < 0.1)
+                FlxG.sound.play(Paths.sound('umano'), 0.8);
+        }
+
+        if (Options.gameplayShaders) {
+            if(FlxG.save.data.bloom) gameOverCam.addShader(bloom);
+            if(FlxG.save.data.glitch) gameOverCam.addShader(glitch);
+        }
+
+        if(soulType != null) {
+            FlxTween.num(2, 0, 2, {ease: FlxEase.quintOut}, function(num) {
+                bloom.size = 20 * num;
+                bloom.brightness = 1 + (20 * num);
+                glitch.AMT = 0.1 * num;
+                glitch.SPEED = 2 * num;
+            });
+
+            gameOverCam.shake(0.04, 0.2);
+        } else {
+            glitch.AMT = 0;
+            bloom.size = 0;
+            bloom.brightness = 0;
+        }
+        
         heartbroken.visible = true;
         heart.visible = false;
 
-        FlxTween.tween(game_over, {alpha: 1}, 2, {
-            ease: FlxEase.linear,
+        FlxTween.tween(game_over, {alpha: 1}, soulType != null ? 2 : 1, {
+            ease: soulType != null ? FlxEase.linear : FlxEase.quadOut,
             onComplete: function(_) {
                 quoteTextObj.start(null, quoteTextObj);
                 gameOverEnd = true;
@@ -176,6 +228,7 @@ function update(elapsed:Float){
 		FlxG.sound.music = null;
         
         FlxG.switchState(PlayState.isStoryMode ? new StoryMenuState() : new FreeplayState());
+        PlayState.isStoryMode = false;
     }
 
     if (heartbroken.visible) {
@@ -190,7 +243,7 @@ function endGameOver() {
     gameOverEnd = false;
 
     FlxG.sound.music.stop();
-    FlxG.sound.play(Paths.sound('gameovers/' + songName), 0.8);
+    var sound:FlxSound = FlxG.sound.play(Paths.sound('gameovers/' + songName), 0.8);
 
     FlxTween.num(2, 0, 2, {ease: FlxEase.quintOut}, function(num) {
         bloom.size = 20 * num;

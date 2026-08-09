@@ -1,6 +1,9 @@
 //
 static var hudElements:Array<FlxBasic> = [];
 static var camHUD2:FlxCamera = null;
+static var safetyCam:FlxCamera = null; // for epilepsy
+
+public var dustinPauseScript:Null<String> = null;
 
 function create() {
     downscroll = Options.downscroll;
@@ -11,6 +14,14 @@ function create() {
     camHUD2.bgColor = 0x00000000;
     camHUD2.visible = true;
     FlxG.cameras.add(camHUD2, false);
+
+    var metaColor = PlayState.SONG.meta.customValues.color;
+}
+
+function postCreate() {
+    insert_camera(safetyCam = new FlxCamera(), FlxG.cameras.list.indexOf(PlayState.instance.scripts.publicVariables.get("videoCam") != null ? videoCam : camHUD), false);
+    safetyCam.bgColor = FlxColor.BLACK;
+    safetyCam.alpha = 0;
 }
 
 function update(elapsed:Float) {
@@ -52,7 +63,20 @@ function draw(e) {
 
 function onEvent(eventEvent) {
     var params:Array = eventEvent.event.params;
-    if (eventEvent.event.name == "Scroll Speed Change") {
-        if (!FlxG.save.data.mechanics) eventEvent.cancel(true);
+    switch(eventEvent.event.name) {
+        case "Scroll Speed Change" || "Change Scroll Speed":
+            if (!FlxG.save.data.scrollSpeedChange) eventEvent.cancel(true);
+        case "Camera Flash":
+            if( FlxG.save.data.antiFlash) {
+                eventEvent.cancel(true);
+                eventEvent.event.params[1] = FlxColor.GRAY;
+                var time:Float = eventEvent.event.params[2];
+                if((Conductor.stepCrochet / 1000) * time < 0.5)
+                    time = 0.5 / (Conductor.stepCrochet / 1000);
+
+                var cam:FlxCamera = eventEvent.event.params[3] == "camHUD" ? camHUD : camGame;
+                
+
+            }
     }
 }

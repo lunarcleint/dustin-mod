@@ -42,9 +42,16 @@ var lifeTxt:FunkinText;
 var textBG:FunkinSprite;
 var erText:FunkinText;
 
+var dialogueCam:FlxCamera;
+
 function postCreate() {
     FlxG.camera.followLerp = 0;
     camFollowChars = false;
+
+    dialogueCam = new FlxCamera();
+    dialogueCam.bgColor = FlxColor.TRANSPARENT;
+    dialogueCam._filters = camGame._filters;
+    FlxG.cameras.add(dialogueCam, false);
 
     dustinHealthBG?.visible = false;
     lerpedHealth = health = maxHealth;
@@ -56,9 +63,7 @@ function postCreate() {
     dustinHealthBar.antialiasing = false;
     noMissIconAnim = true;
 
-    for (text in [hpTxt = new FunkinText(FlxG.width - (FlxG.width / 2.67) - 10, dustinHealthBar.y - 9, 0, "hp"), lifeTxt = new FunkinText(FlxG.width - (FlxG.width / 5) - 9, dustinHealthBar.y - 9, 0, health * 10 + "/" + maxHealth * 10)]) {
-        text.textField.antiAliasType = 0/*ADVANCED*/;
-        text.textField.sharpness = 400/*MAX ON OPENFL*/;
+    for (text in [hpTxt = textCrispy(new FunkinText(FlxG.width - (FlxG.width / 2.67) - 10, dustinHealthBar.y - 9, 0, "hp")), lifeTxt = textCrispy(new FunkinText(FlxG.width - (FlxG.width / 5) - 9, dustinHealthBar.y - 9, 0, health * 10 + "/" + maxHealth * 10))]) {
         insert(members.indexOf(dustinHealthBar), text); hudElements.insert(hudElements.indexOf(dustinHealthBar), text);
         text.cameras = [camHUD]; text.scrollFactor.set();
         text.setFormat(Paths.font("DTM-Mono.ttf"), 20, 0xFFFFFFFF);
@@ -74,20 +79,17 @@ function postCreate() {
     for(text in [scoreTxt, missesTxt, accuracyTxt]) text?.visible = false;
 
     if(iconText == null) return;
-    iconText.cameras = [camHUD]; hudElements.push(iconText);
-    genocides.cameras = [camHUD];
+    iconText.cameras = [dialogueCam]; hudElements.push(iconText);
+    genocides.cameras = [dialogueCam];
     iconText.animation.play(_lastAnim = dad.getAnimName());
 
     insert(members.indexOf(iconText), textBG = newDialogueBoxBG(20, 20, null, (iconText.width + FlxG.width * 2) * iconText.scale.x, (iconText.height + FlxG.height / 1.6) * iconText.scale.y, 5));
-    textBG.cameras = [camHUD];
-    if(camHUD.downscroll) textBG.y = FlxG.height - textBG.height - 15;
+    textBG.cameras = [dialogueCam];
     hudElements.push(textBG);
 
-    insert(members.indexOf(textBG) + 1, erText = new FunkinText(iconText.x + (iconText.width * iconText.scale.x) + 50, textBG.y + textBG.extra["border"] + 10, textBG.width));
+    insert(members.indexOf(textBG) + 1, erText = textCrispy(new FunkinText(iconText.x + (iconText.width * iconText.scale.x) + 50, textBG.y + textBG.extra["border"] + 10, textBG.width)));
     erText.setFormat(Paths.font("pixel-comic.ttf"), Math.floor(textBG.height / 5), 0xFFFFFFFF);
-    erText.cameras = [camHUD]; hudElements.push(erText);
-    erText.textField.antiAliasType = 0/*ADVANCED*/;
-	erText.textField.sharpness = 400/*MAX ON OPENFL*/;
+    erText.cameras = [dialogueCam]; hudElements.push(erText);
 
     iconText.setPosition(textBG.x - 200, textBG.y - 175);
 
@@ -186,6 +188,7 @@ function postUpdate(elapsed:Float) if (iconText != null) {
     var curAnim = dad.getAnimName();
     var isAlt:Bool = false;
     var isIdle:Bool = curAnim == "idle";
+    dialogueCam.alpha = camHUD.alpha;
     if (dad.curCharacter == "papyrus_genocides") {
         isAlt = true;
         curAnim += "-alt";
@@ -258,11 +261,13 @@ function stepHit(step:Int){
             erText.alpha = 1;
             iconText.alpha = 1;
 
-        case 46:
+
+        case 51:
             genocides.alpha = 1;
 
-        case 63:
+        case 64:
             genocides.alpha = 0;
+            erText.text = "";
             for (strum in playerStrums.members) {
                 strum.visible = true;
             }
@@ -279,6 +284,7 @@ function stepHit(step:Int){
             });
 
         case 891, 1275:
+            erText.text = "";
             FlxTween.num(textBG.extra["bWidth"], originalTextBGWidth, 1.5, {ease: FlxEase.quartOut}, (val:Float) -> {
                 textBG.extra["bWidth"] = val;
                 erText.fieldWidth = val;
@@ -313,6 +319,8 @@ function stepHit(step:Int){
         case 1979:
             currentFloatSpeed = 5; 
             currentFloatRadius = 400; 
+        case 2288:
+            dialogueCam.visible = false;
     }
 }
 var papsTrails:Array<FlxTrail> = [];

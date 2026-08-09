@@ -89,3 +89,9 @@ function shouldClose() {
     app?.close();
     Lib.application.window?.focus();
 }
+
+function beatHit(beat:Int) {
+    if(beat == 304) {
+        pauseInfo.isMonster = true;
+    }
+}

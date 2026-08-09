@@ -35,14 +35,11 @@ function create() {
         chapterBoxInner.setPosition(chapterBox.x + chapterBox.width / 2 - chapterBoxInner.width / 2, chapterBox.y + chapterBox.height / 2 - chapterBoxInner.height / 2);
         add(chapterBoxInner);
 
-        var chapterTxt = new FunkinText(64, 64, 0, "CHAPTER " + (cI + 1) + "\n-- " + chapter + " --", 48, true);
+        var chapterTxt = textCrispy(new FunkinText(64, 64, 0, "CHAPTER " + (cI + 1) + "\n-- " + chapter + " --", 48, true));
         chapterTxt.alignment = "center";
         chapterTxt.setFormat(Paths.font("8bit-jve.ttf"), 48, 0xFFFFFFFF);
         chapterTxt.setPosition(chapterBox.x + chapterBox.width / 2 - chapterTxt.width / 2, chapterBox.y + chapterBox.height);
         add(chapterTxt);
-
-        chapterTxt.textField.antiAliasType = 0/*ADVANCED*/;
-	    chapterTxt.textField.sharpness = 400/*MAX ON OPENFL*/;
 
         var songData = [];
         for (sI => song in songs) {
@@ -89,20 +86,16 @@ function create() {
     vignette.alpha = 0.7;
     add(vignette);
 
-    var chooseTxt = new FunkinText(64, 64, 0, "CHOOSE _SAVE_ POINT", 64, true);
+    var chooseTxt = textCrispy(new FunkinText(64, 64, 0, "CHOOSE _SAVE_ POINT", 64, true));
     chooseTxt.setFormat(Paths.font("8bit-jve.ttf"), 64, 0xFFFFFFFF);
     chooseTxt.applyMarkup(chooseTxt.text, [new FlxTextFormatMarkerPair(new FlxTextFormat(YELLOW), "_")]);
     chooseTxt.scrollFactor.set();
     add(chooseTxt);
 
-    chooseTxt.textField.antiAliasType = 0/*ADVANCED*/;
-	chooseTxt.textField.sharpness = 400/*MAX ON OPENFL*/;
-
     var screenVignette = new CustomShader("coloredVignette");
     screenVignette.strength = 0.6; screenVignette.transperency = false;
     screenVignette.amount = 0.7;
     screenVignette.color = [0.0, 0.0, 0.0];
-    if (Options.gameplayShaders) FlxG.camera.addShader(screenVignette);
 
     var bloom:CustomShader;
     bloom = new CustomShader("bloom");
@@ -110,7 +103,11 @@ function create() {
     bloom.brightness = 2;
     bloom.directions = 8;
     bloom.quality = 10;
-    if (Options.gameplayShaders && FlxG.save.data.bloom) FlxG.camera.addShader(bloom);
+
+    if (Options.gameplayShaders) {
+        FlxG.camera.addShader(screenVignette);
+        FlxG.camera.addShader(bloom);
+    }
 }
 
 function update(elapsed:Float) {
@@ -166,6 +163,7 @@ function selectWeek() {
     PlayState.isStoryMode = true;
 
     PlayState.__loadSong(playList[0], data[0].difficulties[0]);
+    curMusicID = "";
     FlxG.switchState(new PlayState());
 }
 

@@ -1,29 +1,28 @@
 {
+	"customValues": {
+		"customName": "the Uprising",
+		"titleCardSubtext": "* by Zeroh/pause(0.5)/\n* ft. Skie & Chezzar",
+		"gameover": {
+			"isMonster": false,
+			"quote": "Honey, get up, I'm still here.",
+			"song": "the-uprising",
+			"sound": "gf"
+		},
+		"credits": {
+			"CHART": "GOJIMANPLAYS",
+			"BACKGROUND": "NEF",
+			"SPRITES": "S-WAY, MEIART",
+			"SONG": "ZEROH, SKIE, CHEZZAR"
+		},
+		"stats": "* TANKMAN - 25 ATK 40 DEF\n* Last survivor of his army.\n* He looks damaged already."
+	},
+	"color": "#FFFFFF",
 	"opponentModeAllowed": true,
 	"difficulties": [
 		"hard"
 	],
 	"icon": "Icon",
 	"coopAllowed": true,
-	"name": "the-uprising",
-	"color": "#FFFFFF",
-	"customValues": {
-		"customName": "the Uprising",
-		"gameover": {
-			"quote": "Honey, get up, I'm still here.",
-			"isMonster": false,
-			"sound": "gf",
-			"song": "the-uprising"
-		},
-		"credits": {
-			"SPRITES": "S-WAY, WILLART-MEI",
-			"BACKGROUND": "NEF",
-			"CHART": "GOJIMANPLAYS",
-			"SONG": "ZEROH, SKIE, CHEZZAR"
-		},
-		"titleCardSubtext": "* by Zeroh/pause(0.5)/\n* ft. Skie & Chezzar",
-		"stats": "* TANKMAN 25 ATK 40 DEF\n* Last survivor of his army.\n* He looks damaged already."
-	},
 	"stepsPerBeat": 4,
 	"displayName": "The Uprising",
 	"needsVoices": true,

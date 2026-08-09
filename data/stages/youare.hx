@@ -28,7 +28,9 @@ var customUI:Array<FlxSprite>;
 
 var dadClone:Character = null;
 var bfClone:Character = null;
-
+var glitch:CustomShader = null;
+var glitchTimer:Float = 0;
+var glitchValues:Array<Float> = [0.05, 0.15, 0.2, 0.3];
 var dadPos:Float = 670;
 
 
@@ -49,36 +51,42 @@ function create() {
     bloom_new.directions = 16; bloom_new.quality = 5;
     bloom_new.threshold = .85;
 
-    if (Options.gameplayShaders && FlxG.save.data.bloom) camHUD.addShader(bloom_new);
-
     water = new CustomShader("waterDistortion");
     water.strength = 0.5;
-    if (Options.gameplayShaders && FlxG.save.data.water) bgCam.addShader(water);
 
     tape_noise = new CustomShader("tapenoise");
     tape_noise.res = [FlxG.width, FlxG.height];
     tape_noise.time = 0; tape_noise.strength = 0;
-    if (Options.gameplayShaders && FlxG.save.data.static) bgCam.addShader(tape_noise);
 
     warp = new CustomShader("warp");
     warp.distortion = 1;
-    if (Options.gameplayShaders && FlxG.save.data.warp) bgCam.addShader(warp);
 
     warp2 = new CustomShader("warp");
     warp2.distortion = 0;
-    if (Options.gameplayShaders && FlxG.save.data.warp) camGame.addShader(warp2);
+
+    if (Options.gameplayShaders) {
+        if (FlxG.save.bloom) camHUD.addShader(bloom_new);
+        if (FlxG.save.data.water) bgCam.addShader(water);
+        if (FlxG.save.data.static) bgCam.addShader(tape_noise);
+
+        if (FlxG.save.data.warp) {
+            bgCam.addShader(warp);
+            camGame.addShader(warp2);
+        }
+    }
 
     autoTitleCard = false;
     bg_player.camera = bgCam;
+
+    glitch = new CustomShader("glitching");
+    
 }
 
-/*function onStartCountdown(countdown){ 
-    countdown.cancel();
-    startSong();
-}*/
+function onCountdown(countdown) countdown.cancel();
 
 function postCreate() {
     //
+    camGame.alpha = 0.0001;
     boyfriend.alpha = 0;
 
     customUI = [
@@ -118,6 +126,7 @@ function stepHit(step:Int) {
             FlxG.camera.shake(0.03, 0.4);
 
         case 258:
+            camGame.alpha = 1;
             stage.getSprite("YOUAREtitlecard").playAnim("introtitle", false);
 
         // PAPS PART
@@ -268,6 +277,13 @@ function stepHit(step:Int) {
             }
 
             createDadClone(dadPos, 0.75);
+
+        case 3328:
+            boyfriend.shader = glitch;
+
+        case 3456:
+            sans_bg.alpha = 0;
+            sans_fg.alpha = 0;
     }
 }
 
@@ -276,6 +292,14 @@ var tottalTimer:Float = FlxG.random.float(100, 1000);
 var heartBaseY:Float = 0;
 var heartFloatTime:Float = 0;
 function update(elapsed:Float) {
+    glitchTimer += elapsed;
+        if (glitchTimer >= 0.15) {
+            glitchTimer = 0;
+
+            var randIndex = FlxG.random.int(0, glitchValues.length - 1);
+            glitch.AMT = glitchValues[randIndex];
+        } 
+
     water?.time = (tottalTimer += elapsed);
 
     tape_noise.time = tottalTimer;

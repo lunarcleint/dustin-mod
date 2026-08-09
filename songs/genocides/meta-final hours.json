@@ -1,0 +1,35 @@
+{
+	"color": "#000000",
+	"customValues": {
+		"characterY": null,
+		"character": null,
+		"mainColor": "#FFFFFF",
+		"credits": {
+			"SPRITES": "WEEDEET",
+			"BACKGROUND": "UNDERTALE",
+			"CHART": "FROSTIC",
+			"SONG": "SKIE, CHEZZAR, MAR MAR"
+		},
+		"customName": "genOcides",
+		"titleCardSubtext": "* by Skie/pause(0.5)/\n* ft. Chezzar and Mar Mar",
+		"gameover": {
+			"isMonster": false,
+			"quote": "human, i remember you're DEAD.",
+			"song": "genocides",
+			"sound": "sans"
+		},
+		"characterX": "-30",
+		"stats": "* SANS ?? ATK ?? DEF\n* The HARDEST enemy.\n* Die and reset kiddo..."
+	},
+	"opponentModeAllowed": false,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Genocides",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 95
+}

@@ -3,7 +3,6 @@
 importScript("data/scripts/DialogueBoxBG");
 importScript("data/scripts/FunkinTypeText");
 
-import StringTools;
 import flixel.text.FlxTypeText;
 import flixel.FlxObject;
 
@@ -81,10 +80,8 @@ public function newBasicCard(x:Int, y:Int, width:Int, height:Int, _title:String,
 	Tmembers.push(cardBG);
 
 	// the capital o for the heart inside  - Nex
-	title = new FlxText(0, 0, 0, _title);
+	title = textCrispy(new FlxText(0, 0, 0, _title));
 	title.setFormat(Paths.font("fallen-down.ttf"), Math.floor(cardBG.width / 20)+2, fullColor);
-	title.textField.antiAliasType = 0/*ADVANCED*/;
-	title.textField.sharpness = 400/*MAX ON OPENFL*/;
 	title.cameras = [camera];
 	title.updateHitbox();
 	Tmembers.push(title);

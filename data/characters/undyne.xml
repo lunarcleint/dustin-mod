@@ -1,1 +1,9 @@
-<!DOCTYPE codename-engine-character><character x="-181" y="-260" sprite="cornered/Undyne_assets" scale="1.35" camx="-20" camy="110" icon="cornered-sans" color="#FFFFFF" holdTime="3"><anim name="idle" anim="undyneidle" indices="0..19"/><anim name="idle-loop" anim="undyneidle" loop="true" indices="20..29"/><anim name="singLEFT" anim="undyneright" x="5" y="-18"/><anim name="singDOWN" anim="undynedown" x="-27" y="-9"/><anim name="singUP" anim="undyneup" x="-11" y="3"/><anim name="singRIGHT" anim="undyneleft" x="-7" y="9"/></character>
+<!DOCTYPE codename-engine-character>
+<character x="-181" y="-260" sprite="cornered/Undyne_assets" scale="1.35" camx="-20" camy="110" color="#0E4693" holdTime="3">
+	<anim name="idle" anim="undyneidle" indices="0..19"/>
+	<anim name="idle-loop" anim="undyneidle" loop="true" indices="20..29"/>
+	<anim name="singLEFT" anim="undyneright" x="5" y="-18"/>
+	<anim name="singDOWN" anim="undynedown" x="-27" y="-9"/>
+	<anim name="singUP" anim="undyneup" x="-11" y="3"/>
+	<anim name="singRIGHT" anim="undyneleft" x="-7" y="9"/>
+</character>

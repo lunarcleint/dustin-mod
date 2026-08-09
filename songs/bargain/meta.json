@@ -1,11 +1,8 @@
 {
-	"opponentModeAllowed": false,
-	"icon": "face",
-	"difficulties": [
-		"hard"
-	],
+	"color": "#000000",
 	"customValues": {
 		"customName": "bargAin",
+		"titleCardSubtext": "* by David0414",
 		"credits": {
 			"CHART": "CURIOUS",
 			"BACKGROUND": "WEEDEET",
@@ -18,10 +15,13 @@
 			"song": "bargain",
 			"sound": "sans"
 		},
-		"stats": "* SANS 1 ATK 1 DEF\n* The easiest enemy.\n* He did your mom last night.",
-		"titleCardSubtext": "* by David0414"
+		"stats": "* SANS 1 ATK 1 DEF\n* The easiest enemy.\n* He did your mom last night."
 	},
-	"name": "bargain",
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"hard"
+	],
 	"coopAllowed": false,
 	"stepsPerBeat": 4,
 	"displayName": "Bargain",

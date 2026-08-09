@@ -18,17 +18,14 @@ function postCreate() {
         new FlxTextFormatMarkerPair(new FlxTextFormat(0xFFFFFF00), "_")
     ]);
     disclaimer.font = Paths.font("8bit-jve.ttf");
-    disclaimer.textField.antiAliasType = 0/*ADVANCED*/;
-    disclaimer.textField.sharpness = 400/*MAX ON OPENFL*/;
+    textCrispy(disclaimer);
     disclaimer.y += 15;
 
-    newWarningFont = new FlxText(0, 170, FlxG.width, "WARNING");
+    newWarningFont = textCrispy(new FlxText(0, 170, FlxG.width, "WaRNING"));
     newWarningFont.setFormat(Paths.font("fallen-down.ttf"), 60, 0xFFFFFFFF);
     newWarningFont.borderStyle = FlxTextBorderStyle.OUTLINE;
     newWarningFont.borderSize = 2;
     newWarningFont.borderColor = 0xFF000000;
-    newWarningFont.textField.antiAliasType = 0/*ADVANCED*/;
-    newWarningFont.textField.sharpness = 400/*MAX ON OPENFL*/;
     newWarningFont.alignment = "center";
     add(newWarningFont);
 
@@ -60,5 +57,5 @@ function update(elapsed:Float) {
 }
 
 function destroy() {
-    Framerate.debugMode = 0;
+    if (!Options.devMode) Framerate.debugMode = 0;
 }

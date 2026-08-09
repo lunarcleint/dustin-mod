@@ -17,8 +17,6 @@ var arrowSine:Bool = false;
 function create() {
     warp = new CustomShader("warp");
     warp.distortion = 0;
-    if (Options.gameplayShaders && FlxG.save.data.warp) FlxG.camera.addShader(warp);
-    if (Options.gameplayShaders && FlxG.save.data.warp) camCharacters.addShader(warp);
 
     radial = new CustomShader("radial");
     radial.blur = 0;
@@ -39,14 +37,24 @@ function create() {
     tape_noise = new CustomShader("tapenoise");
     tape_noise.res = [FlxG.width, FlxG.height];
     tape_noise.time = 0; tape_noise.strength = 0;
-    if (Options.gameplayShaders && FlxG.save.data.static) FlxG.camera.addShader(tape_noise);
 
     lightShader = new CustomShader("heatlight");
     lightShader.threshold = .14;
 
-    if (Options.gameplayShaders && FlxG.save.data.glitch) FlxG.camera.addShader(wi);
-    if (Options.gameplayShaders && FlxG.save.data.glitch) camCharacters.addShader(wi);
-    if (Options.gameplayShaders && FlxG.save.data.glitch) camHUD.addShader(wi);
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.warp) {
+            FlxG.camera.addShader(warp);
+            camCharacters.addShader(warp);
+        }
+
+        if (FlxG.save.data.static) FlxG.camera.addShader(tape_noise);
+
+        if (FlxG.save.data.glitch) {
+            FlxG.camera.addShader(wi);
+            camCharacters.addShader(wi);
+            camHUD.addShader(wi);
+        }
+    }
 
     flickerSprite = new FunkinSprite().makeSolid(FlxG.width, FlxG.height, 0xFF000000);
     flickerSprite.scrollFactor.set(0, 0);
@@ -55,7 +63,8 @@ function create() {
     flickerSprite.alpha = 0.0;
     add(flickerSprite);
 
-    FlxFlicker.flicker(flickerSprite, 9999999, 0.04);
+    if(!FlxG.save.data.antiFlash)
+        FlxFlicker.flicker(flickerSprite, 9999999, 0.04);
 
     mtt.alpha = 0.00000001;
 
@@ -84,10 +93,18 @@ function stepHit(step:Int) {
             FlxTween.num(0, .7, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.cubeOut}, (val:Float) -> {water.strength = val;});
             FlxTween.num(0, .3, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.cubeIn}, (val:Float) -> {chromWarp.distortion = val;});
         case 384:
-            if (Options.gameplayShaders) camCharacters.addShader(radial);
-            if (Options.gameplayShaders) FlxG.camera.addShader(radial);
 
-            if (Options.gameplayShaders && FlxG.save.data.glitch) camCharacters.addShader(glitching);
+            heat.strength = .25;
+            heat.speed = 6;
+            if (Options.gameplayShaders) {
+                camCharacters.addShader(radial);   
+                FlxG.camera.addShader(radial);
+
+                if (FlxG.save.data.glitch) camCharacters.addShader(glitching);
+
+                if (FlxG.save.data.fire) camHUD.addShader(heathud);
+            }
+
             FlxTween.num(8, 2.3, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.cubeOut}, (val:Float) -> {oldstatic.strength = val;});
             FlxTween.num(.8, .0, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.cubeOut}, (val:Float) -> {water.strength = val;});
 
@@ -100,9 +117,6 @@ function stepHit(step:Int) {
             FlxTween.num(.3, 0, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.cubeIn}, (val:Float) -> {chromWarp.distortion = val;});
             FlxTween.num(2.5, 3.5, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.cubeOut}, (val:Float) -> {fogShader.INTENSITY = val;});
 
-            heat.strength = .25;
-            heat.speed = 6;
-            if (Options.gameplayShaders && FlxG.save.data.fire) camHUD.addShader(heathud);
         case 452 | 640:
             FlxTween.num(.055, .002, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.cubeIn}, (val:Float) -> {radial.blur = val;});
             FlxTween.num(1, 0, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.cubeIn}, (val:Float) -> {glitching.glitchAmount = val;});
@@ -260,8 +274,10 @@ function stepHit(step:Int) {
 
             heathud.strength = 0.06;
             FlxG.camera.removeShader(radial);
-            if (Options.gameplayShaders && FlxG.save.data.glitch) FlxG.camera.addShader(glitching);
-            if (Options.gameplayShaders) FlxG.camera.addShader(radial);
+            if (Options.gameplayShaders) {
+                if (FlxG.save.data.glitch) FlxG.camera.addShader(glitching);
+                FlxG.camera.addShader(radial);
+            }
 
             glitching.glitchAmount = 0; chromWarp.distortion = 0;
             wi.time = 0.4; FlxG.camera.removeShader(wi);

@@ -1,1 +1,18 @@
-<!DOCTYPE codename-engine-stage><stage folder="stages/hall/" name="hall" zoom="0.455" playerZoom="0.455" gfZoom="0.2" noteSkin="br" healthBarSkin="br" timeBarSkin="br"><sprite x="0" sprite="back" y="0" name="back" scrollx="0.8" antialiasing="true"><property name="zoomFactor" type="float" value="1.01"/></sprite><sprite x="0" sprite="ground" y="0" name="ground" antialiasing="true"/><sprite x="0" sprite="paps_bg" y="0" name="paps_bg" antialiasing="true"/><girlfriend x="3300" y="1950" alpha="0"/><dad x="5170" y="2700" scale="1.15" camxoffset="-590" camyoffset="0"/><boyfriend x="1400" y="2630" scale="1.25" flipX="false" camxoffset="50" camyoffset="-35"/><sprite x="0" sprite="light" y="0" name="light" antialiasing="true"/><sprite x="300" sprite="fg" y="0" name="fg" alpha="1" scrollx="2"/><sprite x="300" sprite="paps_fg" y="0" name="paps_fg" alpha="1" scrollx="2"/><sprite name="cine1" x="-200" y="-200" sprite="cine/pico" antialiasing="true" scrollx="0" scrolly="0" scale=".66667" alpha="0"><property name="zoomFactor" type="float" value="0"/></sprite><sprite name="cine2" x="-240" y="-220" sprite="cine/gf" antialiasing="true" scrollx="0" scrolly="0" scale=".66667" alpha="0"><property name="zoomFactor" type="float" value="0"/></sprite><sprite name="cine3" x="-340" y="-320" sprite="cine/sans" antialiasing="true" scrollx="0" scrolly="0" scale=".66667" alpha="0"><property name="zoomFactor" type="float" value="0"/></sprite><sprite name="cine4" x="-340" y="-120" sprite="cine/paps" antialiasing="true" scrollx="0" scrolly="0" scale=".66667" alpha="0"><property name="zoomFactor" type="float" value="0"/></sprite><sprite name="cine5" x="-340" y="-260" sprite="cine/Undyne" antialiasing="true" scrollx="0" scrolly="0" scale=".66667" alpha="0"><property name="zoomFactor" type="float" value="0"/></sprite><sprite name="cine6" x="-340" y="-260" sprite="cine/mettaton" antialiasing="true" scrollx="0" scrolly="0" scale=".66667" alpha="0"><property name="zoomFactor" type="float" value="0"/></sprite><sprite name="cine7" x="-340" y="-230" sprite="cine/dt_extractor" antialiasing="true" scrollx="0" scrolly="0" scale=".66667" alpha="0"><property name="zoomFactor" type="float" value="0"/></sprite><sprite name="cine8" x="-340" y="-260" sprite="cine/flowey" antialiasing="true" scrollx="0" scrolly="0" scale=".66667" alpha="0"><property name="zoomFactor" type="float" value="0"/></sprite></stage>
+<!DOCTYPE codename-engine-stage>
+<stage healthBarSkin="br" playerZoom="0.455" gfZoom="0.2" folder="stages/hall/" timeBarSkin="br" noteSkin="br" zoom="0.455" name="hall">
+	<sprite zoomfactor="1.01" scrollx="0.8" sprite="back" name="back"/>
+	<sprite sprite="ground" name="ground"/>
+	<girlfriend alpha="0" x="3300" y="1950"/>
+	<dad scale="1.15" camxoffset="-590" x="5170" y="2700"/>
+	<boyfriend camxoffset="50" x="1400" camyoffset="-35" y="2630" scale="1.25" flipX="false"/>
+	<sprite sprite="light" name="light"/>
+	<sprite x="300" scrollx="2" sprite="fg" name="fg"/>
+	<sprite scroll="0" sprite="cine/pico" zoomfactor="0" alpha="0" name="cine1"/>
+	<sprite scroll="0" sprite="cine/gf" zoomfactor="0" alpha="0" name="cine2"/>
+	<sprite scroll="0" sprite="cine/sans" zoomfactor="0" alpha="0" name="cine3"/>
+	<sprite scroll="0" sprite="cine/paps" zoomfactor="0" alpha="0" name="cine4"/>
+	<sprite scroll="0" sprite="cine/Undyne" zoomfactor="0" alpha="0" name="cine5"/>
+	<sprite scroll="0" sprite="cine/mettaton" zoomfactor="0" alpha="0" name="cine6"/>
+	<sprite scroll="0" sprite="cine/dt_extractor" zoomfactor="0" alpha="0" name="cine7"/>
+	<sprite scroll="0" sprite="cine/flowey" zoomfactor="0" alpha="0" name="cine8"/>
+</stage>

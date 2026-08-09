@@ -1,15 +1,12 @@
 {
-	"opponentModeAllowed": false,
-	"icon": "face",
-	"difficulties": [
-		"hard"
-	],
+	"color": "#9271FD",
 	"customValues": {
+		"customName": "perseveRance",
 		"credits": {
-			"SONG": "CHEZZAR, MAR MAR",
 			"SPRITES": "CHUF, APRICOSKA, AMAZE, YOKUTZEN",
 			"BACKGROUND": "WEEDEET, FIZZYPOP",
-			"CHART": "CURIOUS"
+			"CHART": "CURIOUS",
+			"SONG": "CHEZZAR, MAR MAR"
 		},
 		"gameover": {
 			"isMonster": false,
@@ -20,7 +17,11 @@
 		"stats": "* SANS 31 ATK 26 DEF\n* He is not ready yet.\n* Something is familiar about him.",
 		"titleCardSubtext": "* by Chezzar/pause(0.5)/\n* ft. Mar Mar"
 	},
-	"name": "perseverance",
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"hard"
+	],
 	"coopAllowed": false,
 	"stepsPerBeat": 4,
 	"displayName": "Perseverance",

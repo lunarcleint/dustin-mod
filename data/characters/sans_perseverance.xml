@@ -1,1 +1,26 @@
-<!DOCTYPE codename-engine-character><character y="170" sprite="perseverance/sans" scale="1.1" camy="-50" icon="perseverance-sans" color="#393177"><anim name="idle" anim="idle"/><anim name="singLEFT" anim="left" x="40" y="4.55"/><anim name="singDOWN" anim="down" y="-15.45"/><anim name="singUP" anim="up" x="-5.5" y="1.8"/><anim name="singRIGHT" anim="right" x="-7.27" y="-0.9"/><anim name="idle-mad" anim="madidle" y="-0.9"/><anim name="singRIGHT-mad" anim="madright" x="80" y="-0.91"/><anim name="singDOWN-mad" anim="maddown" x="40" y="-45.45"/><anim name="singUP-mad" anim="madup" x="43.64" y="16.36"/><anim name="singLEFT-mad" anim="madleft" x="97.27" y="-22.73"/><anim name="voiceline" anim="voiceline" x="54.55" y="-2.73"/><anim name="idle-racist" anim="racistidle"/><anim name="singUP-racist" anim="racistup" x="45.45" y="17.27"/><anim name="red_eye" anim="red_eye" x="-4.55" y="6.36"/><anim name="red_eye-loop" anim="red_eye0011" x="-4.55" y="6.36" loop="true"/><anim name="singDOWN-racist" anim="racistdown" x="42.73" y="-41.82"/><anim name="singRIGHT-racist" anim="racistright" x="83.64" y="-0.91"/><anim name="singLEFT-racist" anim="racistleft" x="96.36" y="-20.91"/><anim name="eye" anim="eye" x="-1" y="4"/><anim name="eye-loop" anim="eye0154" x="-1" y="4" loop="true"/><anim name="madvoiceline" anim="voiceline" x="54.55" y="-2.73"/><anim name="madvoiceline-loop" anim="voiceline0076" x="54.46" y="-2.73" loop="true"/><anim name="eyedle" anim="eye0000" x="1" y="4" loop="true"/></character>
+<!DOCTYPE codename-engine-character>
+<character y="170" sprite="perseverance/sans" scale="1.1" camy="-50" icon="perseverance-sans" color="#393177">
+	<anim name="idle" anim="idle" y="-1"/>
+	<anim name="singLEFT" anim="left" x="41" y="3.55"/>
+	<anim name="singDOWN" anim="down" y="-17.45"/>
+	<anim name="singUP" anim="up" x="-5.5" y="0.8"/>
+	<anim name="singRIGHT" anim="right" x="-7.27" y="-1.9"/>
+	<anim name="idle-mad" anim="madidle" y="-0.9"/>
+	<anim name="singRIGHT-mad" anim="madright" x="80" y="-0.91"/>
+	<anim name="singDOWN-mad" anim="maddown" x="40" y="-45.45"/>
+	<anim name="singUP-mad" anim="madup" x="43.64" y="16.36"/>
+	<anim name="singLEFT-mad" anim="madleft" x="97.27" y="-22.73"/>
+	<anim name="voiceline" anim="voiceline" x="54.55" y="-2.73"/>
+	<anim name="idle-racist" anim="racistidle" y="-1"/>
+	<anim name="singUP-racist" anim="racistup" x="45.45" y="17.27"/>
+	<anim name="red_eye" anim="red_eye" x="-4.55" y="5.36"/>
+	<anim name="red_eye-loop" anim="red_eye0011" x="-4.55" y="5.36" loop="true"/>
+	<anim name="singDOWN-racist" anim="racistdown" x="40.73" y="-43.82"/>
+	<anim name="singRIGHT-racist" anim="racistright" x="83.64" y="-0.91"/>
+	<anim name="singLEFT-racist" anim="racistleft" x="96.36" y="-20.91"/>
+	<anim name="eye" anim="eye" x="-1" y="4"/>
+	<anim name="eye-loop" anim="eye0154" x="-1" y="5" loop="true"/>
+	<anim name="madvoiceline" anim="voiceline" x="54.55" y="-2.73"/>
+	<anim name="madvoiceline-loop" anim="voiceline0076" x="54.46" y="-2.73" loop="true"/>
+	<anim name="eyedle" anim="eye0000" x="-1" y="4" loop="true"/>
+</character>

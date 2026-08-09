@@ -1,6 +1,7 @@
 //
 
 importScript("data/scripts/DialogueBoxBG");
+importScript("data/scripts/galleryBG");
 
 import openfl.geom.Rectangle;
 import flixel.text.FlxText;
@@ -11,10 +12,13 @@ var optionBoxes:Array<DialogueBoxBG> = [];
 var optionTexts:Array<FlxText> = [];
 static var galleryMusicStarted:Bool = false;
 
+static var gallerySelected:Int = 0;
+
 var curSelected:Int = 0;
 var prevSelected:Int = 0;
 
 function create() {
+    createGalleryBG();
     if (!galleryMusicStarted) {
         FlxG.sound.playMusic(Paths.music("gallery_placeholder"), 0.3, true);
         galleryMusicStarted = true;
@@ -43,7 +47,7 @@ function create() {
         optionTexts.push(txt);
     }
 
-    changeSelection(0, true);
+    changeSelection(gallerySelected, true);
 }
 
 function createOptionBox(x:Float, y:Float):DialogueBoxBG {
@@ -58,11 +62,9 @@ function createOptionBox(x:Float, y:Float):DialogueBoxBG {
 }
 
 function createOptionText(x:Float, y:Float, str:String, size:Int = 25):FlxText {
-    var txt = new FlxText(x, y, 140, str, size, true);
+    var txt = textCrispy(new FlxText(x, y, 140, str, size, true));
     txt.setFormat(Paths.font("8bit-jve.ttf"), size, FlxColor.WHITE, FlxTextAlign.CENTER);
     add(txt);
-    txt.textField.antiAliasType = 0/*ADVANCED*/;
-	txt.textField.sharpness = 400/*MAX ON OPENFL*/;
     return txt;
 }
 
@@ -87,6 +89,7 @@ function changeSelection(amt:Int = 0, force:Bool = false) {
 function update(elapsed:Float):Void {
     if (controls.BACK || controls.BACK) {
         galleryMusicStarted = false;
+        curSelected = 0;
         FlxG.sound.music.stop();
         FlxG.switchState(new MainMenuState());
     }
@@ -118,3 +121,5 @@ function selectOption() {
         default: trace("⬥︎❒︎□︎■︎♑︎");
     }
 }
+
+function destroy() gallerySelected = curSelected;

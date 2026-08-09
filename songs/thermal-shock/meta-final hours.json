@@ -1,0 +1,35 @@
+{
+	"color": "#9271FD",
+	"customValues": {
+		"customName": "thermal shOck",
+		"titleCardSubtext": "* by Audieun/pause(0.5)/\n* ft. Chezzar & Mar Mar",
+		"gameover": {
+			"quote": "PAPS, YOU STILL HAVE A JOB TO DO.",
+			"isMonster": true,
+			"sound": "swapsans",
+			"song": "thermal-shock"
+		},
+		"mainColor": "#FFADD5",
+		"credits": {
+			"SPRITES": "PHALV, CHEZZAR",
+			"BACKGROUND": "JFLOID",
+			"CHART": "CORVA",
+			"SONG": "AUDIEUN, CHEZZAR, MARMAR"
+		},
+		"stats": "* GIRLFRIEND - 32 ATK 26 DEF\n* The fallen human.\n* You can see their true eyes.",
+		"character": "thermal-shock-gf"
+	},
+	"instSuffix": "-Final Hours",
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Thermal Shock",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 140,
+	"vocalsSuffix": "-Final Hours"
+}

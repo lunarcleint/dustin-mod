@@ -13,7 +13,7 @@
         {
             "name": "New Stats",
             "type": "String",
-            "defaultValue": "* GASTER ?? ATK, ?? DEF\\n* Dark, yet darker.\\n* You are not supposed to see this."
+            "defaultValue": "* GASTER - ?? ATK ?? DEF\\n* Dark, yet darker.\\n* You are not supposed to see this."
         }, 
         {
             "name": "New Character X",

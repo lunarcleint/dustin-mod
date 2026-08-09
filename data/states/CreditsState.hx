@@ -86,14 +86,11 @@ function create() {
     background.screenCenter();
     add(background);
 
-    shText = new FlxText(0, 500, 500, "PRESS ENTER TO HEAR THE ECHOES", 40, true);
+    shText = textCrispy(new FlxText(0, 500, 500, "PRESS ENTER TO HEAR THE ECHOES", 40, true));
     shText.setFormat(Paths.font("8bit-jve.ttf"), 40, 0x00F7FF, FlxTextAlign.CENTER);
     shText.x = FlxG.width / 2 - shText.width / 2;
     shText.y = FlxG.height - 30 - shText.height;
     add(shText);
-
-    shText.textField.antiAliasType = 0/*ADVANCED*/;
-    shText.textField.sharpness = 400/*MAX ON OPENFL*/;
 
     door = new FunkinSprite().loadGraphic(Paths.image('menus/credits/door'));
     door.x = FlxG.width - 75;
@@ -148,7 +145,7 @@ function create() {
     offscreenStartX = lineBox.x + lineBox.width + 50;
     offscreenStartY = spBox.y + spBox.height + 100;
 
-    roleText = newText(lineBox.x + 50, lineBox.y + 40, 400,  "ROLES", 50, true, FlxTextAlign.LEFT);
+    roleText = newText(lineBox.x + 50, lineBox.y + 40, 400,  "ROLES", 47, true, FlxTextAlign.LEFT);
     roleInfo = newText(lineBox.x + 50, lineBox.y + 110, 400, devs[0].roles, 33, true, FlxTextAlign.LEFT);
     nameText = newText(0, 0, 300, devs[0].name, 40, true, FlxTextAlign.CENTER);
     spHeader = newText(0, 0, 400, "SPECIAL THANKS", 60, true, FlxTextAlign.CENTER);
@@ -185,25 +182,19 @@ function create() {
 	add(text);
     }
 
-    leftArrow = new FlxText(0, 0, 50, "<", 40, true);
+    leftArrow = textCrispy(new FlxText(0, 0, 50, "<", 40, true));
     leftArrow.setFormat(Paths.font("8bit-jve.ttf"), 40, FlxColor.WHITE, FlxTextAlign.CENTER);
     leftArrow.x = nameText.x - 20;
     leftArrow.y = nameText.y;
     leftArrow.visible = false;
     add(leftArrow);
 
-    leftArrow.textField.antiAliasType = 0/*ADVANCED*/;
-    leftArrow.textField.sharpness = 400/*MAX ON OPENFL*/;
-
-    rightArrow = new FlxText(0, 0, 50, ">", 40, true);
+    rightArrow = textCrispy(new FlxText(0, 0, 50, ">", 40, true));
     rightArrow.setFormat(Paths.font("8bit-jve.ttf"), 40, FlxColor.WHITE, FlxTextAlign.CENTER);
     rightArrow.x = nameText.x + (nameText.width - rightArrow.width) + 20;
     rightArrow.y = nameText.y;
     rightArrow.visible = false;
     add(rightArrow);
-
-    rightArrow.textField.antiAliasType = 0/*ADVANCED*/;
-    rightArrow.textField.sharpness = 400/*MAX ON OPENFL*/;
 
     divLine = new FlxSprite();
     divLine.makeGraphic(lineBox.width - 100, 4, FlxColor.WHITE);
@@ -440,11 +431,8 @@ function updateImage():Void {
 }
 
 function newText(x:Float, y:Float, fieldWidth:Int, txt:String, size:Int, embedded:Bool, align:FlxTextAlign):FlxText {
-    var f = new FlxText(Math.floor(x), Math.floor(y), fieldWidth, txt, size, embedded);
+    var f = textCrispy(new FlxText(Math.floor(x), Math.floor(y), fieldWidth, txt, size, embedded));
     f.setFormat(Paths.font("8bit-jve.ttf"), size, FlxColor.WHITE, align);
-
-    f.textField.antiAliasType = 0/*ADVANCED*/;
-	f.textField.sharpness = 400/*MAX ON OPENFL*/;
     return f;
 }
 

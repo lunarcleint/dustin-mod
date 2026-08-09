@@ -1,0 +1,62 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/sixbones/" gfZoom=".7"  zoom="0.5" name="sixbones" noteSkin="sixbones">
+	<sprite x="0" sprite="stage1_gradient" y="0" type="none" name="stage1_gradient"/>
+
+	<dad camxoffset="550" x="930" camyoffset="450" y="330" alpha="1" scale="1.4"/>
+
+	<sprite x="630" sprite="door_right" y="250" type="none" name="door_right"/>
+	<sprite x="630" sprite="door_left" y="250" type="none" name="door_left"/>
+	
+	<sprite x="0" sprite="door_shadow" y="0" type="none" name="door_shadow" scale="0.9"/>
+	<sprite x="0" sprite="stage1" y="0" type="none" name="stage1"/>
+	<sprite x="0" sprite="sb_front" y="0" type="none" name="sb_front"/>
+
+	
+	
+
+	<sprite x="-2050" sprite="left_back" y="0" type="none" name="left_back"/>
+	<sprite x="-2050" sprite="sb_left" y="0" type="none" name="sb_left"/>
+	<sprite x="-2050" sprite="left_front" y="0" type="none" name="left_front"/>
+
+
+
+	<sprite x="2000" sprite="right_back" y="0" type="none" name="right_back"/>
+	<sprite x="2000" sprite="sb_right" y="0" type="none" name="sb_right"/>
+	<sprite x="2000" sprite="right_front" y="0" type="none" name="right_front"/>
+
+
+	<character name="sixbones_second" camxoffset="550" x="930" camyoffset="450" y="330" alpha="1" scale="1.4"/>
+	<character name="sixbones_third" camxoffset="550" x="930" camyoffset="450" y="330" alpha="1" scale="1.4"/>
+	<sprite x="0" sprite="flash_2_middle" y="0" type="none" name="flash_2_middle" alpha="0"/>
+	<sprite x="-2050" sprite="flash_2_left" y="0" type="none" name="flash_2_left" alpha="0"/>
+	<sprite x="2000" sprite="flash_2_right" y="0" type="none" name="flash_2_right" alpha="0"/>
+
+	<sprite x="0" sprite="flash_1_middle" y="0" type="none" name="flash_1_middle" alpha="0"/>
+	<sprite x="-2050" sprite="flash_1_left" y="0" type="none" name="flash_1_left" alpha="0"/>
+	<sprite x="2000" sprite="flash_1_right" y="0" type="none" name="flash_1_right" alpha="0"/>
+
+	<sprite x="0" sprite="impactframe" y="0" type="none" name="flash_shoot_start" alpha="0"/>
+
+	<sprite x="150" sprite="cut_1" y="250" type="none" name="cut_1" alpha="0" scale="1.4"/>
+	<sprite x="150" sprite="cut_2" y="250" type="none" name="cut_2" alpha="0" scale="1.4"/>
+	<sprite x="150" sprite="cut_3" y="250" type="none" name="cut_3" alpha="0" scale="1.4"/>
+
+	
+
+
+	<girlfriend x="286" scroll="1" y="349" alpha="0"/>
+	
+	<boyfriend camxoffset="750" x="0" camyoffset="270" y="0" scale="1" alpha="0"/>
+
+	<sprite x="0" sprite="cursor" y="0" type="none" name="cursor" scale="0.3" alpha="0.5"/>
+	<sprite x="0" sprite="cursor" y="0" type="none" name="cursor2" scale="0.3" alpha="0.5"/>
+	<sprite x="0" sprite="warning" y="0" type="none" name="warning" scale="0.5" alpha="0.8"/>
+
+	<sprite x="0" sprite="death_face" y="0" type="none" name="death_face" alpha="0" scale="0.6"/>
+
+	<sprite x="0" sprite="borders" y="0" type="none" name="borders" scale="0.5"/>
+
+	<sprite x="0" sprite="box" y="0" type="none" name="box" scale="0.4" alpha="0.5"/>
+	<sprite x="0" sprite="box" y="0" type="none" name="box_left" scale="0.4" alpha="0.5"/>
+	
+</stage>

@@ -88,9 +88,9 @@ Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
 	<SubTexture name="upmiss0000" x="2323" y="461" width="381" height="512" frameX="-1" frameY="0" frameWidth="381" frameHeight="512"/>
 	<SubTexture name="upmiss0001" x="400" y="461" width="380" height="481" frameX="0" frameY="-31" frameWidth="381" frameHeight="512"/>
 	<SubTexture name="upmiss0002" x="400" y="461" width="380" height="481" frameX="0" frameY="-31" frameWidth="381" frameHeight="512"/>
-	<SubTexture name="upmiss0003" x="1557" y="461" width="376" height="489" frameX="0" frameY="0" frameWidth="381" frameHeight="512"/>
-	<SubTexture name="upmiss0004" x="1557" y="461" width="376" height="489" frameX="0" frameY="0" frameWidth="381" frameHeight="512"/>
-	<SubTexture name="upmiss0005" x="1557" y="461" width="376" height="489" frameX="0" frameY="0" frameWidth="381" frameHeight="512"/>
-	<SubTexture name="upmiss0006" x="1557" y="461" width="376" height="489" frameX="0" frameY="0" frameWidth="381" frameHeight="512"/>
-	<SubTexture name="upmiss0007" x="1557" y="461" width="376" height="489" frameX="0" frameY="0" frameWidth="381" frameHeight="512"/>
+	<SubTexture name="upmiss0003" x="1557" y="461" width="376" height="489" frameX="0" frameY="-24" frameWidth="381" frameHeight="512"/>
+	<SubTexture name="upmiss0004" x="1557" y="461" width="376" height="489" frameX="0" frameY="-24" frameWidth="381" frameHeight="512"/>
+	<SubTexture name="upmiss0005" x="1557" y="461" width="376" height="489" frameX="0" frameY="-24" frameWidth="381" frameHeight="512"/>
+	<SubTexture name="upmiss0006" x="1557" y="461" width="376" height="489" frameX="0" frameY="-24" frameWidth="381" frameHeight="512"/>
+	<SubTexture name="upmiss0007" x="1557" y="461" width="376" height="489" frameX="0" frameY="-24" frameWidth="381" frameHeight="512"/>
 </TextureAtlas>

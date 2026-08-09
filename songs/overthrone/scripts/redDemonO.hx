@@ -17,7 +17,7 @@ function postUpdate() {  // To finish this once we have the freeplay ready  - Ne
             var diffs = Chart.loadChartMeta("red-demon-o").difficulties;
             PlayState.loadSong("red-demon-o", diffs[diffs.length - 1]);
             MusicBeatState.skipTransIn = MusicBeatState.skipTransOut = true;
-            FlxG.switchState(new PlayState());
+            FlxG.resetState();
         }
     } else {
         trace("wrong:kys:");

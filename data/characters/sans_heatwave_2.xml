@@ -1,0 +1,5 @@
+<!DOCTYPE codename-engine-character>
+<character y="160" sprite="heatwave/HW_Sans2" scale="1.1" icon="sans_heat" color="#A82300">
+	<anim name="idle" anim="idle" loop="true"/>
+	<anim name="explosion" anim="explosionsans2" x="8"/>
+</character>

@@ -1,0 +1,31 @@
+{
+	"customValues": {
+		"customName": "loRem iPsum",
+		"titleCardSubtext": "* by Mar Mar/pause(0.5)/\n* ft. Ug32t, Skie, Chezzar & Nexus",
+		"gameover": {
+			"quote": "H-hey... H-human? \nP-pick up the phone, p-please..",
+			"isMonster": false,
+			"sound": "alphys",
+			"song": "lorem-ipsum"
+		},
+		"credits": {
+			"SPRITES": "MERRITZ, WEEDEET",
+			"BACKGROUND": "DEMOASH, MERRITZ",
+			"CHART": "CHEZZAR",
+			"SONG": "MAR MAR, UG32T, SKIE, CHEZZAR, NEXUS"
+		},
+		"stats": "* [bones]        blocks the way. \n* No data available."
+	},
+	"color": "#FFFFFF",
+	"opponentModeAllowed": true,
+	"difficulties": [
+		"hard"
+	],
+	"icon": "Icon",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "LOREM IPSUM",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 85
+}

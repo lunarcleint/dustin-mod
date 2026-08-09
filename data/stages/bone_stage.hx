@@ -31,7 +31,11 @@ function create() {
 }
 
 function postCreate() {
-    if (Options.gameplayShaders && FlxG.save.data.saturation) videoCam.addShader(contrast);
-    if (Options.gameplayShaders && FlxG.save.data.saturation) videoCam.addShader(saturation);
-    if (Options.gameplayShaders && FlxG.save.data.bloom) videoCam.addShader(bloom_new);
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.saturation) {
+            videoCam.addShader(contrast);
+            videoCam.addShader(saturation);
+        }
+        if (FlxG.save.data.bloom) videoCam.addShader(bloom_new);
+    }
 }

@@ -9,6 +9,7 @@ function onGamePause(e) if (bigRichsIncoming) e.cancel(true);
 
 var bigRichsIncoming:Bool = false;
 public function bazinga() if (!bigRichsIncoming) {
+    for(strum in strumLines) strum.ghostTapping = true;
     bigRichsIncoming = true;
 
     var gainAmount:Int = Std.int(switch (curRating.rating) {
@@ -23,19 +24,21 @@ public function bazinga() if (!bigRichsIncoming) {
     if (FlxG.save.data.nh) gainAmount = Math.round(gainAmount*2);
     FlxG.save.data.dustinCash += gainAmount;
 
+    for (camera in FlxG.cameras.list) {
+        camera.alpha = 0;
+        camera.visible = false;
+    }
+
     var cutsceneCamera = new FlxCamera();
     cutsceneCamera.bgColor = 0xFF000000;
     FlxG.cameras.add(cutsceneCamera, false);
 
-    var target_text = new FlxText(0, 0, 0, "+ 0 EXP");
+    var target_text = textCrispy(new FlxText(0, 0, 0, "+ 0 EXP"));
     target_text.setFormat(Paths.font("DTM-Mono.ttf"), 48, 0xFFFFFFFF);
 
     target_text.borderStyle = FlxTextBorderStyle.OUTLINE;
     target_text.borderSize = 2;
     target_text.borderColor = 0xFF000000;
-
-    target_text.textField.antiAliasType = 0/*ADVANCED*/;
-    target_text.textField.sharpness = 400/*MAX ON OPENFL*/;
 
     target_text.alpha = 0;
     target_text.cameras = [cutsceneCamera];

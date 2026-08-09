@@ -3,7 +3,6 @@
 
 uniform float time;
 uniform vec2 resolution;
-uniform vec2 mouse;
 
 float sat(float t) {
 	return clamp(t, 0.0, 1.0);
@@ -52,7 +51,7 @@ void main() {
 	vec2 uv = fragCoord / resolution;
 
 	float t = mod(time * 100.0, 32.0) / 110.0;
-	float GLITCH = 0.1 + mouse.x / resolution.x;
+	float GLITCH = 0.1 + resolution.x;
 
 	float gnm = sat(GLITCH);
 	float rnd0 = rand(mytrunc(vec2(t, t), 6.0));

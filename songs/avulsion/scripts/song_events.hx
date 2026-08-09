@@ -1,6 +1,8 @@
 //
 import flixel.effects.FlxFlicker;
 import flixel.addons.effects.FlxTrail;
+import flixel.math.FlxMatrix;
+import funkin.backend.FlxAnimate;
 
 public var static2:CustomShader;
 public var chromWarp:CustomShader;
@@ -11,19 +13,16 @@ var flickerSprite:FunkinSprite;
 var normalStrumPoses:Array<Array<Array<Int>>> = [];
 var arrowSine:Bool = false;
 
-var animI:Int = 0;
-var animOffRanges:Array<Dynamic> = [
-    {startFrame: 0, x: 0, y: 0},
-    {startFrame: 152, x: 205, y: 120},
-    {startFrame: 296, x: 95, y: 6},
-    {startFrame: 631, x: 104, y: 5},
-    {startFrame: 909, x: 150, y: 6},
-];
-
 var camPaps:FlxCamera;
 public var screenVignette2:CustomShader;
 
 function postCreate() {
+
+    stage.getSprite("bg_start").alpha = 1;
+    stage.getSprite("floorLights").alpha = 0;
+    stage.getSprite("room").alpha = 0;
+    stage.getSprite("bg_monitor").alpha = 0;
+
     dust.BRIGHT = 0;
 
     camPaps = new FlxCamera(0, 0);
@@ -56,33 +55,41 @@ function postCreate() {
 
     warp = new CustomShader("warp");
     warp.distortion = 0;
-    if (Options.gameplayShaders && FlxG.save.data.warp) camGame.addShader(warp);
-    if (Options.gameplayShaders && FlxG.save.data.chromwarp) camGame.addShader(chromWarp);
 
-    FlxFlicker.flicker(flickerSprite, 9999999, 0.05);
-
-    FlxG.camera.removeShader(bloom);
-    if (Options.gameplayShaders && FlxG.save.data.bloom) FlxG.camera.addShader(bloom);
+    if(FlxG.save.data.antiFlash)
+        FlxFlicker.flicker(flickerSprite, 9999999, 0.05);
 
     for (i=>strum in strumLines.members) {
         normalStrumPoses[i] = [for (s in strum.members) [s.x, s.y]];
     }
 
-    var papAnim:FlxAnimation = gf.animation.getByName("1");
-    papAnim.frames = [for (i in 0...1170) i]; 
-
     gf.cameras = [camPaps];
     camPaps.visible = false;
-
-    if (Options.gameplayShaders && FlxG.save.data.bloom) camPaps.addShader(bloom);
-    if (Options.gameplayShaders && FlxG.save.data.static) camPaps.addShader(oldstatic);
-    if (Options.gameplayShaders) camPaps.addShader(static2);
 
     screenVignette2 = new CustomShader("coloredVignette_clip");
     screenVignette2.strength = 1.2;
     screenVignette2.amount = 1.2;
     screenVignette2.color = [0.0, 0.0, 0.0];
-    if (Options.gameplayShaders) camPaps.addShader(screenVignette2);
+    
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.warp) camGame.addShader(warp);
+        if (FlxG.save.data.chromwarp) camGame.addShader(chromWarp);
+
+        if (FlxG.save.data.bloom) {
+            FlxG.camera.removeShader(bloom);
+            FlxG.camera.addShader(bloom);
+        }
+
+        if (FlxG.save.data.bloom) camPaps.addShader(bloom);
+
+        if (FlxG.save.data.static) {
+            camPaps.addShader(oldstatic);
+            camPaps.addShader(static2);
+        }
+
+        camPaps.addShader(screenVignette2);
+    }
+    spawnPapsTrail(gf);
 }
 
 var drainAmount:Float = .3;
@@ -95,16 +102,31 @@ function stepHit(step:Int) {
         case 64:
             showTitleCard();
             stage.getSprite("bg_start").alpha = 0;
-            stage.getSprite("bg_main").alpha = 1;
 
+            stage.getSprite("floorLights").alpha = 1;
+            stage.getSprite("room").alpha = 1;
+            stage.getSprite("bg_monitor").alpha = 1;
             stage.getSprite("bg_light2").alpha = 1;
             stage.getSprite("bg_light3").alpha = 1;
             dad.alpha = 1;
             boyfriend.alpha = 1;
 
+            if (!Options.gameplayShaders) {
+                dad.color = FlxColor.WHITE;
+                boyfriend.color = FlxColor.WHITE;
+            }
+
+            if (!FlxG.save.data.bloom || !Options.gameplayShaders)
+                for (spr in ["floorLights", "room", "bg_monitor", "bg_light2", "bg_light3"]) {
+                    stage.getSprite(spr).alpha = 0.1;
+                    FlxTween.tween(stage.getSprite(spr), {alpha: 1}, .6, {ease: FlxEase.quadOut});
+                }
+
             FlxG.camera.shake(0.01, 0.55);
 
             FlxTween.num(1, .13, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.quadOut}, (val:Float) -> {static2.strengthMulti = val;});
+        case 208:
+            stage.getSprite("drakOVER").alpha = 0.5;
         case 848: 
             static2.strengthMulti *= 0.75;
             oldstatic.strength *= 0.75;
@@ -117,14 +139,73 @@ function stepHit(step:Int) {
             static2.strengthMulti *= 1.25;
             oldstatic.strength *= 1.25;
             flickerSprite.alpha *= 1.5;
+        case 984:
+            updateDTLights = false;
+            stage.getSprite("dtLights").alpha = 0.35;
+            stage.getSprite("dtEyes").alpha = 0.45;
+            stage.getSprite("g_OVER").alpha = 0.5;
         case 1000:
             arrowSine = true;
             camZoomMult = 0.9;
+        case 1547:
+            FlxTween.num(0, 1, 3, {ease: FlxEase.quadIn}, (val:Float) -> {
+                stage.getSprite("dtLights").alpha = 0.35 + (0.25 * val);
+                stage.getSprite("dtEyes").alpha = 0.45 + (0.25 * val);
+                stage.getSprite("g_OVER").alpha = 0.5 - (0.45 * val);
+                eyeItensity = 0.1 * val;
+            });
+        case 1803: // EVERY SOUL HAD TO DIE
+            dad.visible = false;
+            boyfriend.visible = false;
+            camGame.visible = false;
+            /*stage.getSprite("bg_main").visible = false;
+            stage.getSprite("bg_end").visible = false;
+            stage.getSprite("bg_start").visible = false;
+            stage.getSprite("bg_monitor").visible = false;
+            stage.getSprite("bg_light2").visible = false;
+            stage.getSprite("bg_light3").visible = false;*/
+
+            dust.BRIGHT = 0;
+            //papsTrails[0].visible = false;
+            gf.script.set("enabledTrails", false);
+            for (trail in gf.script.get("papsTrails")) {
+                gf.script.get("papsTrails").remove(trail);
+                trail = null;
+            }
+
         case 1812:
+            gf.color = 0xFF9E7E7E;
+            camGame.visible = true;
             camPaps.removeShader(bloom);
+
+            dad.visible = true;
+            boyfriend.visible = true;
+
+            stage.getSprite("dtLights").alpha = 1;
+            stage.getSprite("dtEyes").alpha = 1;
+
+            stage.getSprite("dtOVER").alpha = 0.45;
+
+            eyeItensity = 0.6;
+            /*stage.getSprite("bg_main").visible = true;
+            stage.getSprite("bg_end").visible = true;
+            stage.getSprite("bg_start").visible = true;
+            stage.getSprite("bg_monitor").visible = true;
+            stage.getSprite("bg_light2").visible = true;
+            stage.getSprite("bg_light3").visible = true;*/
+            dust.BRIGHT = 1;
+
+            //papsTrails[0].visible = true;
+            gf.script.set("enabledTrails", true);
+
         case 2084: 
             FlxG.camera.shake(0.01, 0.2);
             FlxTween.tween(gf, {alpha: 0}, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.quadOut});
+            FlxTween.num(0, 1, (Conductor.stepCrochet / 1000) * 8, {ease: FlxEase.quadOut}, (val:Float) -> {
+                stage.getSprite("dtOVER").alpha = 0.5 + (0.5 * val);
+                stage.getSprite("g_OVER").alpha = 0.05 - (0.95 * val);
+                eyeItensity = 0.6 + (0.4 * val);
+            });
             clearTrails();
         case 2109: 
             hurtColor = 0xFFFF0000;
@@ -133,6 +214,11 @@ function stepHit(step:Int) {
             health = 2; // DISABLE ON HELL IF IT EVER COMES OUT -lunar
             drainHealth = true;
             FlxG.camera.shake(0.01, 0.4);
+            dustiniconP1.onDraw = (spr) -> {
+                spr.x -= spr.width / 2;
+                spr.draw();
+                spr.x += spr.width / 2;
+            }
             dustinHealthBG.y -= 32;
             dustinHealthBar.y -= 32;
             healthBarColors[0] = 0x00000000;
@@ -167,9 +253,16 @@ function stepHit(step:Int) {
             redOverlayHUD.alpha = 0;
             chromWarp.distortion = 0;
             warp.distortion = 0;
+            if (Options.gameplayShaders) {
+                shadows.boyfriend.distance = 0;
+                shadows.dad.distance = 0;
+            }
             FlxG.camera.shake(0.02, 0.5);
-            stage.getSprite("bg_end").alpha = 1;
-            stage.getSprite("bg_main").alpha = 0;
+            stage.getSprite("dtLights").alpha = 0;
+            stage.getSprite("dtEyes").alpha = 0;
+            stage.getSprite("dtOVER").alpha = 0;
+            stage.getSprite("g_OVER").alpha = 0;
+            eyeItensity = 0;
     }
 }
 
@@ -177,9 +270,12 @@ var lock24FPS:Array<{sprite:FlxSprite, x:Float, y:Float, anim:String}> = [];
 var dad24FPS:{x:Float, y:Float, anim:String} = null;
 var __coolTimer:Float = 0;
 
-var lastGFOffX:Float = 0;
 var tottalTimer:Float = FlxG.random.float(100, 1000);  // Stole this from the snow shader script cuz I liked the idea lmfao  - Nex
 function update(elapsed:Float) {
+    //gf.alpha = 0;
+    //gf.visible = 1;
+    //camPaps.visible = 1;
+    //camPaps.alpha = 1;
     tottalTimer += elapsed;
     __coolTimer += elapsed;
     oldstatic.time = tottalTimer;
@@ -191,10 +287,10 @@ function update(elapsed:Float) {
 
     for (info in lock24FPS) {
         var sprite = info.sprite;
-        if (sprite.animation.frameName != info.anim) {
+        if (sprite.animation.name != info.anim) {
             sprite.x = info.x; sprite.y = info.y;
             if (info.angle != null) sprite.angle = info.angle;
-            info.anim = sprite.animation.frameName;
+            info.anim = sprite.animation.name;
         }
     }
 
@@ -226,56 +322,9 @@ function update(elapsed:Float) {
         }
     }
 
-    if (lastGFOffX == 0 && gf.animation.frameIndex == 296 + 253) { // EVERY SOUL HAD TO DIE
-        dad.visible = false;
-        boyfriend.visible = false;
-        stage.getSprite("bg_main").visible = false;
-        stage.getSprite("bg_end").visible = false;
-        stage.getSprite("bg_start").visible = false;
-        stage.getSprite("bg_monitor").visible = false;
-        stage.getSprite("bg_light2").visible = false;
-        stage.getSprite("bg_light3").visible = false;
-
-        dust.BRIGHT = 0;
-        papsTrails[0].visible = false;
-
-        lastGFOffX = -1;
-    }
-
-    if (lastGFOffX == -1 && gf.animation.frameIndex == 296 + 273) {
-        dad.visible = true;
-        boyfriend.visible = true;
-        stage.getSprite("bg_main").visible = true;
-        stage.getSprite("bg_end").visible = true;
-        stage.getSprite("bg_start").visible = true;
-        stage.getSprite("bg_monitor").visible = true;
-        stage.getSprite("bg_light2").visible = true;
-        stage.getSprite("bg_light3").visible = true;
-        dust.BRIGHT = 1;
-
-        papsTrails[0].visible = true;
-        lastGFOffX = 1;
-    }
-
     if (drainHealth && FlxG.save.data.mechanics) {
         health -= (drainAmount*.96) * elapsed;
         if (FlxG.keys.justPressed.SPACE) health += gainAmount;
-    }
-}
-
-function postUpdate(elapsed:Float) {
-    if (animI+1 != animOffRanges.length && gf.animation.frameIndex >= animOffRanges[animI+1].startFrame) animI++;
-    gf.frameOffset.set(animOffRanges[animI].x, animOffRanges[animI].y);
-}
-
-function playLyricAnimation(index:Int) {
-    index++;
-
-    if (gf.animation.exists(Std.string(index))) {
-        gf.playAnim(Std.string(index), true);
-        (new FlxTimer()).start((gf.animation.curAnim.numFrames * 1/24)-(3/24), function () {
-            playLyricAnimation(index);
-        });
     }
 }
 
@@ -283,11 +332,12 @@ function lyrics() {
     spawnPapsTrail(gf);
     FlxTween.tween(gf, {alpha: 1}, (Conductor.stepCrochet / 1000) * 12, {ease: FlxEase.quadOut});
     lock24FPS = [];
-    dad24FPS = {sprite: gf, x: 1780, y: 1100, anim: gf.animation.frameName}
+    dad24FPS = {sprite: gf, x: 1780, y: 1100, anim: gf.animation.name}
     lock24FPS.push(dad24FPS);
     __coolTimer = 0;
 
-    gf.playAnim("1", true);
+    trace('play the goddamn animation already');
+    gf.playAnim("lyrics", true);
 
     camPaps.visible = true;
     camPaps.angle = 0;
@@ -314,9 +364,10 @@ function onCameraMove(_) {
     }
 }
 
-var papsTrails:Array<FlxTrail> = [];
+var papsTrails:Array<AtlasTrail> = [];
 function spawnPapsTrail(sprite:FlxSprite) {
-    trail = new FlxTrail(sprite, null, 12, 4, 0.25, 0.045);
+    return;
+    trail = new AtlasTrail(sprite, null, 12, 4, 0.25, 0.045);
     trail.color = 0xFFFFFFFF;
     insert(members.indexOf(sprite), trail);
     papsTrails.push(trail);
@@ -361,9 +412,42 @@ function onGameOver(_) {
     FlxG.sound.play(Paths.sound('startBreak'), 1);
     new FlxTimer().start(1, function() {
         FlxG.sound.play(Paths.sound('endBreak'), 1);
-        FlxG.sound.play(Paths.sound('snd_damage_c'), 1);
+        FlxG.sound.play(Paths.sound('undertale/snd_damage_c'), 1);
         new FlxTimer().start(3, function() {
             FlxG.switchState(new ModState("EndingCredits", "secret"));
         });
     });
+}
+
+/*function draw() {
+    for (trail in papsTrails) {
+        for (limb in trail.limb_instance) {
+            @:privateAccess {
+            dad.atlasAnim.parseElement(limb, 0, new FlxMatrix(), dad.colorTransform, dad.blend, true);
+            }
+        }
+    }
+}*/
+
+class AtlasTrail extends FlxTrail {
+
+    private var _l:Int = -5;
+    public var limb_instance:Array<FlxElement> = [];
+
+    override public function update(elapsed:Float) {
+        super.update(elapsed);
+        if (_l != (_l = members.length)) {
+            for(i in members) {
+                trace('oh');
+                if (i.animateAtlas == null && target.animateAtlas != null) {
+                    limb_instance.push(target.animateAtlas.anim.cutInstance);
+                }
+            }
+        }
+    }
+
+    override public function draw() {
+        trace(',y');
+        return super.draw();
+    }
 }

@@ -48,8 +48,6 @@ function stepHit(step:Int) {
                 boyfriend.playAnim("dodge", true);
         case 2280: 
             // FlxTween.cancelTweensOf(blaster); blaster.y = 920;
-            if (!dodging) health = 0.05;
-            canDodge = false;
 
             space.visible = false;
             blaster.playAnim("blast");
@@ -93,6 +91,9 @@ function stepHit(step:Int) {
                     });
                 });
             });
+        case 2281: // makes it where you can actually press space on beat now
+            if (!dodging) health = 0.05;
+            canDodge = false;
         case 2284:
             for (element in hudElements)
                 FlxTween.tween(element, {alpha: 1}, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.quadOut});

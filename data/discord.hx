@@ -7,15 +7,10 @@ function onGameOver() {
 function onDiscordPresenceUpdate(e) {
 	var data = e.presence;
 
-	if (data.button1Label == null)
-		data.button1Label = "Friday Night Dustin' Discord";
-	if (data.button1Url == null)
-		data.button1Url = "https://discord.com/invite/friday-night-dustin-community-server-1151789887910072412";
-
-	if (data.button2Label == null)
-		data.button2Label = "Codename Engine Discord";
-	if (data.button2Url == null)
-		data.button2Url = "https://discord.gg/2NTCdsQvx4";
+	data.button1Label ??= "Friday Night Dustin' Discord";
+	data.button1Url ??= "https://discord.com/invite/friday-night-dustin-community-server-1151789887910072412";
+	data.button2Label ??= "Codename Engine Discord";
+	data.button2Url ??= "https://discord.gg/2NTCdsQvx4";
 }
 
 function onPlayStateUpdate() {
@@ -34,22 +29,17 @@ function onMenuLoaded(name:String) {
 
 function onEditorTreeLoaded(name:String) {
 	switch(name) {
-		case "Character Editor":
-			DiscordUtil.changePresenceSince("Choosing a Character", null);
-		case "Chart Editor":
-			DiscordUtil.changePresenceSince("Choosing a Chart", null);
-		case "Stage Editor": // secret for now
-			DiscordUtil.changePresenceSince("Choosing a Stage", null);
+		case "Character Editor": DiscordUtil.changePresenceSince("Choosing a Character", null);
+		case "Chart Editor": DiscordUtil.changePresenceSince("Choosing a Chart", null);
+		case "Stage Editor": DiscordUtil.changePresenceSince("Choosing a Stage", null); // secret for now
+
 	}
 }
 
 function onEditorLoaded(name:String, editingThing:String) {
 	switch(name) {
-		case "Character Editor":
-			DiscordUtil.changePresenceSince("Editing a Character", editingThing);
-		case "Chart Editor":
-			DiscordUtil.changePresenceSince("Editing a Chart", editingThing);
-		case "Stage Editor":
-			DiscordUtil.changePresenceSince("Editing a Stage", editingThing);
+		case "Character Editor": DiscordUtil.changePresenceSince("Editing a Character", editingThing);
+		case "Chart Editor": DiscordUtil.changePresenceSince("Editing a Chart", editingThing);
+		case "Stage Editor": DiscordUtil.changePresenceSince("Editing a Stage", editingThing);
 	}
 }

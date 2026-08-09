@@ -41,7 +41,7 @@ function onEvent(eventEvent) {
         
         for (strumLine in strumLines.members) {
             for (i => note in strumLine.notes.members) {
-                if (note.noteTypeID != 0 || note.extra["CHANGE_EVENT"] != eventEvent.event.params[2]) continue; // avoid notetypes/notes that will be changed later
+                if ((note.noteTypeID != 0 && (note.noteType != "No Animation" && note.noteType != "No Anim Note")) || note.extra["CHANGE_EVENT"] != eventEvent.event.params[2]) continue; // avoid notetypes/notes that will be changed later
                 if (skin == noteSkin) break; // avoid notes that are alreadly the default skin and are being changed back (were never changed in the first place)
 
                 var oldAnimName:String = note.animation.name;

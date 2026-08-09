@@ -1,17 +1,14 @@
 {
-	"color": "#9271FD",
+	"color": "#000000",
 	"customValues": {
-		"characterY": null,
-		"character": null,
-		"mainColor": null,
+		"customName": "cOrnered",
+		"titleCardSubtext": "* by Skie/pause(0.5)/\n* ft. Mar Mar",
 		"credits": {
 			"CHART": "FROSTIC",
 			"BACKGROUND": "HLOARTS",
-			"SPRITES": "SAMUEL PASTEL, CHUF, HORRORSPINN",
+			"SPRITES": "SAMUEL PASTEL, CHUF, YEEZUS (HORRORSPINN)",
 			"SONG": "SKIE, MAR MAR"
 		},
-		"customName": "cOrnered",
-		"titleCardSubtext": "* by Skie/pause(0.5)/\n* ft. Mar Mar",
 		"gameover": {
 			"isMonster": false,
 			"quote": "I know you can do it, BOYFRIEND!",
@@ -28,8 +25,11 @@
 	],
 	"coopAllowed": false,
 	"stepsPerBeat": 4,
-	"displayName": "cornered",
+	"displayName": "Cornered",
 	"beatsPerMeasure": 4,
 	"needsVoices": true,
+	"variants": [
+		"final hours"
+	],
 	"bpm": 120
 }

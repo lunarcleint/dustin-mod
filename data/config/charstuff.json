@@ -234,9 +234,16 @@
       },
       {
         "name": "Thero",
-        "desc": "* Placeholder",
+        "desc": "* Placeholder\n\n\n\n\n\n\n\n\n\n\n\nYou really thought we were gonna update this?",
         "authors": "* LEMONEMY",
         "image": "game/ui/pause/characterIcons/thero",
+        "offset": { "x": -35 , "y": 5 }
+      },
+      {
+        "name": "Sixbones",
+        "desc": "Papyrus has fallen down, and Sans brings him to Alphys' lab. Against her advisory, Sans insisted that injecting his brother with determination was the only real way he could possibly still live. Inevitably, Papyrus begins to melt while Sans holds him, neither letting go.\n\nNot long after the unfortunate incident with Sans and his brother, Pico happens to fall into the underground instead of the regular human. After observing him capably dealing with everything thrown his way from her cameras, Alphys asks for Pico's help.",
+        "authors": "Zarla",
+        "image": "game/ui/pause/characterIcons/lorem-ipsum",
         "offset": { "x": -35 , "y": 5 }
       }
     ]

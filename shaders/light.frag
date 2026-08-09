@@ -106,6 +106,7 @@ uniform int LAYERS;
 uniform float DEPTH;
 uniform float WIDTH;
 uniform float SPEED;
+uniform float OPACITY;
 
 const mat3 p = mat3(13.323122,23.5112,21.71123,21.1212,28.7312,11.9312,21.8112,14.7212,61.3934);
 
@@ -121,7 +122,7 @@ void main()
     if (flipY) uvCentered.y *= -1;
 	
 	float meltiness = abs(1.-((pixel.y-snowMeltRect.y)/snowMeltRect.w));
-	if (pixel.y >= snowMeltRect.y + snowMeltRect.w) meltiness = 0;
+	if (pixel.y >= snowMeltRect.y + snowMeltRect.w) meltiness = 0.0;
 
 	vec3 acc = vec3(0.0);
 	float dof = 5.*sin(time*.1);
@@ -150,7 +151,7 @@ void main()
 		acc *= meltiness;
 
     vec4 flixelColor = flixel_texture2D(bitmap, openfl_TextureCoordv.xy);
-	gl_FragColor = flixelColor + vec4(acc * vec3(1.0, 1.0, 0.6) * 0.8 * (0.6 + (coolNoise() * 0.4)), flixelColor.a);
+	gl_FragColor = flixelColor + vec4(acc * vec3(1.0, 1.0, 0.6) * 0.8 * (0.6 + (coolNoise() * 0.4)), flixelColor.a) * OPACITY;
 
 	// if (snowMelts && ((pixel.x >= rect.x) && (pixel.x < rect.x + rect.z) && (pixel.y >= rect.y)))
 	// 	gl_FragColor = vec4(vec3(meltiness), 1.);

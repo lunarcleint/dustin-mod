@@ -1,0 +1,1 @@
+dustin has proper addon support now, so if you want to add a CD, you can do it through here as images instead of a spritesheet.

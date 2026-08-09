@@ -1,36 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="SOULSOT.png">
-	<!-- Created with Adobe Animate version 22.0.3.179 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="DOWNSOULS0000" x="0" y="0" width="2560" height="1716"/>
-	<SubTexture name="DOWNSOULS0001" x="0" y="0" width="2560" height="1716"/>
-	<SubTexture name="DOWNSOULS0002" x="2560" y="0" width="2560" height="1716"/>
-	<SubTexture name="DOWNSOULS0003" x="2560" y="0" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0000" x="5120" y="0" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0001" x="5120" y="0" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0002" x="5120" y="0" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0003" x="5120" y="0" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0004" x="5120" y="0" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0005" x="0" y="1716" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0006" x="0" y="1716" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0007" x="0" y="1716" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0008" x="0" y="1716" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0009" x="0" y="1716" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0010" x="2560" y="1716" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0011" x="2560" y="1716" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0012" x="2560" y="1716" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0013" x="2560" y="1716" width="2560" height="1716"/>
-	<SubTexture name="IDLESOULS0014" x="2560" y="1716" width="2560" height="1716"/>
-	<SubTexture name="LEFTSOULS0000" x="5120" y="1716" width="2560" height="1716"/>
-	<SubTexture name="LEFTSOULS0001" x="5120" y="1716" width="2560" height="1716"/>
-	<SubTexture name="LEFTSOULS0002" x="0" y="3432" width="2560" height="1716"/>
-	<SubTexture name="LEFTSOULS0003" x="0" y="3432" width="2560" height="1716"/>
-	<SubTexture name="RIGHTSOULS0000" x="2560" y="3432" width="2560" height="1716"/>
-	<SubTexture name="RIGHTSOULS0001" x="2560" y="3432" width="2560" height="1716"/>
-	<SubTexture name="RIGHTSOULS0002" x="5120" y="3432" width="2560" height="1716"/>
-	<SubTexture name="RIGHTSOULS0003" x="5120" y="3432" width="2560" height="1716"/>
-	<SubTexture name="UPSOULS0000" x="0" y="5148" width="2560" height="1716"/>
-	<SubTexture name="UPSOULS0001" x="0" y="5148" width="2560" height="1716"/>
-	<SubTexture name="UPSOULS0002" x="2560" y="5148" width="2560" height="1716"/>
-	<SubTexture name="UPSOULS0003" x="2560" y="5148" width="2560" height="1716"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Tex-Packer-EX v0.7.1 https://kitzsh.github.io/tex-packer-ex
+-->
+<TextureAtlas imagePath="SOULSOT.png" width="9787" height="2854">
+  <SubTexture name="DOWNSOULS0000.png" x="1456" y="5"  width="1573" height="1279" frameX="-439" frameY="-217" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="DOWNSOULS0001.png" x="1456" y="5"  width="1573" height="1279" frameX="-439" frameY="-217" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="DOWNSOULS0002.png" x="6457" y="5"  width="1636" height="1191" frameX="-399" frameY="-294" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="DOWNSOULS0003.png" x="6457" y="5"  width="1636" height="1191" frameX="-399" frameY="-294" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0000.png" x="3039" y="5"  width="1721" height="1212" frameX="-403" frameY="-241" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0001.png" x="3039" y="5"  width="1721" height="1212" frameX="-403" frameY="-241" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0002.png" x="3039" y="5"  width="1721" height="1212" frameX="-403" frameY="-241" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0003.png" x="3039" y="5"  width="1721" height="1212" frameX="-403" frameY="-241" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0004.png" x="3039" y="5"  width="1721" height="1212" frameX="-403" frameY="-241" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0005.png" x="3204" y="1227"  width="1720" height="1211" frameX="-403" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0006.png" x="3204" y="1227"  width="1720" height="1211" frameX="-403" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0007.png" x="3204" y="1227"  width="1720" height="1211" frameX="-403" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0008.png" x="3204" y="1227"  width="1720" height="1211" frameX="-403" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0009.png" x="3204" y="1227"  width="1720" height="1211" frameX="-403" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0010.png" x="4934" y="1226"  width="1721" height="1210" frameX="-401" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0011.png" x="4934" y="1226"  width="1721" height="1210" frameX="-401" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0012.png" x="4934" y="1226"  width="1721" height="1210" frameX="-401" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0013.png" x="4934" y="1226"  width="1721" height="1210" frameX="-401" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="IDLESOULS0014.png" x="4934" y="1226"  width="1721" height="1210" frameX="-401" frameY="-242" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="LEFTSOULS0000.png" x="8103" y="1190"  width="1673" height="1165" frameX="-409" frameY="-276" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="LEFTSOULS0001.png" x="8103" y="1190"  width="1673" height="1165" frameX="-409" frameY="-276" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="LEFTSOULS0002.png" x="8103" y="5"  width="1679" height="1175" frameX="-404" frameY="-275" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="LEFTSOULS0003.png" x="8103" y="5"  width="1679" height="1175" frameX="-404" frameY="-275" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="RIGHTSOULS0000.png" x="4770" y="5"  width="1677" height="1211" frameX="-442" frameY="-255" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="RIGHTSOULS0001.png" x="4770" y="5"  width="1677" height="1211" frameX="-442" frameY="-255" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="RIGHTSOULS0002.png" x="1575" y="1294"  width="1619" height="1224" frameX="-487" frameY="-253" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="RIGHTSOULS0003.png" x="1575" y="1294"  width="1619" height="1224" frameX="-487" frameY="-253" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="UPSOULS0000.png" x="5" y="5"  width="1441" height="1461" frameX="-535" frameY="-53" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="UPSOULS0001.png" x="5" y="5"  width="1441" height="1461" frameX="-535" frameY="-53" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="UPSOULS0002.png" x="5" y="1476"  width="1560" height="1373" frameX="-459" frameY="-79" frameWidth="2560" frameHeight="1716"/>
+  <SubTexture name="UPSOULS0003.png" x="5" y="1476"  width="1560" height="1373" frameX="-459" frameY="-79" frameWidth="2560" frameHeight="1716"/>
 </TextureAtlas>

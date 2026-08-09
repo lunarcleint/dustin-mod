@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="HW_Sans2.png">
+	<!-- Created with Adobe Animate version 24.0.12.3 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="explosionsans20000" x="0" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20001" x="0" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20002" x="0" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20003" x="0" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20004" x="0" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20005" x="0" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20006" x="0" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20007" x="0" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20008" x="0" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20009" x="508" y="0" width="492" height="647" frameX="-3" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20010" x="508" y="0" width="492" height="647" frameX="-3" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20011" x="508" y="0" width="492" height="647" frameX="-3" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20012" x="508" y="0" width="492" height="647" frameX="-3" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20013" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20014" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20015" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20016" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20017" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20018" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20019" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20020" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20021" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20022" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20023" x="1015" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20024" x="1523" y="0" width="493" height="647" frameX="-1" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20025" x="1523" y="0" width="493" height="647" frameX="-1" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20026" x="1523" y="0" width="493" height="647" frameX="-1" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20027" x="1523" y="0" width="493" height="647" frameX="-1" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20028" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20029" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20030" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20031" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20032" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20033" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20034" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20035" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20036" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20037" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20038" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20039" x="2031" y="0" width="493" height="646" frameX="-1" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20040" x="2539" y="0" width="492" height="647" frameX="-3" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20041" x="2539" y="0" width="492" height="647" frameX="-3" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20042" x="2539" y="0" width="492" height="647" frameX="-3" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20043" x="2539" y="0" width="492" height="647" frameX="-3" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20044" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20045" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20046" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20047" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20048" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20049" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20050" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20051" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20052" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20053" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20054" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20055" x="3046" y="0" width="493" height="648" frameX="-1" frameY="-10" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20056" x="3554" y="0" width="495" height="646" frameX="0" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20057" x="3554" y="0" width="495" height="646" frameX="0" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20058" x="3554" y="0" width="495" height="646" frameX="0" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20059" x="3554" y="0" width="495" height="646" frameX="0" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20060" x="0" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20061" x="0" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20062" x="0" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20063" x="0" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20064" x="0" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20065" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20066" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20067" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20068" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20069" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20070" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20071" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20072" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20073" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20074" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20075" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20076" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20077" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20078" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20079" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20080" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20081" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20082" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20083" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20084" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20085" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20086" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20087" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20088" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20089" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20090" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20091" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20092" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20093" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20094" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20095" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20096" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20097" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20098" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20099" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20100" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20101" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20102" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20103" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20104" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20105" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20106" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20107" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20108" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20109" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20110" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20111" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20112" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20113" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20114" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20115" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20116" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20117" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20118" x="1016" y="663" width="493" height="647" frameX="-2" frameY="-11" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20119" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20120" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20121" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20122" x="508" y="663" width="493" height="646" frameX="-2" frameY="-12" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20123" x="1524" y="663" width="495" height="644" frameX="-2" frameY="-14" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20124" x="1524" y="663" width="495" height="644" frameX="-2" frameY="-14" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20125" x="1524" y="663" width="495" height="644" frameX="-2" frameY="-14" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20126" x="1524" y="663" width="495" height="644" frameX="-2" frameY="-14" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20127" x="1524" y="663" width="495" height="644" frameX="-2" frameY="-14" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20128" x="2034" y="663" width="499" height="645" frameX="-8" frameY="-13" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20129" x="2034" y="663" width="499" height="645" frameX="-8" frameY="-13" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20130" x="2034" y="663" width="499" height="645" frameX="-8" frameY="-13" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20131" x="2548" y="663" width="483" height="657" frameX="-8" frameY="-1" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20132" x="2548" y="663" width="483" height="657" frameX="-8" frameY="-1" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20133" x="2548" y="663" width="483" height="657" frameX="-8" frameY="-1" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20134" x="2548" y="663" width="483" height="657" frameX="-8" frameY="-1" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20135" x="3046" y="663" width="477" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20136" x="3046" y="663" width="477" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20137" x="3046" y="663" width="477" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20138" x="3046" y="663" width="477" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20139" x="3046" y="663" width="477" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20140" x="3538" y="663" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20141" x="3538" y="663" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20142" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20143" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20144" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20145" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20146" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20147" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20148" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20149" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20150" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="explosionsans20151" x="0" y="1336" width="479" height="658" frameX="-8" frameY="0" frameWidth="507" frameHeight="658"/>
+	<SubTexture name="idlesans20000" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20001" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20002" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20003" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20004" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20005" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20006" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20007" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20008" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20009" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20010" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20011" x="494" y="1336" width="479" height="657" frameX="0" frameY="-1" frameWidth="479" frameHeight="658"/>
+	<SubTexture name="idlesans20012" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20013" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20014" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20015" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20016" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20017" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20018" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20019" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20020" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20021" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20022" x="988" y="1336" width="479" height="658"/>
+	<SubTexture name="idlesans20023" x="988" y="1336" width="479" height="658"/>
+</TextureAtlas>

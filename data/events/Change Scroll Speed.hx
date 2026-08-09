@@ -1,3 +1,6 @@
+if (!FlxG.save.data.scrollSpeedChange)
+    disableScript();
+
 var scrollTween:FlxTween = null;
 
 function onEvent(eventEvent) {

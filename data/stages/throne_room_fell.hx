@@ -60,7 +60,7 @@ function onDadHit(note:Note) {
 
 
 function stepHit(step:Int) {
-    if (step == 45) {
+    if (FlxG.save.data.mechanics && step == 45) {
         FlxTween.tween(shadeSprite, { alpha: 0 }, 0.5, { ease: FlxEase.quintOut });
         FlxTween.tween(madnessSprite, { alpha: 0 }, 0.5, { ease: FlxEase.quintOut });
     }
@@ -92,8 +92,10 @@ function stepHit(step:Int) {
     }
 }
 function onSongStart():Void {
-    FlxTween.tween(shadeSprite, { alpha: 1 }, 0.5, { ease: FlxEase.quintOut });
-    FlxTween.tween(madnessSprite, { alpha: 1 }, 0.5, { ease: FlxEase.quintOut });
+    if (FlxG.save.data.mechanics) {
+        FlxTween.tween(shadeSprite, { alpha: 1 }, 0.5, { ease: FlxEase.quintOut });
+        FlxTween.tween(madnessSprite, { alpha: 1 }, 0.5, { ease: FlxEase.quintOut });
+    }
 
 }
 

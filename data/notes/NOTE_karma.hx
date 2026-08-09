@@ -10,8 +10,8 @@ function onNoteCreation(event:NoteCreationEvent) if (event.note.noteType == "NOT
         event.note.exists = event.note.active = event.note.visible = false;
         return;
     }
-
-    event.note.avoid = true;
+    event.note.extra.set("hurtNote", true);
+    //event.note.avoid = true; Hitbox is weird when you try hitting a regular note
 }
 
 function onPlayerMiss(event) {
@@ -22,7 +22,7 @@ function onPlayerMiss(event) {
 }
 
 function onPlayerHit(event) {
-    if (event.noteType == "NOTE_karma") {
+    if (event.noteType == "NOTE_karma" && validHurtNoteHit(event.note)) {
         karmaDrainTimeLeft = karmaDrainDuration;
         karmaDrainTimer = 0;
 
@@ -30,7 +30,7 @@ function onPlayerHit(event) {
         FlxG.sound.play(Paths.sound("hurt_note"));
     }
 
-    if (event.noteType == "NOTE_hate") {
+    if (event.noteType == "NOTE_hate" && validHurtNoteHit(event.note)) {
         if (stage.getSprite("hate_vignette").alpha != 1) {
             stage.getSprite("hate_vignette").alpha += 0.2;
         }

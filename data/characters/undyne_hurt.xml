@@ -1,1 +1,9 @@
-<!DOCTYPE codename-engine-character><character x="-180" y="-260" sprite="cornered/Hurt_undyne" scale="1.35" camx="-20" camy="110" icon="cornered-sans" color="#20247F" holdTime="3"><anim name="idle" anim="undyneidleALT" indices="0..19"/><anim name="idle-loop" anim="undyneidleALT" loop="true" indices="20..29"/><anim name="singRIGHT" anim="undyneleftALT" x="-8" y="9"/><anim name="singDOWN" anim="undynedownALT" x="-29" y="-11"/><anim name="singUP" anim="undyneupALT" x="-11" y="2"/><anim name="singLEFT" anim="undynerightALT" x="6" y="-19"/></character>
+<!DOCTYPE codename-engine-character>
+<character x="-180" y="-260" sprite="cornered/Hurt_undyne" scale="1.35" camx="-20" camy="110" icon="undyne" color="#0E4693" holdTime="3">
+	<anim name="idle" anim="undyneidleALT" indices="0..19"/>
+	<anim name="idle-loop" anim="undyneidleALT" loop="true" indices="20..29"/>
+	<anim name="singRIGHT" anim="undyneleftALT" x="-8" y="9"/>
+	<anim name="singDOWN" anim="undynedownALT" x="-29" y="-11"/>
+	<anim name="singUP" anim="undyneupALT" x="-11" y="2"/>
+	<anim name="singLEFT" anim="undynerightALT" x="6" y="-19"/>
+</character>

@@ -1,1 +1,8 @@
-<!DOCTYPE codename-engine-character><character sprite="heatwave/mtt" scale="1.1" icon="sans_heat" color="#A82300"><anim name="idle" anim="mtt_idle" loop="true"/><anim name="singLEFT" anim="mtt_left" x="216" y="54"/><anim name="singDOWN" anim="mtt_down" x="41" y="-256"/><anim name="singUP" anim="mtt_up" x="127" y="205"/><anim name="singRIGHT" anim="mtt_right" x="-286" y="28"/></character>
+<!DOCTYPE codename-engine-character>
+<character sprite="heatwave/mtt" scale="1.1" color="#920A0A">
+	<anim name="idle" anim="mtt_idle" loop="true"/>
+	<anim name="singLEFT" anim="mtt_left" x="216" y="54"/>
+	<anim name="singDOWN" anim="mtt_down" x="41" y="-256"/>
+	<anim name="singUP" anim="mtt_up" x="127" y="205"/>
+	<anim name="singRIGHT" anim="mtt_right" x="-286" y="28"/>
+</character>

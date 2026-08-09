@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="characters.png" width="1011" height="1160">
+	<SubTexture name="dustbelief0" x="801.6874999999999" y="661.4583333333333" width="188.51562499999997" height="221.58854166666663" frameX="-0" frameY="-0" frameWidth="188.51562499999997" frameHeight="221.58854166666663"/>
+	<SubTexture name="dustbelief select" x="763.3229166666666" y="890.3229166666665" width="191.16145833333331" height="228.20312499999997" frameX="3" frameY="-0" frameWidth="191.16145833333331" frameHeight="228.20312499999997"/>
+	<SubTexture name="dustfell0" x="0.6614583333333333" y="661.4583333333333" width="275.16666666666663" height="238.78645833333331" frameX="-0" frameY="-0" frameWidth="275.16666666666663" frameHeight="238.78645833333331"/>
+	<SubTexture name="dustfell select" x="277.81249999999994" y="661.4583333333333" width="275.16666666666663" height="234.81770833333331" frameX="-0" frameY="-0" frameWidth="275.16666666666663" frameHeight="234.81770833333331"/>
+	<SubTexture name="dustshift0" x="277.81249999999994" y="898.2604166666665" width="240.77083333333331" height="260.6145833333333" frameX="-0" frameY="-0" frameWidth="240.77083333333331" frameHeight="260.6145833333333"/>
+	<SubTexture name="dustshift select" x="520.5677083333333" y="898.2604166666665" width="240.77083333333331" height="238.78645833333331" frameX="-0" frameY="-22" frameWidth="240.77083333333331" frameHeight="238.78645833333331"/>
+	<SubTexture name="dustswap0" x="554.9635416666666" y="661.4583333333333" width="244.73958333333331" height="226.88020833333331" frameX="-0" frameY="-0" frameWidth="244.73958333333331" frameHeight="226.88020833333331"/>
+	<SubTexture name="dustswap select" x="0.6614583333333333" y="902.2291666666665" width="255.32291666666663" height="230.84895833333331" frameX="-0" frameY="-0" frameWidth="255.32291666666663" frameHeight="230.84895833333331"/>
+	<SubTexture name="dusttale0" x="0.6614583333333333" y="0.6614583333333333" width="1009.3854166666665" height="330.72916666666663" frameX="-0" frameY="-0" frameWidth="1009.3854166666665" frameHeight="330.72916666666663"/>
+	<SubTexture name="dusttale select" x="0.6614583333333333" y="333.37499999999994" width="1010.0468749999999" height="326.0989583333333" frameX="4" frameY="-0" frameWidth="1010.0468749999999" frameHeight="326.0989583333333"/>
+</TextureAtlas>

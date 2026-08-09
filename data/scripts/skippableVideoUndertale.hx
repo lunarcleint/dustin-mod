@@ -5,6 +5,9 @@ import funkin.backend.system.Logs;
 import funkin.backend.utils.FlxInterpolateColor;
 import hxvlc.flixel.FlxVideoSprite;
 
+public static var FULL_VOLUME:Bool = false;
+
+var onStart:Void->Void = null;
 var callback:Void->Void = null;
 var vid:FlxVideoSprite;
 var holdCircle:FlxSprite;
@@ -19,10 +22,6 @@ var oldVisible = [];
 var vidName:String;
 function startVideo(name:String, ?leCallback:Void->Void, ?ext:String, ?usePath:Bool) {
     vidName = name;
-    for (cam in FlxG.cameras.list) {
-        oldVisible.push(cam.visible);
-        cam.visible = false;
-    }
 
     callback = leCallback;
     ext ??= "mp4";
@@ -43,16 +42,20 @@ function startVideo(name:String, ?leCallback:Void->Void, ?ext:String, ?usePath:B
         vid.screenCenter();
     });
 
-    if (FULL_VOLUME) {
-        vid.autoVolumeHandle = false;
-        vid.bitmap.volume = 1;
+    try {
+        if (FULL_VOLUME) {
+            vid.autoVolumeHandle = false;
+            vid.bitmap.volume = 1;
 
-        FULL_VOLUME = false;
+            FULL_VOLUME = false;
+        }
+    }
+    catch (e:Any) {
+        // hxvlc 1.5.0/CNE <=v1.0.1 backward comaptibility
+        // Does nothing if fails
     }
 
-    add(skipText = new FunkinText(-28, FlxG.height - 50 - 6, FlxG.width, "Hold ENTER/LEFT CLICK to skip...").setFormat(Paths.font('8bit-jve.ttf'), 32, 0xffffffff, "right", FlxTextBorderStyle.OUTLINE, 0xff000000));
-    skipText.textField.antiAliasType = 0;
-    skipText.textField.sharpness = 400;
+    add(skipText = textCrispy(new FunkinText(-28, FlxG.height - 50 - 6, FlxG.width, "Hold ENTER/LEFT CLICK to skip...").setFormat(Paths.font('8bit-jve.ttf'), 32, 0xffffffff, "right", FlxTextBorderStyle.OUTLINE, 0xff000000)));
     skipText.scrollFactor.set();
     skipText.borderSize = 3;
     skipText.cameras = [cutsceneCamera];
@@ -69,8 +72,24 @@ function startVideo(name:String, ?leCallback:Void->Void, ?ext:String, ?usePath:B
     ratio /= 360;  // before i forger  - Nex
 
     if (vid.load(usePath == false ? Paths.video(name, ext) : name)) {
-        vid.bitmap.onEndReached.add(onFinish);
+        //making sure the game doesn't freeze before the video plays - HIGG
         vid.play();
+        vid.pause();
+        new FlxTimer().start(0.0001, () -> {
+            for (cam in FlxG.cameras.list) {
+                if (cam == cutsceneCamera)
+                    continue;
+                if (cam.visible) {
+                    oldVisible.push(cam);
+                    cam.visible = false;
+                }
+            }
+            vid.bitmap.position = 0;
+            vid.play();
+            vid.bitmap.onEndReached.add(onFinish);
+            if(onStart != null)
+                onStart();
+        });
     } else {
         Logs.trace("Failed to load the cutscene, finishing directly!!", 2);
         onFinish();
@@ -88,7 +107,7 @@ function update(elapsed:Float) if (vid != null) {
 
         if (alphaTimer > 1) doAlphaTween();
         else alphaTimer += elapsed;
-    } else {
+    } else if (vid.alpha == 1) {
         alphaTween?.cancel();
         skipText.alpha = 1;
         alphaTimer = 0;
@@ -107,7 +126,9 @@ function update(elapsed:Float) if (vid != null) {
     //vid.y = Main.scaleMode.offset.y;
 
     if (vid != null && !vid.autoVolumeHandle) {
-        vid.bitmap.volume = Math.floor(FlxMath.bound(getCalculatedVolume() * 3, 0, 1) * (100));
+        var volume:Float = Math.floor(Math.pow(vid.getCalculatedVolume(), 0.333) * 100.0);
+        if (vid.bitmap.volume != volume)
+            vid.bitmap.volume = volume;
     }
 }
 
@@ -123,13 +144,14 @@ function doAlphaTween() {
 import StringTools;
 
 function onFinish() {
+    vid.bitmap?.dispose();
     vid.destroy();
     vid = null; // cuz it doesnt happen instantly and i need it for update  - Nex
     FlxG.cameras.remove(cutsceneCamera, true);
 
     if (!StringTools.contains(vidName, "end-cutscene")) {
-        for (i => cam in FlxG.cameras.list)
-            cam.visible = oldVisible[i] ?? true;
+        for (cam in oldVisible)
+            cam.visible = true;
     }
     
     if (callback != null) callback();

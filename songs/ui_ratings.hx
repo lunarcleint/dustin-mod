@@ -8,6 +8,8 @@ public var ratingColor:FlxColor = null;
 public var ratingsGroup:RotatingSpriteGroup;
 
 function postCreate() {
+    // I can see how it makes sense but the text could start clipping in the ratings
+    comboBreaks = false;
     if (timeTxt != null) {
         ratingColor = fullColor;
         timeTxt.color = fullColor;
@@ -21,8 +23,7 @@ function postCreate() {
         txt.borderSize = 2;
         txt.borderColor = 0xFF000000;
 
-        txt.textField.antiAliasType = 0/*ADVANCED*/;
-        txt.textField.sharpness = 400/*MAX ON OPENFL*/;
+        textCrispy(txt);
 
         hudElements.push(txt);
     }
@@ -61,6 +62,27 @@ function onPlayerHit(_) {
     _.healthGain *= 0.75;
     _.showRating = false;
 
+    if (_.note.extra["hurtNote"] != null) {
+        _.countScore = false;
+        _.preventStrumGlow();
+        // I would count as a miss, but sometimes it counts it even if you hit a good note
+        if (!(_.misses = !validHurtNoteHit(_.note))) {
+            _.countScore = false;
+            _.countAsCombo = false;
+            _.forceAnim = false;
+        } else {
+            _.score = -10;
+            _.healthGain = -0.04;
+            _.animSuffix = "miss";
+            _.forceAnim = true;
+            _.note.strumLine.vocals.volume = 0;
+            vocals.volume = 0;
+            _.preventVocalsUnmute();
+            FlxG.sound.play(Paths.sound(FlxG.random.getObject(Flags.DEFAULT_MISS_SOUNDS)), FlxG.random.float(0.1, 0.2));
+            trace('oh shittings');
+        }
+        return;
+    }
     var noteDiff = Math.abs(Conductor.songPosition - _.note.strumTime);
     if (noteDiff > hitWindow * 0.5)
         _.rating = 'shit';
@@ -138,7 +160,7 @@ function createRatingSprite():FlxSprite {
     comboSprite.animation.addByPrefix("sick", "sick", 1, true);
     comboSprite.animation.play("good", true);
 
-    comboSprite.scrollFactor.set();
+    //comboSprite.scrollFactor.set();
 
     comboSprite.scale.set(ratingScale, ratingScale);
     comboSprite.updateHitbox();

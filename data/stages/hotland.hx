@@ -35,14 +35,11 @@ function create() {
     embers.time = 0; embers.speed = 1;
     embers.strength = 1; embers.zoom = 1;
     stage.getSprite("embershit").flipY = true;
-    if (Options.gameplayShaders && FlxG.save.data.particles) stage.getSprite("embershit").shader = embers;
-    if (Options.gameplayShaders && FlxG.save.data.fire) stage.getSprite("lavaPT2").shader = heat;
 
     embers2 = new CustomShader("firething");
     embers2.LAYERS_COUNT = 7; embers2.ALPHA_MOD = .2;
     embers2.SIZE_MOD = 1.4;
     embers2.iTime = 0; embers2.res = [FlxG.width, FlxG.height];
-    if (Options.gameplayShaders && FlxG.save.data.particles) stage.getSprite("embershit2").shader = embers2;
 
     fogShader = new CustomShader("fog");
     fogShader.cameraZoom = FlxG.camera.zoom;
@@ -58,25 +55,42 @@ function create() {
 
     chromWarp = new CustomShader("chromaticWarp");
     chromWarp.distortion = 0;
-    if (Options.gameplayShaders && FlxG.save.data.chromwarp) camGame.addShader(chromWarp);
 
     water = new CustomShader("waterDistortion");
     water.strength = .0;
-    if (Options.gameplayShaders && FlxG.save.data.water) camGame.addShader(water);
 
     glitching = new CustomShader("glitching2");
     glitching.time = 0; glitching.glitchAmount = 0;
 
-    if (Options.gameplayShaders && FlxG.save.data.static) FlxG.camera.addShader(oldstatic);
-    if (Options.gameplayShaders && FlxG.save.data.fire) FlxG.camera.addShader(heat);
-
-    if (Options.gameplayShaders && FlxG.save.data.static) camCharacters.addShader(oldstatic);
-    if (Options.gameplayShaders && FlxG.save.data.fire) camCharacters.addShader(heat);
-    if (Options.gameplayShaders && FlxG.save.data.fog) camCharacters.addShader(fogShader);
-
     flames = new CustomShader("roaring_flame"); // flame on!!!! -lunar
     flames.time = 0; flames.intensitiy = 0; flames.zoom = 1;
-    if (Options.gameplayShaders && FlxG.save.data.glitch) stage.getSprite("rflames").shader = flames;
+
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.particles) {
+            stage.getSprite("embershit").shader = embers;
+            stage.getSprite("embershit2").shader = embers2;
+        }
+
+        if (FlxG.save.data.fire) {
+            stage.getSprite("lavaPT2").shader = heat;
+            FlxG.camera.addShader(heat);
+            camCharacters.addShader(heat);
+        }
+
+        if (FlxG.save.data.chromwarp) camGame.addShader(chromWarp);
+
+        if (FlxG.save.data.water) camGame.addShader(water);
+
+        if (FlxG.save.data.static) {
+            FlxG.camera.addShader(oldstatic);
+            camCharacters.addShader(oldstatic);
+        }
+
+        if (FlxG.save.data.fog) camCharacters.addShader(fogShader);
+
+        if (FlxG.save.data.glitch) stage.getSprite("rflames").shader = flames;
+    }
+
     stage.getSprite("rflames").flipY = true;
 
     stage.stageSprites["CORE_IMPACT1"].cameras = [camCharacters];
@@ -92,8 +106,10 @@ function postCreate() {
     sansShadow?.playAnim(_lastSANSanim = dad.getAnimName(), true, "DANCE");
     bfShadow?.playAnim(_lastBFanim = boyfriend.getAnimName(), true, "DANCE");
 
-    if (Options.gameplayShaders && FlxG.save.data.bloom) camCharacters.addShader(bloom);
-    if (Options.gameplayShaders && FlxG.save.data.saturation) camCharacters.addShader(contrast);
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.bloom) camCharacters.addShader(bloom);
+        if (FlxG.save.data.saturation) camCharacters.addShader(contrast);
+    }
 }
 
 function onDadHit(event) {
@@ -135,10 +151,6 @@ function update(elapsed:Float) {
     if(_lastSANSanim != anim && (_lastSANSanim = anim) == "idle") sansShadow?.playAnim("idle", true, "DANCE");
     if(_lastBFanim != (anim = boyfriend.getAnimName()) && (_lastBFanim = anim) == "idle") bfShadow?.playAnim("idle", true, "DANCE");
 
-    camCharacters.scroll = FlxG.camera.scroll;
-    camCharacters.zoom = FlxG.camera.zoom;
-    camCharacters.angle = FlxG.camera.angle;
-
     for (strum in strumLines)
         for (char in strum.characters) {
             if (char.curCharacter != "mtt") char.cameras = [camCharacters];
@@ -155,6 +167,8 @@ function update(elapsed:Float) {
 
     mttAnimationFrameName = mtt.animation.frameName;
 }
+
+function postUpdate(elapsed) DustinUtil.copyCamera(FlxG.camera, camCharacters);
 
 public var mttCameraNormalizer:Float = 0;
 function onCameraMove(_) {

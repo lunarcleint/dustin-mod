@@ -2,23 +2,68 @@
 import flixel.effects.particles.FlxTypedEmitter;
 import flixel.effects.particles.FlxParticle;
 import flixel.effects.particles.FlxEmitterMode;
-import flixel.util.FlxSpriteUtil;
 
-var gfShaderSprite;
-var blackOverlay;
-var beam;
+import flixel.util.FlxSpriteUtil;
+import flixel.util.FlxSpriteUtil.LabelValuePair;
+
+import flixel.math.FlxVelocity;
+import flixel.util.FlxStringUtil;
+import flixel.util.IFlxDestroyable;
+
 var maxTimeTween:FlxTween;
-var heat:CustomShader = null;
-var heat2:CustomShader = null;
+public var snow:CustomShader;
+public var heat:CustomShader = null;
+public var heat2:CustomShader = null;
+
+public var waterParticle:FlxSprite;
+public var backEmitter:ParticleEmitter;
+public var frontEmitter:ParticleEmitter;
 
 function create() {
     heat2 = new CustomShader("waterDistortion");
     heat = new CustomShader("waterDistortion");
-    if (Options.gameplayShaders && FlxG.save.data.water) FlxG.camera.addShader(heat2);
-    if (Options.gameplayShaders && FlxG.save.data.water) camHUD.addShader(heat);
+    if (Options.gameplayShaders && FlxG.save.data.water) {
+        FlxG.camera.addShader(heat2);
+        camHUD.addShader(heat2);
+    }
     heat.strength = 0;
     heat2.strength = 0;
 
+    
+    snow = importScript("data/scripts/cornered-shader");
+    snow.set("initIndex", members.length);
+    snow.set("isOn", false);
+
+    waterParticle = new FlxSprite().loadGraphic(Paths.image("particle_cornered"));
+    waterParticle.blend = 0;
+    waterParticle.antialiasing = Options.antialiasing;
+
+    backEmitter = new ParticleEmitter(waterParticle);
+    backEmitter.scrollFactor.set(0.8, 0.8);
+    backEmitter.scale = 2;
+
+    backEmitter.addSpawnPoint(-600, 325, 300);
+    backEmitter.addSpawnPoint(-600, 680, 300);
+    backEmitter.addSpawnPoint(90, 700, 350);
+    backEmitter.addSpawnPoint(1100, 550, 250);
+    backEmitter.addSpawnPoint(1200, 660, 400);
+    backEmitter.addSpawnPoint(760, 440, 250);
+
+    insert(members.indexOf(stage.stageSprites["wall_left"]), backEmitter);
+
+
+    //FRONT PARTICLES
+
+    frontEmitter = new ParticleEmitter(waterParticle);
+    frontEmitter.scrollFactor.set(1.05, 1.05);
+    frontEmitter.scale = 2.5;
+    frontEmitter.alpha = 0.8;
+    frontEmitter.duration = 2;
+    frontEmitter.maxLimit = 15;
+
+    frontEmitter.addSpawnPoint(-500, 1200, 2500);
+
+    add(frontEmitter);
     /*
     spawnWaterEmitter(-600, 325, 300);
     spawnWaterEmitter(-600, 680, 300);
@@ -29,228 +74,19 @@ function create() {
     */
 }
 
-function postCreate() {
-    blackOverlay = new FlxSprite();
-    blackOverlay.makeGraphic(3000, 3000, FlxColor.BLACK);
-    blackOverlay.scrollFactor.set(1, 1);
-    blackOverlay.screenCenter();
-    blackOverlay.alpha = 0;
-    add(blackOverlay);
-
-    beam = new Character(gf.x, gf.y, "LightBeameye", stage.isCharFlipped("LightBeameye", false));
-    beam.visible = false;
-    beam.x = gf.x;
-    beam.y = gf.y;
-    add(beam);
-
-    beam.x += 600;
-    beam.y += -225;
-
-    gfShaderSprite = new Character(gf.x, gf.y, "undyne_hurt_white", stage.isCharFlipped("undyne_hurt_white", false));
-    gfShaderSprite.alpha = 0;
-    gfShaderSprite.x = gf.x;
-    gfShaderSprite.y = gf.y;
-    add(gfShaderSprite);
-
-    customLengthOverride = 199000;
-}
-
 var tottalTimer:Float = FlxG.random.float(50, 300);
 
 function update(elapsed:Float) {
+    //trace(FlxG.camera.followLerp * 1000);
     heat?.time = (tottalTimer += elapsed);
     heat2?.time = (tottalTimer += elapsed);
-    if (beam.visible) {
-        switch (gf.animation.curAnim.name) {
-            case "idle":
-                beam.x = gf.x;
-                beam.y = gf.y;
-
-                beam.x += 600;
-                beam.y += -225;
-            case "singUP":
-                beam.x = gf.x;
-                beam.y = gf.y;
-                
-                beam.x += 600;
-                beam.y += -370;
-            case "singDOWN":
-                beam.x = gf.x;
-                beam.y = gf.y;
-                
-                beam.x += 710;
-                beam.y += -140;
-            case "singLEFT":
-                beam.x = gf.x;
-                beam.y = gf.y;
-                
-                beam.x += 450;
-                beam.y += -235;
-            case "singRIGHT":
-                beam.x = gf.x;
-                beam.y = gf.y;
-                
-                beam.x += 730;
-                beam.y += -210;
-            default:
-                beam.x = gf.x;
-                beam.y = gf.y;
-
-                beam.x += 600;
-                beam.y += -225;
-        }
-    }
-}
-
-function stepHit(step:Int) {
-    switch (step) {
-        case 740:
-            FlxTween.tween(bg, {alpha: 0}, 2, {ease: FlxEase.quadOut});
-            FlxTween.tween(bg_front, {alpha: 0}, 2, {ease: FlxEase.quadOut});
-            FlxTween.tween(wall_left, {alpha: 0}, 2, {ease: FlxEase.quadOut});
-            FlxTween.tween(wall_right, {alpha: 0}, 2, {ease: FlxEase.quadOut});
-            FlxTween.tween(bridge, {alpha: 0}, 3, {ease: FlxEase.quadOut});
-            FlxTween.tween(shards, {alpha: 0}, 3, {ease: FlxEase.quadOut});
-            FlxTween.tween(gf, {alpha: 0}, 3, {ease: FlxEase.quadOut});
-            FlxTween.tween(dad, {alpha: 0}, 3, {ease: FlxEase.quadOut});
-
-            FlxTween.tween(cracks, {alpha: 0}, 3, {ease: FlxEase.quadOut});
-            FlxTween.tween(bones, {alpha: 0}, 3, {ease: FlxEase.quadOut});
-        case 761:
-            heat.strength = 0.2;
-            heat2.strength = 0.3;
-            gf.alpha = 1;
-            gf.visible = false;
-
-            dad.alpha = 0;
-
-            for (strum in cpuStrums.members)
-                if (strum != null) strum.alpha = 0;
-
-            FlxTween.tween(bg, {alpha: 1}, 4.5, {ease: FlxEase.quadOut});
-            FlxTween.tween(bg_front, {alpha: 1}, 4.5, {ease: FlxEase.quadOut});
-            FlxTween.tween(wall_left, {alpha: 1}, 4.5, {ease: FlxEase.quadOut});
-            FlxTween.tween(wall_right, {alpha: 1}, 4.5, {ease: FlxEase.quadOut});
-            FlxTween.tween(bridge, {alpha: 1}, 3.5, {ease: FlxEase.quadOut});
-            FlxTween.tween(shards, {alpha: 1}, 3.5, {ease: FlxEase.quadOut});
-            FlxTween.tween(cracks, {alpha: 1}, 3.5, {ease: FlxEase.quadOut});
-            FlxTween.tween(bones, {alpha: 1}, 3.5, {ease: FlxEase.quadOut});
-
-        case 762:
-            dad.alpha = 0;
-            FlxTween.tween(dad, {alpha: 1}, 3, {ease: FlxEase.quadOut});
-
-        case 787:
-            // Tween paps sturms to 0.3 alpha
-            for (strum in cpuStrums.members)
-                if (strum != null)
-                    FlxTween.tween(strum, {alpha: 0.3}, 0.75, {ease: FlxEase.sineInOut});
-
-        case 1095:
-            FlxTween.tween(dad, {alpha: 0}, 1.5, {ease: FlxEase.quadOut});
-
-        case 1107:
-            dad.alpha = 1;
-            gf.alpha = 1;
-            heat.strength = 0;
-            heat2.strength = 0;
-            for (strum in cpuStrums.members)
-                if (strum != null) strum.alpha = 1;
-            gf.visible = true;
-
-        case 1292 | 2154:
-            stage.stageSprites["ATTACK"].alpha = 1;
-            stage.stageSprites["ATTACK"].playAnim("appear");
-
-        case 1304 | 2162:
-            stage.stageSprites["ATTACK"].playAnim("press",true);
-
-        case 1526:
-            FlxTween.tween(gfShaderSprite, { alpha: 1 }, 1.5);
-            FlxTween.tween(blackOverlay, { alpha: 1 }, 1.5);
-            FlxG.camera.shake(0.002, 0.3);
-
-        case 1530:
-            FlxG.camera.shake(0.004, 0.3);
-
-        case 1533:
-            FlxG.camera.shake(0.006, 0.4);
-
-        case 1536:
-            FlxG.camera.shake(0.008, 0.4);
-
-        case 1539:
-            FlxG.camera.shake(0.01, 0.3);
-
-        case 1541:
-            FlxG.camera.shake(0.015, 0.3);
-
-        case 1543:
-            FlxG.camera.shake(0.02, 0.5);
-            beam.visible = true;
-            gfShaderSprite.visible = false;
-            blackOverlay.visible = false;
-
-            cracks.alpha = 0;
-            bones.alpha = 0;
-
-            // Tween the max song length from 199000ms to 307000ms over 3 seconds
-            if (maxTimeTween != null) maxTimeTween.cancel();
-
-            var duration:Float = 3.0;
-            var startLength:Float = customLengthOverride;
-            var endLength:Float = 307000;
-
-            maxTimeTween = FlxTween.num(startLength, endLength, duration, {ease: FlxEase.quadOut}, function(val:Float) {
-                customLengthOverride = val;
-            }, function() {
-                customLengthOverride = endLength;
-            });
-
-        case 2183:
-            beam.visible = false;
-
-
-        case 1295:
-                FlxG.camera.shake(0.015, 0.4);
-
-                stage.stageSprites["BLASTER_IMPACT1"].alpha = 1;
-                new FlxTimer().start(0.2, () -> {
-                    stage.stageSprites["BLASTER_IMPACT1"].alpha = 0;
-                    stage.stageSprites["BLASTER_IMPACT2"].alpha = 1;
-
-                    new FlxTimer().start(0.1, () -> {
-                        stage.stageSprites["BLASTER_IMPACT2"].alpha = 0;
-                        stage.stageSprites["BLASTER_IMPACT3"].alpha = 1;
-
-                         new FlxTimer().start(0.1, () -> {
-                        stage.stageSprites["BLASTER_IMPACT3"].alpha = 0;
-                    });
-                    });
-                });
-
-        case 2157:
-                FlxG.camera.shake(0.02, 0.6);
-
-                stage.stageSprites["BLASTER_IMPACT4"].alpha = 1;
-                new FlxTimer().start(0.2, () -> {
-                    stage.stageSprites["BLASTER_IMPACT4"].alpha = 0;
-                    stage.stageSprites["BLASTER_IMPACT5"].alpha = 1;
-
-                    new FlxTimer().start(0.1, () -> {
-                        stage.stageSprites["BLASTER_IMPACT5"].alpha = 0;
-                        stage.stageSprites["BLASTER_IMPACT6"].alpha = 1;
-
-                         new FlxTimer().start(0.1, () -> {
-                        stage.stageSprites["BLASTER_IMPACT6"].alpha = 0;
-                    });
-                    });
-                });
-    }
+    bg_front.animation.pause();
 }
 
 // LUNAR PLS FIX THESE THEYRE MAKING THE RAM GO CRAZY:SOB:  - Nex
-function spawnWaterEmitter(ex:Float, ey:Float, ewidth:Float) {
+// don't worry I fixed it >:) - hig ig
+/*function spawnWaterEmitter(ex:Float, ey:Float, ewidth:Float) {
+    
     emitter = new FlxTypedEmitter(ex, ey);
     
     emitter.launchMode = FlxEmitterMode.SQUARE;
@@ -273,4 +109,142 @@ function spawnWaterEmitter(ex:Float, ey:Float, ewidth:Float) {
     insert(members.indexOf(stage.stageSprites["wall_left"]), emitter);
     //add(emitter);
     emitter.start(false, 0.08);
+}*/
+
+class ParticleEmitter extends FlxBasic {
+
+
+    private var _spawnTimer:Float = 0;
+
+    var _pool:Array<Dynamic> = [];
+
+    public var scale:Float = 1;
+    public var alpha:Float = 1;
+    public var scrollFactor:FlxPoint = FlxPoint.get(1,1);
+
+    public var dummy:FlxSprite;
+
+    public var spawnPoints:Array<ParticleSpawnPoint> = [];
+    public var particles:Array<ParticleData> = [];
+    public var maxLimit:Float = 40;
+
+    public var duration:Float = 0.5;
+    public var speed:Float = 1;
+
+    public function new(_dummy:FlxSprite) {
+        super();
+        if(_dummy != null)
+            dummy = _dummy;
+    }
+
+    public function addSpawnPoint(_x:Float, _y:Float, _width:Float) {
+        var spawnPoint = {
+            x: _x,
+            y: _y,
+            width: _width,
+            limit: maxLimit,
+            timer: 0,
+            particles: [],
+            _spawnEndTime: FlxG.random.float(0.8, 1.5),
+            toString: null
+        }
+
+        spawnPoint.toString = () -> {
+            return FlxStringUtil.getDebugString([
+                LabelValuePair.weak("x", spawnPoint.x),
+                LabelValuePair.weak("y", spawnPoint.y),
+                LabelValuePair.weak("width", spawnPoint.width),
+                LabelValuePair.weak("timer", spawnPoint.timer),
+                LabelValuePair.weak("particles", spawnPoint.particles)
+            ]);
+        }
+
+        spawnPoints.push(spawnPoint);
+	}
+
+    public var colors:Array<Int> = [0xFFA5ECFC, 0xFF408696];
+
+    public override function update(elapsed:Float) {
+        super.update(elapsed);
+
+        for(i => spawnPoint in spawnPoints) {
+            if(spawnPoint.timer > spawnPoint._spawnEndTime && spawnPoint.particles.length < maxLimit) {
+                var particle:Dynamic;
+                if(_pool[0] != null) {
+                    particle = _pool[0];
+                    particle.x = spawnPoint.x + FlxG.random.float(0, spawnPoint.width);
+                    particle.y = spawnPoint.y;
+                    particle.alpha = 0;
+                    particle.timer = 0;
+                    _pool.remove(_pool[0]);
+                } else {
+                    particle = {
+                        color: CoolUtil.lerpColor(colors[0], colors[1], FlxG.random.float(0, 1)),
+                        x: spawnPoint.x + FlxG.random.float(0, spawnPoint.width),
+                        y: spawnPoint.y,
+                        size: [3, 4, 8][FlxG.random.int(0,2)],
+                        velocity: FlxG.random.float(-150, -250),
+                        alpha: 0,
+                        timer: 0,
+
+                        _endLimit: FlxG.random.float(duration * .25, duration),
+                    }
+                }
+
+                FlxTween.num(0, 1, 0.4 / speed, {}, (num) -> {
+                    if(particle != null)
+                        particle.alpha = num;
+                });
+
+                particles.push(particle);
+                spawnPoint.particles.push(particle);
+                spawnPoint._spawnEndTime = FlxG.random.float(0.25, 0.4);
+                spawnPoint.timer = 0;
+            } else spawnPoint.timer += elapsed * speed;
+
+            for(particle in spawnPoint.particles) {
+                var velocityDelta = 0.5 * (FlxVelocity.computeVelocity(particle.velocity, 0, 0, 0, elapsed * speed) - particle.velocity);
+                particle.velocity += velocityDelta;
+                var delta = (particle.velocity) * (elapsed * speed);
+                particle.velocity += velocityDelta;
+                particle.y += delta;
+
+                if(particle.timer > particle._endLimit && particle.alpha == 1) {
+                    FlxTween.cancelTweensOf(particle);
+                    FlxTween.num(particle.alpha, 0, 1 / speed,
+                    {
+                        onComplete: (_) -> {
+                            particles.remove(particle);
+                            spawnPoint.particles.remove(particle);
+                            _pool.push(particle);
+                        }
+                    }, (num) -> {
+                        if(particle != null)
+                            particle.alpha = num;
+                    });
+                } else particle.timer += elapsed;
+            }
+        }
+    }
+
+    public override function draw() {
+        for(particle in particles) {
+            dummy.setGraphicSize(particle.size * scale, particle.size * scale);
+            dummy.updateHitbox();
+            dummy.setPosition(particle.x, particle.y);
+            dummy.scrollFactor = scrollFactor;
+            dummy.alpha = particle.alpha * alpha;
+            dummy.color = particle.color;
+            dummy.draw();
+        }
+        dummy.scale.set(0, 0);
+        dummy.alpha = 0;
+    }
+
+    public override function destroy() {
+        super.destroy();
+
+        alpha = null;
+        velocity = null;
+    }
 }

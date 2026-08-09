@@ -22,23 +22,31 @@ var isFloating2:Bool = false;
 function create() {
     warp = new CustomShader("warp");
     warp.distortion = 0.5;
-    if (Options.gameplayShaders && FlxG.save.data.warp) FlxG.camera.addShader(warp);
 
     heathud = new CustomShader("heatwave");
     heathud.time = 0; heathud.speed = 0.7; 
     heathud.even = true;
-    if (Options.gameplayShaders && FlxG.save.data.fire) camHUD.addShader(heathud);
-    if (Options.gameplayShaders && FlxG.save.data.fire) FlxG.camera.addShader(heathud);
 
     impact = new CustomShader("impact_frames");
     impact.threshold = .3;
 
-    if (Options.gameplayShaders && FlxG.save.data.impact) FlxG.camera.addShader(impact);
-
     tape_noise = new CustomShader("tapenoise");
     tape_noise.res = [FlxG.width, FlxG.height];
     tape_noise.time = 0; tape_noise.strength = 0;
-    if (Options.gameplayShaders && FlxG.save.data.static) FlxG.camera.addShader(tape_noise);
+
+    // adding shaders
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.warp) FlxG.camera.addShader(warp);
+        if (FlxG.save.data.fire) {
+            camHUD.addShader(heathud);
+            FlxG.camera.addShader(heathud);
+        }
+        if (FlxG.save.data.impact)
+            FlxG.camera.addShader(impact);
+
+        if (FlxG.save.data.static)
+            FlxG.camera.addShader(tape_noise);
+    }
 
     stage.getSprite("fondo").visible = false;
     stage.getSprite("pilares").visible = false;

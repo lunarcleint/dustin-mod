@@ -1,1 +1,13 @@
-<!DOCTYPE codename-engine-character><character x="-400" y="350" sprite="the_uprising/bf_uprising" flipX="true" isPlayer="true" color="#F28F3E"><anim name="idle" anim="idle"/><anim name="singLEFT" anim="left0" y="3"/><anim name="singDOWN" anim="down0" y="-5"/><anim name="singUP" anim="up0"/><anim name="singRIGHT" anim="right0"/><anim name="singLEFTmiss" anim="lmiss" x="2"/><anim name="singDOWNmiss" anim="dmiss"/><anim name="singUPmiss" anim="umiss"/><anim name="singRIGHTmiss" anim="rmiss"/><anim name="what" anim="peroné"/></character>
+<!DOCTYPE codename-engine-character>
+<character x="-640" y="-75" sprite="the_uprising/bf_uprising" camx="-770" camy="50" isPlayer="true" icon="bf_uprising" color="#F28F3E">
+	<anim name="idle" anim="idle"/>
+	<anim name="singLEFT" anim="right0"/>
+	<anim name="singDOWN" anim="down0" y="-5"/>
+	<anim name="singUP" anim="up0"/>
+	<anim name="singRIGHT" anim="left0"/>
+	<anim name="singLEFTmiss" anim="rmiss"/>
+	<anim name="singDOWNmiss" anim="dmiss" y="-5"/>
+	<anim name="singUPmiss" anim="umiss"/>
+	<anim name="singRIGHTmiss" anim="lmiss"/>
+	<anim name="what" anim="peroné"/>
+</character>

@@ -40,11 +40,9 @@ function create() {
 
     chromWarp = new CustomShader("chromaticWarp");
     chromWarp.distortion = 0;
-    if (Options.gameplayShaders && FlxG.save.data.chromwarp) camGame.addShader(chromWarp);
 
     water = new CustomShader("waterDistortion");
     water.strength = .0;
-    if (Options.gameplayShaders && FlxG.save.data.water) camGame.addShader(water);
 
     impact = new CustomShader("impact_frames");
     impact.threshold = -1;
@@ -53,12 +51,21 @@ function create() {
     glitching = new CustomShader("glitching2");
     glitching.time = 0; glitching.glitchAmount = 0;
 
-    if (Options.gameplayShaders) camCharacters.addShader(impact);
-    if (Options.gameplayShaders && FlxG.save.data.glitch) camCharacters.addShader(glitching);
-    if (Options.gameplayShaders && FlxG.save.data.bloom) camCharacters.addShader(bloom_new);
-    if (Options.gameplayShaders && FlxG.save.data.saturation) camCharacters.addShader(saturation);
-    if (Options.gameplayShaders && FlxG.save.data.bloom) camCharacters.addShader(bloom);
-    if (Options.gameplayShaders && FlxG.save.data.fog) camCharacters.addShader(fogShader);
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.water) camGame.addShader(water);
+        if (FlxG.save.data.fog) camCharacters.addShader(fogShader);
+        if (FlxG.save.data.impact) camCharacters.addShader(impact);
+        if (FlxG.save.data.glitch) camCharacters.addShader(glitching);
+        if (FlxG.save.data.chromwarp) camGame.addShader(chromWarp);
+        
+        if (FlxG.save.data.bloom) {
+            camCharacters.addShader(bloom_new);
+            camCharacters.addShader(bloom);
+        }
+
+        if (FlxG.save.data.saturation) camCharacters.addShader(saturation);
+
+    }
 
     for (cam in [camGame, camHUD, camHUD2]) FlxG.cameras.remove(cam, false);
     for (cam in [camGame, camCharacters, camHUD, camHUD2]) {cam.bgColor = 0x00000000; FlxG.cameras.add(cam, cam == camGame);}
@@ -69,15 +76,19 @@ function create() {
 function onCountdown(event) event.sprite?.cameras = [camCharacters];
 
 function postCreate() {
-    if (Options.gameplayShaders && FlxG.save.data.particles) camGame.addShader(snowShader);
-    if (Options.gameplayShaders && FlxG.save.data.particles) camCharacters.addShader(snowShader2);
+    if (Options.gameplayShaders) {
+        screenVignette.transperency = true;
 
-    if (Options.gameplayShaders && FlxG.save.data.water) camHUD.addShader(water);
+        camGame.removeShader(screenVignette);
+        camHUD2.addShader(screenVignette);
+    
+        if (FlxG.save.data.particles) {
+            camGame.addShader(snowShader);
+            camCharacters.addShader(snowShader2);
+        }
 
-    screenVignette.transperency = true;
-
-    camGame.removeShader(screenVignette);
-    if (Options.gameplayShaders) camHUD2.addShader(screenVignette);
+        if (FlxG.save.data.water) camHUD.addShader(water);
+    }
 
     snowShader.snowMeltRect = [-700, 460, 1500, 100]; 
     snowShader2.snowMeltRect = [-700, 460, 1500, 100]; 
@@ -93,14 +104,12 @@ function update(elapsed:Float) {
     fogShader.cameraZoom = FlxG.camera.zoom;
     fogShader.cameraPosition = [FlxG.camera.scroll.x, FlxG.camera.scroll.y];
 
-    camCharacters.scroll = FlxG.camera.scroll;
-    camCharacters.zoom = FlxG.camera.zoom;
-    camCharacters.angle = FlxG.camera.angle;
-
     for (strum in strumLines)
         for (char in strum.characters)
             char.cameras = [camCharacters];
 }
+
+function postUpdate() DustinUtil.copyCamera(FlxG.camera, camCharacters);
 
 function onStageXMLParsed(actualEvent) {
     // So it wont take ram if not needed  - Nex

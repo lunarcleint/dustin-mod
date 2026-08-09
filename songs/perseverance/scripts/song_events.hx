@@ -1,4 +1,4 @@
-//
+// NEW
 import flixel.effects.FlxFlicker;
 
 var flickerSprite:FunkinSprite;
@@ -12,28 +12,31 @@ var blackOverlayHUD:FlxSprite;
 var normalStrumPoses:Array<Array<Array<Int>>> = [];
 var arrowSine:Bool = false;
 function postCreate() {
-    blackwhite = new CustomShader("blackwhite");
-    blackwhite.grayness = 1;
-    if (Options.gameplayShaders) 
+    if (Options.gameplayShaders) {
+        blackwhite = new CustomShader("blackwhite");
+        blackwhite.grayness = 1;
         for (cam in [FlxG.camera, camHUD, camCharacters, camForeground]) cam.addShader(blackwhite);
 
-    oldstatic = new CustomShader("static");
-    oldstatic.time = 0; oldstatic.strength = 1.2;
-    if (Options.gameplayShaders && FlxG.save.data.static) 
-        for (cam in [FlxG.camera, camHUD, camCharacters, camForeground]) cam.addShader(oldstatic);
+        oldstatic = new CustomShader("static");
+        oldstatic.time = 0; oldstatic.strength = 1.2;
+        if (FlxG.save.data.static) 
+            for (cam in [FlxG.camera, camHUD, camCharacters, camForeground]) cam.addShader(oldstatic);
 
-    pixel = new CustomShader("pixel");
-    pixel.blockSize = 1.0;
-    pixel.res = [FlxG.width, FlxG.height];
+        pixel = new CustomShader("pixel");
+        pixel.blockSize = 5.0;
+        pixel.res = [FlxG.width, FlxG.height];
+    }
 
     flickerSprite = new FunkinSprite().makeSolid(FlxG.width, FlxG.height, 0xFF000000);
     flickerSprite.scrollFactor.set(0, 0);
     flickerSprite.zoomFactor = 0;
     flickerSprite.cameras = [camHUD];
     flickerSprite.alpha = 0.05;
-    add(flickerSprite);
 
-    FlxFlicker.flicker(flickerSprite, 9999999, 0.05);
+    if(!FlxG.save.data.antiFlash) {
+        add(flickerSprite);
+        FlxFlicker.flicker(flickerSprite, 9999999, 0.05);
+    }
 
     for (element in hudElements) element.alpha = 0;
     camMoveOffset = 15;
@@ -75,6 +78,7 @@ function onSongStart() {
 
 var time:Float = 0;
 function update(elapsed:Float) {
+
     time += elapsed;
     oldstatic?.time = time;
 
@@ -84,11 +88,11 @@ function update(elapsed:Float) {
             s.y = lerp(s.y, arrowSine ? normalStrumPoses[i][k][1] + (8*FlxMath.fastSin((time*3) + ((Conductor.stepCrochet / 1000) * (k*2) * 4))) : normalStrumPoses[i][k][1], .6);
         }
     }
+
 }
 
-public var cancelCamMove:Bool = false;
-function onCameraMove(camMoveEvent) {
-    if (cancelCamMove) camMoveEvent.cancel();
+function onSongEnd() {
+    arrowSine = false;
 }
 
 function stepHit(step:Int) {
@@ -127,7 +131,10 @@ function stepHit(step:Int) {
         case 544:
             FlxG.camera.shake(0.000001, 999999);
 			FlxTween.tween(FlxG.camera, {_fxShakeIntensity: 0.0009}, (Conductor.stepCrochet / 1000) * 100);
+        case 564:
+            FlxTween.num(0, 0.1, (Conductor.stepCrochet / 1000) * 50, {ease: FlxEase.sineIn}, (val:Float) -> {water.strength = val;});
         case 645:
+            FlxTween.num(0.1, 0, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.cubeOut}, (val:Float) -> {water.strength = val;});
             if(oldstatic != null) FlxTween.num(1.3, 0, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.quadOut}, (val:Float) -> {oldstatic.strength = val;});
             if(blackwhite != null) FlxTween.num(1, 0, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.quadOut}, (val:Float) -> {blackwhite.grayness = val;});
             if(blackwhite != null) FlxTween.num(1.3, 0, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.quadOut}, (val:Float) -> {blackwhite.grayness = val;});
@@ -146,10 +153,12 @@ function stepHit(step:Int) {
             screenVignette.transperency = true;
 
             camGame.removeShader(screenVignette);
-            if (Options.gameplayShaders) camForeground.addShader(screenVignette);
-
             camCharacters.removeShader(screenVignette2);
-            if (Options.gameplayShaders && FlxG.save.data.bloom) camCharacters.addShader(bloom);
+
+            if (Options.gameplayShaders) {
+                camForeground.addShader(screenVignette);
+                if (FlxG.save.data.bloom) camCharacters.addShader(bloom);
+            }
 
             FlxTween.num(1, 0, (Conductor.stepCrochet / 1000) * 8, {ease: FlxEase.quadOut}, (val:Float) -> {bloom_new.brightness = val;});
             FlxTween.num(.7, 0, (Conductor.stepCrochet / 1000) * 4, {ease: FlxEase.quadOut}, (val:Float) -> {chromWarp.distortion = val;});
@@ -185,7 +194,7 @@ function stepHit(step:Int) {
         
         case 1168:
             strumLines.members[0].notes.forEach((note:Note) -> {note.visible = false;});
-            if (pixel != null && FlxG.save.data.pixel) {
+            if (Options.gameplayShaders && pixel != null && FlxG.save.data.pixel) {
                 if (Options.gameplayShaders) 
                     for (cam in [FlxG.camera, camCharacters, camForeground]) cam.addShader(pixel);
 
@@ -193,7 +202,7 @@ function stepHit(step:Int) {
             }
 
             camAngleChars = false;
-            FlxTween.num(0, -120, (Conductor.stepCrochet / 1000) * 15, {ease: FlxEase.circIn}, (val:Float) -> {camGame.angle = val;});
+            FlxTween.tween(camGame, {angle: -120}, (Conductor.stepCrochet / 1000) * 15, {ease: FlxEase.circIn});
         case 1180: FlxG.camera.visible = camCharacters.visible = camForeground.visible = camHUD.visible = false;
         case 1182: FlxG.camera.visible = camCharacters.visible = camForeground.visible = camHUD.visible = true;
         case 1184:
@@ -211,14 +220,19 @@ function stepHit(step:Int) {
                 for (cam in [camCharacters, camForeground]) cam.removeShader(pixel);
             }}, (val:Float) -> {pixel.blockSize = val;});
 
+            FlxTween.cancelTweensOf(camGame);
             camGame.angle = 0; 
 
             camForeground.removeShader(screenVignette);
-            if (Options.gameplayShaders) camHUD2.addShader(screenVignette);
 
             camGame.removeShader(snowShader);
-            if (Options.gameplayShaders && FlxG.save.data.bloom) camGame.addShader(bloom_new);
-            if (Options.gameplayShaders && FlxG.save.data.bloom) camHUD.addShader(bloom_new);
+            if (Options.gameplayShaders) {
+                camHUD2.addShader(screenVignette);
+                if (FlxG.save.data.bloom) {
+                    camGame.addShader(bloom_new);
+                    camHUD.addShader(bloom_new);
+                }
+            }
             gradientShader.applyY = 9999999;
             fogShader.applyY = 9999999;
             snowShader2.pixely = true; snowShader2.LAYERS = 7;
@@ -267,10 +281,12 @@ function stepHit(step:Int) {
             for (name => sprite in stage.stageSprites)    
                 sprite.visible = name != "PILLARS";
 
-            if (Options.gameplayShaders) camForeground.addShader(screenVignette);
-            if (Options.gameplayShaders) camHUD2.removeShader(screenVignette);
+            if (Options.gameplayShaders) {
+                camForeground.addShader(screenVignette);
+                camHUD2.removeShader(screenVignette);
 
-            if (Options.gameplayShaders && FlxG.save.data.particles) camGame.addShader(snowShader);
+                if (FlxG.save.data.particles) camGame.addShader(snowShader);
+            }
             camGame.removeShader(bloom_new);
             camHUD.removeShader(bloom_new);
             gradientShader.applyY = 1520;
@@ -310,10 +326,11 @@ function stepHit(step:Int) {
             snowShader2.snowMelts = false;
 
             camForeground.removeShader(screenVignette);
-            if (Options.gameplayShaders) camHUD2.addShader(screenVignette);
-
             camCharacters.removeShader(snowShader2);
-            if (Options.gameplayShaders && FlxG.save.data.particles) camHUD.addShader(snowShader2);
+            if (Options.gameplayShaders) {
+                camHUD2.addShader(screenVignette);
+                if (FlxG.save.data.particles) camHUD.addShader(snowShader2);
+            }
         case 1935:
 
         case 1936 | 1952 | 1968 | 2064 | 2080 | 2096 :
@@ -322,11 +339,13 @@ function stepHit(step:Int) {
             FlxTween.num(1.3, .4, (Conductor.stepCrochet / 1000) * 8, {ease: FlxEase.quadOut}, (val:Float) -> {bloom_new.brightness = val;});
             FlxTween.num(32, 15, (Conductor.stepCrochet / 1000) * 8, {ease: FlxEase.quadOut}, (val:Float) -> {bloom_new.size = val;});
         case 2128:
-            if (Options.gameplayShaders) camForeground.addShader(screenVignette);
             camHUD2.removeShader(screenVignette);
-
-            if (Options.gameplayShaders) camCharacters.addShader(snowShader2);
             camHUD.removeShader(snowShader2);
+
+            if (Options.gameplayShaders) {
+                camForeground.addShader(screenVignette);
+                camCharacters.addShader(snowShader2);
+            }
 
             snowShader2.snowMelts = true;
 
@@ -383,6 +402,8 @@ function stepHit(step:Int) {
         case 2836:
             for (element in hudElements)
                 FlxTween.tween(element, {alpha: 0}, (Conductor.stepCrochet / 1000) * 16, {ease: FlxEase.quadOut});
+        case 2860:
+            arrowSine = false;
     }
 }
 
@@ -407,6 +428,7 @@ function epicimpact() {
     if (!Options.gameplayShaders) return;
     for (cam in FlxG.cameras.list) cam.visible = false;
     new FlxTimer().start(0.06, () -> {
+        safetyCam.alpha = 0.5;
         shaketime = .26; cancelCamMove = true; lerpCamZoom = false; gfAlpha = 0; 
 
         for (cam in FlxG.cameras.list) cam.visible = true;
@@ -423,6 +445,10 @@ function epicimpact() {
 
             executeEvent({name: "Bloom Effect", time: 0, params: [false, 1.3, 4, "linear", "In"]});
             executeEvent({name: "Bloom Effect", time: 0, params: [true, 1, 2, "quad", "Out"]});
+
+            safetyCam.alpha = 0;
+
+            FlxG.camera.fade(FlxColor.BLACK, (Conductor.stepCrochet / 1000) * 4, true, () -> {}, true);
 
             FlxTween.num(1, 0, ((Conductor.stepCrochet / 1000) * 6), {ease: FlxEase.cubeIn}, (val:Float) -> {glitching.glitchAmount = val;});
 

@@ -1,29 +1,28 @@
 {
+	"customValues": {
+		"customName": "psychOpath",
+		"titleCardSubtext": "* by David0414/pause(0.5)/\n* ft. George",
+		"credits": {
+			"CHART": "GOJIMANPLAYS",
+			"BACKGROUND": "NEF, MEIART",
+			"SPRITES": "HEV, MEIART",
+			"SONG": "DAVID0414, GEORGE"
+		},
+		"gameover": {
+			"isMonster": false,
+			"quote": "...heh",
+			"song": "psychopath",
+			"sound": "sans"
+		},
+		"stats": "* SANS 1 ATK 1 DEF\n* Wanted to try something new.\n* Just a shell from what it used to be."
+	},
+	"color": "#FFFFFF",
 	"opponentModeAllowed": false,
 	"difficulties": [
 		"hard"
 	],
 	"icon": "Icon",
 	"coopAllowed": false,
-	"name": "psychopath",
-	"color": "#FFFFFF",
-	"customValues": {
-		"customName": "psychOpath",
-		"titleCardSubtext": "* by David0414/pause(0.5)/\n* ft. George",
-		"credits": {
-			"SPRITES": "HEV, WILLART-MEI",
-			"BACKGROUND": "NEF, WILLART-MEI",
-			"CHART": "GOJIMANPLAYS",
-			"SONG": "DAVID0414, GEORGE"
-		},
-		"gameover": {
-			"quote": "...heh",
-			"isMonster": false,
-			"sound": "sans",
-			"song": "psychopath"
-		},
-		"stats": "* SANS 1 ATK 1 DEF\n* Wanted to try something new.\n* Just a shell from what it used to be."
-	},
 	"stepsPerBeat": 4,
 	"displayName": "Psychopath",
 	"needsVoices": true,

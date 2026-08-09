@@ -33,6 +33,7 @@ var changeCooldown:Float = 0;
 var changeCooldownTime:Float = 0.3;
 
 function create() {
+
     var raw = Assets.getText(Paths.json("config/charstuff"));
     aus = Json.parse(raw);
 
@@ -57,34 +58,34 @@ function create() {
     add(createDescBox());
     add(createNameBox());
 
-    var descLabel = new FlxText(230, 60, 500, "DESCRIPTION", 50, true);
+    var descLabel = textCrispy(new FlxText(230, 60, 500, "DESCRIPTION", 50, true));
     descLabel.setFormat(Paths.font("8bit-jve.ttf"), 50, FlxColor.WHITE, FlxTextAlign.LEFT);
     add(descLabel);
 
-    var authorsLabel = new FlxText(230, 480, 500, "AUTHORS", 50, true);
+    var authorsLabel = textCrispy(new FlxText(230, 480, 500, "AUTHORS", 50, true));
     authorsLabel.setFormat(Paths.font("8bit-jve.ttf"), 50, FlxColor.WHITE, FlxTextAlign.LEFT);
     add(authorsLabel);
 
-    descText = new FlxText(230, 130, 500, "", 25, true);
+    descText = textCrispy(new FlxText(230, 130, 500, "", 25, true));
     descText.setFormat(Paths.font("8bit-jve.ttf"),25,FlxColor.WHITE,FlxTextAlign.LEFT);
     descText.wordWrap = true;
     add(descText);
 
-    authorsText = new FlxText(230, 540, 500, "", 30, true);
+    authorsText = textCrispy(new FlxText(230, 540, 500, "", 30, true));
     authorsText.setFormat(Paths.font("8bit-jve.ttf"), 30, FlxColor.WHITE, FlxTextAlign.LEFT);
     authorsText.wordWrap = true;
     add(authorsText);
 
-    nameText = new FlxText(855, 70, 375, "", 50, true);
+    nameText = textCrispy(new FlxText(855, 70, 375, "", 50, true));
     nameText.setFormat(Paths.font("8bit-jve.ttf"),50,FlxColor.WHITE,FlxTextAlign.CENTER);
     nameText.wordWrap = true;
     add(nameText);
 
-    leftArrow = new FlxText(860, 70, 50, "<", 50, true);
+    leftArrow = textCrispy(new FlxText(860, 70, 50, "<", 50, true));
     leftArrow.setFormat(Paths.font("8bit-jve.ttf"), 50, FlxColor.WHITE, FlxTextAlign.CENTER);
     add(leftArrow);
 
-    rightArrow = new FlxText(1180, 70, 50, ">", 50, true);
+    rightArrow = textCrispy(new FlxText(1180, 70, 50, ">", 50, true));
     rightArrow.setFormat(Paths.font("8bit-jve.ttf"), 50, FlxColor.WHITE, FlxTextAlign.CENTER);
     add(rightArrow);
 
@@ -109,10 +110,8 @@ function createAuBox(x,y) {
     return b;
 }
 function createAuText(x,y,str,size) {
-    var t = new FlxText(x,y,140,str,size,true);
+    var t = textCrispy(new FlxText(x,y,140,str,size,true));
     t.setFormat(Paths.font("8bit-jve.ttf"),size,FlxColor.WHITE,FlxTextAlign.CENTER);
-    t.textField.antiAliasType = 0/*ADVANCED*/;
-	t.textField.sharpness = 400/*MAX ON OPENFL*/;
     add(t);
     return t;
 }

@@ -1,0 +1,127 @@
+{
+    "keys": [
+        {
+            "title": "Mirror Key",
+            "week": "dustswap",
+            "cost": 2000,
+            "dialogue": [
+                {"text": "THE KEY TO A DIFFERENT WORLD.", "face": "talk"},
+                {"text": "I HAVE DIFFERENT VESSELS WAITING.", "face": "focus"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        },
+        {
+            "title": "Wrath Key",
+            "week": "dustfell",
+            "cost": 1500,
+            "dialogue": [
+                {"text": "THE KEY TO THE DEEPEST LEVEL OF HELL.", "face": "talk"},
+                {"text": "ONLY PAIN AWAITS YOU THERE.", "face": "surprised"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        },
+        {
+            "title": "Guilty Key",
+            "week": "dustbelief",
+            "cost": 2000,
+            "dialogue": [
+                {"text": "A MISTAKE RESULTING IN A BRANCHING TIMELINE.", "face": "talk"},
+                {"text": "SOME THINGS CAN ONLY CHANGE FOR THE WORST.", "face": "focus"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        },
+        {
+            "title": "Virus Key",
+            "cost": 1500,
+            "week": "dustshift",
+            "dialogue": [
+                {"text": "AN INTERESTING OBJECT. IT SEEMS TO BREAK TIMELINES FROM WITHIN.", "face": "talk"},
+                {"text": "PERHAPS YOU MAY FIND ITS VESSEL FAMILIAR?", "face": "focus"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        }
+    ],
+
+    "cds": [
+        {
+            "title": "Broken CD",
+            "song": "inopia",
+            "cost": 700,
+            "dialogue": [
+                {"text": "IT COMES FROM A TIMELINE MULTIPLE YEARS IN THE FUTURE.", "face": "talk"},
+                {"text": "ITS STATE OF DISREPAIR DOES NOT MIRROR THAT OF ITS FUNCTIONALITY.", "face": "focus"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        },
+        {
+            "title": "Rad CD",
+            "song": "yolo",
+            "cost": 400,
+            "dialogue": [
+                {"text": "IT WAS IN THE MIDDLE OF THE MULTIVERSE.", "face": "talk"},
+                {"text": "STILL IN A PRETTY GOOD STATE.", "face": "focus"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        },
+        {
+            "title": "The CD",
+            "song": "genocides",
+            "cost": 0,
+            "dialogue": [
+                {"text": "PLEASE TAKE IT.", "face": "goofy"}
+            ],
+            "choices": ["Maybe", "Nah"],
+            "speed": 0.05
+        },
+        {
+            "title": "Artistic CD",
+            "song": "uncreate",
+            "cost": 400,
+            "dialogue": [
+                {"text": "ANOTHER PIECE OF MULTIVERSE HISTORY.", "face": "talk"},
+                {"text": "THE PAINT IS STILL FRESH.", "face": "focus"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        },
+        {
+            "title": "Psycho CD",
+            "song": "psychopath",
+            "cost": 700,
+            "dialogue": [
+                {"text": "SOME ENTITIES SAY THIS EVENT CAN NEVER HAPPEN.", "face": "focus"},
+                {"text": "BUT THE MULTIVERSE IS INFINITE\nAND HAS ENDLESS POSSIBILITIES", "face": "surprised"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        },
+        {
+            "title": "Shopping CD",
+            "song": "bargain",
+            "cost": 300,
+            "dialogue": [
+                {"text": "MY PERSONAL FAVORITE UNIVERSE", "face": "talk"},
+                {"text": "BRINGS BACK MEMORIES.", "face": "focus"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        },
+        {
+            "title": "Corrupted CD",
+            "song": "vindication",
+            "cost": 1000,
+            "dialogue": [
+                {"text": "THE HARDEST CD TO FIND.", "face": "talk"},
+                {"text": "THE RESULT OF AN ENTITY COMING OUT OF ITS OWN UNIVERSE TO OTHERS.", "face": "focus"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        },
+        {
+            "title": "[NULL OBJECT]",
+            "song": "lorem-ipsum",
+            "cost": 0,
+            "dialogue": [
+                {"text": "I WAS NOT ABLE TO READ ITS CONTENT.", "face": "focus"},
+                {"text": "DO NOT MIND THE PRICE, IT SEEMS CORRUPTED.", "face": "talk"},
+                {"text": "DO YOU WISH TO ACQUIRE THIS ITEM?", "face": "talk"}
+            ]
+        }
+    ]
+}

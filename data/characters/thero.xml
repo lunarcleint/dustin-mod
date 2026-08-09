@@ -1,1 +1,8 @@
-<!DOCTYPE codename-engine-character><character x="150" y="-320" sprite="vin/therocheeksclapping" camx="-200" camy="130" icon="legacy-sans" color="#9E9E9E" holdTime="6.1"><anim name="idle" anim="thero_idle" x="-93" y="-127" loop="true"/><anim name="singLEFT" anim="thero_left" x="-75" y="-108"/><anim name="singDOWN" anim="thero_down" x="321" y="-87"/><anim name="singUP" anim="thero_up" x="-243" y="-10"/><anim name="singRIGHT" anim="thero_right" x="-212" y="-115"/></character>
+<!DOCTYPE codename-engine-character>
+<character x="150" y="-320" sprite="vin/therocheeksclapping" camx="-200" camy="130" color="#000000" holdTime="6.1">
+	<anim name="idle" anim="thero_idle" x="-93" y="-127" loop="true"/>
+	<anim name="singLEFT" anim="thero_left" x="-75" y="-108"/>
+	<anim name="singDOWN" anim="thero_down" x="321" y="-87"/>
+	<anim name="singUP" anim="thero_up" x="-243" y="-10"/>
+	<anim name="singRIGHT" anim="thero_right" x="-212" y="-115"/>
+</character>

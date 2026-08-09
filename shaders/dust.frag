@@ -107,6 +107,7 @@ uniform int LAYERS;
 uniform float DEPTH;
 uniform float WIDTH;
 uniform float SPEED;
+uniform float OPACITY;
 
 const mat3 p = mat3(13.323122,23.5112,21.71123,21.1212,28.7312,11.9312,21.8112,14.7212,61.3934);
 
@@ -151,7 +152,7 @@ void main() {
 
     vec4 flixelColor = flixel_texture2D(bitmap, openfl_TextureCoordv.xy);
 	vec3 effect = vec3(acc)*.8*((.6+(coolNoise()*3.)));
-	flixelColor.rgb += (effect*(pixely?1.6:1.0)*BRIGHT)*(pow(float(flixelColor.rgb), 1.7)*.9)*.3;
+	flixelColor.rgb += (effect*(pixely?1.6:1.0)*(BRIGHT * OPACITY))*(pow(float(flixelColor.rgb), 1.7)*.9)*.3;
 
 	if (flixelColor.a == 0 && (effect.r > 0. || effect.g > 0. || effect.b > 0.))
 		flixelColor.a = brightness(effect);

@@ -2,7 +2,7 @@
   {
     "name": "Chezzar",
     "roles": "MAIN DIRECTOR - MAIN MUSICIAN - MAIN CODER - SPRITE ARTIST - CUTSCENE ARTIST - CUTSCENE OVERWORLD ANIMATOR",
-    "line": "* Hi I worked for 16 hours a day for 2 months on this, please play my next game 7 WHISPERS."
+    "line": "* Hi I worked for 16 hours a day for 2 months on this, please play my next game CLOCKSHINE."
   },
   {
     "name": "Mar Mar",
@@ -30,7 +30,7 @@
     "line": "* Through the 4 years, this mod grew drastically. Just like me, somewhere worse, somewhere greater, from all different perspectives.\nYet I'm still glad it has come to something. As the mod got the ending it deserved, we will all continue to grow. Thanks everyone for staying!"
   },
   {
-    "name": "Horror Spinn",
+    "name": "Yeezus (Horror Spinn)",
     "roles": "MAIN ARTIST - SPRITE ARTIST",
     "line": "* Turbo undertale super alpha smash bros project all stars hyper edition 21k18 battle royale at the olympic games arcade HD remix & knuckles go kart EX turbo banjo & kazooe. (i'm too burned out to think on something else to say)"
   },
@@ -38,6 +38,11 @@
     "name": "Lunarcleint",
     "roles": "MAIN CODER - CODENAME ENGINE",
     "line": "* Sorry for this mod running so bad I like shader. I spent like 11 hours straight coding till 4 am on a school night, then walked home the next day and did another 8 hour shift at dustin. WE ARE LOCKED IN!!!!"
+  },
+  {
+    "name": "HIGGAMEON",
+    "roles": "MAIN CODER",
+    "line": "* What is a job without a reason? What is a reason, without passion? What is a passion without money? Wait... money?? Actually, I don't like this quote anymore. Say hi to my pal Lunar on the left for me, thanks!"
   },
   {
     "name": "Samuel Pastel",
@@ -70,14 +75,24 @@
     "line": "* Came for the inopia, stayed for redscreen and you are. Play Asvertichaos, don't let this be my legacy."
   },
   {
-    "name": "Willart-Mei",
-    "roles": "SPRITE ARTIST - PIXEL ARTIST - BACKGROUND ARTIST - CHARTER - CUTSCENE ARTIST",
+    "name": "Meiart",
+    "roles": "SPRITE ARTIST - PIXEL ARTIST - BACKGROUND ARTIST - CHARTER - CUTSCENE ARTIST - MUSICIAN",
     "line": "* Now that the mod is done, I can finally return to my home (f is for funk)"
   },
   {
     "name": "Nex_isDumb",
-    "roles": "CODER - CODENAME ENGINE - GAMEBANANA HANDLER",
+    "roles": "CODER - CODENAME ENGINE - GAMEBANANA HANDLER - DROPSHADOW SCRIPT",
     "line": "* human... i remember you're CODENAME."
+  },
+  {
+    "name": "Ralty",
+    "roles": "CODER - CODENAME ENGINE",
+    "line": "* uhh hi"
+  },
+  {
+    "name": "HeroEyad",
+    "roles": "CODER - CODENAME ENGINE",
+    "line": "* Sail, for despair is drowning."
   },
   {
     "name": "Aika",
@@ -210,19 +225,24 @@
     "line": "* I genuinely loved working on this mod. I've changed and grown a lot since I first joined. While I voiced many characters, the most important character I did was Baby Bones. May he rip in fuck"
   },
   {
-    "name": "CheezSomething",
+    "name": "Ryce",
     "roles": "ANIMATOR",
     "line": "* Have you ever played FND with your life on the line."
   },
   {
     "name": "Audieun",
     "roles": "MUSICIAN",
-    "line": "* Check out Echo Flowers."
+    "line": "* Dustin' took me on at a really low point in my life. No one could've known it at the time, but the friends and acquaintances I've made since then have proven to me that I'm wanted at in place like this, high or low. I'm thankful.\n\n\bCheck out Echo Flowers!!!"
   },
   {
     "name": "George",
     "roles": "MUSICIAN",
     "line": "* peak mod with a lot of peak people, grateful to have gotten a chance to work with all of you guys"
+  },
+  {
+    "name": "NexusVGM",
+    "roles": "MUSICIAN",
+    "line": "* Like and sub"
   },
   {
     "name": "Zeroh",

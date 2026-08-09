@@ -1,0 +1,39 @@
+{
+    "dialogue": [
+        {"text": "(Well, there is a man here.)"},
+        {"text": "(He smiles at you.)"},
+        {"text": "(Greeting you as though he had been\nexpecting you to find this place.)"},
+        {"text": "(He offered you something.)"}
+    ],
+    "choices": ["Yes", "No"],
+
+    "yes": [
+        {"text": "(You received the Egg.)"},
+        {"text": "(He asks if you are proud of yourself.)"},
+        {"text": "(...)"},
+        {"text": "(He tells you that, in the end, everyone is drawn back to the place where they\nbelong.)"},
+        {"text": "(A place where they are most\ncomfortable.)"},
+        {"text": "(He asks why that is.)"},
+        {"text": "(Reminding you that this place once\nbrought you pain.)"},
+        {"text": "(...)"},
+        {"text": "(The man put his hand softly on your\nshoulder.)"},
+        {"text": "(He put his finger to his chest, smiled, and nodded his head.)"},
+        {"text": "(He tells you that sometimes the greatest\nmoments can only be achieved through pain.)"},
+        {"text": "(If that is what you seek, he will grant\nyour desire.)"},
+        {"text": "(He remarks that even that would not be\nenough.)"},
+        {"text": "(Whether it happens now,  tomorrow, or\nthe day after tomorrow...)"},
+        {"text": "(That day will inevitably come.)"},
+        {"text": "(Explaining that no matter how many\ntimes it is denied...)"},
+        {"text": "(It will always return to the place\nwhere it belongs.)"},
+        {"text": "(Where they belong.)"},
+        {"text": "(Where all of you belong.)"},
+        {"text": "(...)"}
+        
+    ],
+
+    "no": [
+        {"text": "(...)"},
+        {"text": "(You searched but...)"},
+        {"text": "(There wasn't a man there in the first\nplace.)"}
+    ]
+}

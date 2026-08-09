@@ -66,6 +66,7 @@ function flipBF() {
         boyfriend.flipX = false;
         boyfriend.x = boyfriendOGx;
         dustiniconP2.loadGraphicFromSprite(createHealthIcon("inopia-sans", false));
+        dustiniconP2.updateHitbox();
 
         if (Options.colorHealthBar && healthBarColors != null && dad.iconColor != null) {
             ogHealthColors[0] = healthBarColors[0] = dad.iconColor;
@@ -73,33 +74,12 @@ function flipBF() {
     }
     else {
         boyfriend.flipX = true;
-        boyfriend.x = boyfriendOGx - 250;
+        if (boyfriend.extra["flipOffset"] != null)
+        boyfriend.x = boyfriendOGx + boyfriend.extra["flipOffset"];
         dustiniconP2.loadGraphicFromSprite(createHealthIcon("inopia-paps", false));
+        dustiniconP2.updateHitbox();
 
         if (Options.colorHealthBar && healthBarColors != null && gf.iconColor != null) {
-            ogHealthColors[0] = healthBarColors[0] = gf.iconColor;
-        }
-    }
-}
-
-function flipBFMAD() {
-    if (isTweeningStrums) return;
-
-    if (boyfriend.flipX == true) {
-        boyfriend.flipX = false;
-        boyfriend.x = boyfriendOGx;
-        dustiniconP2.loadGraphicFromSprite(createHealthIcon("inopia-mad-sans", false));
-
-        if (Options.colorHealthBar && healthBarColors != null && dad.iconColor != null) {
-            ogHealthColors[0] = healthBarColors[0] = dad.iconColor;
-        }
-    }
-    else {
-        boyfriend.flipX = true;
-        boyfriend.x = boyfriendOGx - 250;
-        dustiniconP2.loadGraphicFromSprite(createHealthIcon("inopia-mad-paps", false));
-
-         if (Options.colorHealthBar && healthBarColors != null && gf.iconColor != null) {
             ogHealthColors[0] = healthBarColors[0] = gf.iconColor;
         }
     }
@@ -181,12 +161,8 @@ function stepHit(step:Int) {
         case 1008:
             gf.visible = true; 
 
-        case 1024, 1408, 1536, 1568, 1824:
+        case 1024, 1408, 1536, 1568, 1824, 1888:
             flipBF();
-            shiftStrums();
-
-        case 1888:
-            flipBFMAD();
             shiftStrums();
 
         case 1672:

@@ -32,10 +32,17 @@ function create() {
 
     backCam = new FlxCamera(0, 0, 1280, 720);
     backCam.bgColor = 0x00000000;
-    if (Options.gameplayShaders && FlxG.save.data.bloom) backCam.addShader(blooming);
-    if (Options.gameplayShaders && FlxG.save.data.water) backCam.addShader(water);
-    if (Options.gameplayShaders && FlxG.save.data.pixel) backCam.addShader(pixel);
-    if (Options.gameplayShaders && FlxG.save.data.static) backCam.addShader(tape_noise);
+
+    redShader = new CustomShader("rederShader");
+
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.bloom) backCam.addShader(blooming);
+        if (FlxG.save.data.water) backCam.addShader(water);
+        if (FlxG.save.data.pixel) backCam.addShader(pixel);
+        if (FlxG.save.data.static) backCam.addShader(tape_noise);
+
+        boyfriend.shader = redShader;
+    }
 
 
     FlxG.cameras.remove(camGame, false);
@@ -46,9 +53,7 @@ function create() {
     FlxG.cameras.add(camHUD2, false);
 
     BG.camera = backCam;
-
-    redShader = new CustomShader("rederShader");
-    if (Options.gameplayShaders) boyfriend.shader = redShader;
+    boyfriend.colorTransform.color = FlxColor.RED;
 }
 
 function postCreate() {
@@ -82,11 +87,15 @@ function stepHit(step:Int) {
         case 142:
             FlxG.camera.shake(0.01, 0.2);
             if (Options.gameplayShaders) boyfriend.shader = null;
-            boyfriend.color = 0xFF000000;
+            boyfriend.colorTransform.redOffset = 0;
+            boyfriend.colorTransform.blueOffset = 0;
+            boyfriend.colorTransform.greenOffset = 0;
+            boyfriend.color = FlxColor.BLACK;
             backCam.bgColor = 0xFFFF0000;
 
         case 392:
             if (Options.gameplayShaders) boyfriend.color = 0xFFFFFFFF;
+            else boyfriend.color = FlxColor.WHITE;
             BG.visible = true;
             FG.visible = true;
             dad.visible = true;
@@ -106,13 +115,29 @@ function stepHit(step:Int) {
             bgBeat = false;
             BG.visible = false;
             FG.visible = false;
-            if (Options.gameplayShaders) boyfriend.shader = redShader;
-            if (Options.gameplayShaders) dad.shader = redShader;
+            if (Options.gameplayShaders) {
+                boyfriend.shader = redShader;
+                dad.shader = redShader;
+            } else {
+                boyfriend.colorTransform.color = FlxColor.RED;
+                dad.colorTransform.color = FlxColor.RED;
+            }
             backCam.bgColor = 0xFF000000;
             blooming.size = 0;
             blooming.brightness = 1;
 
         case 1119:
+
+            dad.colorTransform.redOffset = 0;
+            dad.colorTransform.blueOffset = 0;
+            dad.colorTransform.greenOffset = 0;
+            dad.color = FlxColor.WHITE;
+
+            boyfriend.colorTransform.redOffset = 0;
+            boyfriend.colorTransform.blueOffset = 0;
+            boyfriend.colorTransform.greenOffset = 0;
+            boyfriend.color = FlxColor.WHITE;
+
             bg_psycho.visible = true;
             bg_psycho.alpha = 0.5;
             road_5.visible = true;
@@ -191,7 +216,7 @@ function stepHit(step:Int) {
             backCam.bgColor = 0xFFFF0000;
 
             bg_psycho.scale.set(6, 6);
-            bg_psycho.x = "-900";
+            bg_psycho.x = -900;
             bg_psycho.updateHitbox();
             dustiniconP2.visible = true;
 

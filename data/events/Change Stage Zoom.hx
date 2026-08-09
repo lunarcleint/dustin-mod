@@ -1,4 +1,6 @@
-// (Yeah i could probably code this better but i dont care -lunar)
+// (Yeah i could probably code this better but i dont care -lunar) (Yeah you could've * BURP -Higg)
+import funkin.editors.charter.Charter;
+
 var defaultZoomTween:FlxTween;
 var bfZoomTween:FlxTween;
 var dadZoomTween:FlxTween;
@@ -7,7 +9,7 @@ var gfZoomTween:FlxTween;
 function onEvent(eventEvent) {
     var params:Array = eventEvent.event.params;
     if (eventEvent.event.name == "Change Stage Zoom") {
-        if (params[4]) {
+        if (params[4] && !(PlayState.chartingMode && Charter.startHere && eventEvent.event.time < Charter.startTime)) {
             var flxease:String = params[7] + (params[7] == "linear" ? "" : params[8]);
 
             if (params[0]) {

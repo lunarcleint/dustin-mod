@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pico_pixel.png">
+	<!-- Made using Maru Aseprite JSON to XML converter -->
+	<SubTexture name="idle00000" x="0" y="0" width="117" height="86"/>
+	<SubTexture name="idle00001" x="117" y="0" width="117" height="86"/>
+	<SubTexture name="idle00002" x="234" y="0" width="117" height="86"/>
+	<SubTexture name="down00000" x="0" y="86" width="117" height="86"/>
+	<SubTexture name="down00001" x="117" y="86" width="117" height="86"/>
+	<SubTexture name="down00002" x="234" y="86" width="117" height="86"/>
+	<SubTexture name="left00000" x="0" y="172" width="117" height="86"/>
+	<SubTexture name="left00001" x="117" y="172" width="117" height="86"/>
+	<SubTexture name="left00002" x="234" y="172" width="117" height="86"/>
+	<SubTexture name="left00003" x="351" y="172" width="117" height="86"/>
+	<SubTexture name="left00004" x="468" y="172" width="117" height="86"/>
+	<SubTexture name="right00000" x="0" y="258" width="117" height="86"/>
+	<SubTexture name="right00001" x="117" y="258" width="117" height="86"/>
+	<SubTexture name="right00002" x="234" y="258" width="117" height="86"/>
+	<SubTexture name="right00003" x="351" y="258" width="117" height="86"/>
+	<SubTexture name="right00004" x="468" y="258" width="117" height="86"/>
+	<SubTexture name="up00000" x="0" y="344" width="117" height="86"/>
+	<SubTexture name="up00001" x="117" y="344" width="117" height="86"/>
+	<SubTexture name="up00002" x="234" y="344" width="117" height="86"/>
+</TextureAtlas>

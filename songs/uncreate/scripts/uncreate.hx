@@ -69,8 +69,10 @@ function postCreate() {
     itslikeprettywarpedtoo = new CustomShader("chromaticWarp");
     itslikeprettywarpedtoo2 = new CustomShader("chromaticWarp");
 
-    if (Options.gameplayShaders && FlxG.save.data.chromwarp) camGame.addShader(itslikeprettywarpedtoo);
-    if (Options.gameplayShaders && FlxG.save.data.chromwarp) tvScreen.addShader(itslikeprettywarpedtoo2);
+    if (Options.gameplayShaders && FlxG.save.data.chromwarp) {
+        camGame.addShader(itslikeprettywarpedtoo);
+        tvScreen.addShader(itslikeprettywarpedtoo2);
+    }
     itslikeprettywarpedtoo.distortion = 0;
     itslikeprettywarpedtoo2.distortion = 4;
 }

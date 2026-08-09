@@ -39,6 +39,11 @@
             "name": "Position",
             "type": "DropDown('front', 'back')",
             "defaultValue": "back"
+        },
+        {
+            "name": "Epilespy Safety? (Disabled if Epilepsy option is enabled)",
+            "type": "Bool",
+            "defaultValue": false
         }
     ]
 }

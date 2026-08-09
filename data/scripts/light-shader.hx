@@ -8,6 +8,18 @@ public var snowScript:TemplateClass = scriptObject(__script__);
 
 var initIndex:Int = null;
 var snowRect:Array<Float> = [1000, 1220, 1500, 100];
+public var snowOpacity(get, set):Float;
+function get_snowOpacity():Float
+    return !Options.gameplayShaders ? 0 : snowShader.OPACITY;
+function set_snowOpacity(value:Float):Float {
+    if (!Options.gameplayShaders)
+        return 0;
+    for (i in 0...2) {
+        var newShader:CustomShader;
+        newShader = (i==0) ? snowShader : snowShader2;
+        newShader.OPACITY = value;
+    }
+}
 
 function postCreate() {
     if(!Options.gameplayShaders) {
@@ -23,6 +35,7 @@ function postCreate() {
         newShader.LAYERS = i == 0 ? 10 : 10-1; newShader.DEPTH = 1.2;
         newShader.WIDTH = .1; newShader.SPEED = .6;
         newShader.STARTING_LAYERS = i == 0 ? 7 : 1;
+        newShader.OPACITY = 1;
         newShader.snowMeltRect = snowRect;
         newShader.snowMelts = true;
 
@@ -37,8 +50,10 @@ function postCreate() {
     if(initIndex != null) insert(initIndex, particleSprite);
     else add(particleSprite);
 
-    if (Options.gameplayShaders && FlxG.save.data.particles) particleSprite.shader = snowShader;
-    if (Options.gameplayShaders && FlxG.save.data.particles) FlxG.camera.addShader(snowShader2);
+    if(Options.gameplayShaders && FlxG.save.data.particles) {
+        particleSprite.shader = snowShader;
+        FlxG.camera.addShader(snowShader2);
+    }
 }
 
 public var snowSpeed:Float = 1;

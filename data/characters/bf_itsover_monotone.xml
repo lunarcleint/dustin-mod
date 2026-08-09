@@ -1,0 +1,16 @@
+<!DOCTYPE codename-engine-character>
+<character x="284" y="-80" sprite="broken_reality/br_boyfriend_monotone" camx="-1016" camy="106" isPlayer="true" icon="bf-br-monotone" color="#313131">
+	<anim name="idle" anim="idle"/>
+	<anim name="singRIGHT" anim="left0"/>
+	<anim name="singDOWN" anim="down0"/>
+	<anim name="singUP" anim="up0"/>
+	<anim name="singLEFT" anim="right0"/>
+	<anim name="singRIGHTmiss" anim="lmiss"/>
+	<anim name="singDOWNmiss" anim="dmiss"/>
+	<anim name="singUPmiss" anim="umiss"/>
+	<anim name="singLEFTmiss" anim="rmiss"/>
+	<anim name="attack_prep" anim="attack" indices="0..11"/>
+	<anim name="attack" anim="attack" indices="12..69"/>
+	<anim name="attack_prep-loop" anim="attack" loop="true" indices="9..12"/>
+	<anim name="attack_back" anim="attack" indices="11..0"/>
+</character>

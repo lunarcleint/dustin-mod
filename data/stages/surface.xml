@@ -1,1 +1,13 @@
-<!DOCTYPE codename-engine-stage><stage folder="stages/surface" name="surface" zoom=".4" gfZoom=".7" noteSkin="uprising" healthBarSkin="uprising" timeBarSkin="uprising"><sprite x="-2706" sprite="background" y="-1100" scrollx="0.7" name="background"/><sprite x="-690" sprite="mountain" y="100" scrollx="0.75" name="mountain"/><sprite x="-1890" sprite="city" y="-604" scrollx="0.8" name="city"/><sprite x="-2250" sprite="text_appear" y="-16" scrollx="0.95" name="text_appear" scale="2"/><sprite x="-2250" sprite="text_appear2" y="-16" scrollx="0.95" name="text_appear2" scale="1.3"/><sprite x="-2250" sprite="grass" y="-16" scrollx="0.95" name="grass"/><sprite x="-3050" sprite="ground" y="910" scrollx="1" name="ground"/><girlfriend x="286" scroll="1" y="349"/><dad x="-579" y="620" camyoffset="-100" camxoffset="400"/><boyfriend x="706" y="200" scale="1.05" flipX="false" camyoffset="-100" camxoffset="200"/></stage>
+<!DOCTYPE codename-engine-stage>
+<stage healthBarSkin="uprising" folder="stages/surface/" gfZoom=".7" noteSkin="uprising" timeBarSkin="uprising" zoom="0.4" name="surface">
+	<sprite x="-1590" updateHitbox="true" scroll="0.4" sprite="sun_underlay_25p" y="-730" type="none" scale="3.5" name="sunUnderlay" zoomfactor="0.85"/>
+	<sprite x="-150" updateHitbox="true" scroll="0.4" sprite="sun_50p" y="-250" type="none" scale="1.75" name="sun" zoomfactor="0.85"/>
+	<sprite x="-660" updateHitbox="true" scroll="0.6" sprite="mountain_50p" y="0" type="none" scale="2" name="mountain" zoomfactor="0.9"/>
+	<sprite x="-1532" updateHitbox="true" scroll="0.8" sprite="city_50p" y="-651" type="none" scale="2" name="city" zoomfactor="0.93"/>
+	<sprite x="-2261" updateHitbox="true" scroll="0.9" sprite="grass_50p" y="-33" type="none" scale="2" name="grass"/>
+	<sprite x="-2483" sprite="ground" y="913" type="none" name="ground"/>
+	<girlfriend x="286" scroll="1" y="349"/>
+	<dad camxoffset="400" x="-579" camyoffset="-100" y="620"/>
+	<boyfriend camxoffset="420" x="1700" camyoffset="-130" y="620" scale="1.05"/>
+	<sprite x="-2483" sprite="ground_mask" y="913" type="none" name="groundMask"/>
+</stage>

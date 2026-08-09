@@ -1,4 +1,5 @@
 //
+import funkin.editors.charter.Charter;
 
 var hudTween:FlxTween;
 var hudAlpha:Float = 1;
@@ -6,7 +7,7 @@ var hudAlpha:Float = 1;
 function onEvent(eventEvent) {
     var params:Array = eventEvent.event.params;
     if (eventEvent.event.name == "Change HUD Alpha") {
-        if (params[0] == false) {
+        if (params[0] == false || (PlayState.chartingMode && Charter.startHere && eventEvent.event.time < Charter.startTime)) {
             for (element in hudElements) {
                 FlxTween.cancelTweensOf(element);
                 element.alpha = params[1];

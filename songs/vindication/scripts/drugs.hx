@@ -1,7 +1,7 @@
 //
-var itslikeprettywarpedtoo:CustomShader = null;
-function add_abberation() if (Options.gameplayShaders && FlxG.save.data.chromwarp) camGame.addShader(itslikeprettywarpedtoo);
-function remove_abberation() if (Options.gameplayShaders && FlxG.save.data.chromwarp) camGame.removeShader(itslikeprettywarpedtoo);
+var _itslikeprettywarpedtoo:CustomShader = null;
+function add_abberation() if (Options.gameplayShaders && FlxG.save.data.chromwarp) camGame.addShader(_itslikeprettywarpedtoo);
+function remove_abberation() if (Options.gameplayShaders && FlxG.save.data.chromwarp) camGame.removeShader(_itslikeprettywarpedtoo);
 
 function postCreate() {
     if (!Options.gameplayShaders) {
@@ -9,8 +9,8 @@ function postCreate() {
         return;
     }
 
-    itslikeprettywarpedtoo = new CustomShader("chromaticWarp");
+    _itslikeprettywarpedtoo = new CustomShader("chromaticWarp");
 }
 
 function update()
-    itslikeprettywarpedtoo.distortion = (stage.stageScript.get("stageLerp") - 1) / 1.3;
+    _itslikeprettywarpedtoo.distortion = (stage.stageScript.get("stageLerp") - 1) / 1.3;

@@ -1,5 +1,4 @@
 //
-
 function create() {
     if (FlxG.save.data.mechanics)
         strumLines.members[1].onNoteUpdate.add(onNoteUpdate);

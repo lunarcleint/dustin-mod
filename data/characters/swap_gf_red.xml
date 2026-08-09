@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="thermal/swapGF_red" x="-100" y="-100" camx="-450" camy="-50" icon="swapgficons" color="#68004C" holdTime="6.1">
+	<anim name="idle" anim="US!Chara IDLE dance"/>
+	<anim name="singLEFT" anim="US!Chara LEFT Note" x="42" y="-16"/>
+	<anim name="singDOWN" anim="US!Chara DOWN Note" x="-17" y="-216"/>
+	<anim name="singUP" anim="US!Chara UP Note" x="112" y="31"/>
+	<anim name="singRIGHT" anim="US!Chara RIGHT note" x="216" y="-160"/>
+</character>

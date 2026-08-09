@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<character x="-505" y="-200" sprite="sixbones/sixbones_3" icon="icon" color="#7C000B" holdTime="6.1">
+	<anim name="idle" anim="idle_three" loop="true"/>
+	<anim name="singLEFT" anim="left_four"/>
+	<anim name="singDOWN" anim="down_four"/>
+	<anim name="singUP" anim="up_four" y="-2"/>
+	<anim name="singRIGHT" anim="right_four"/>
+	<anim name="jumpscare" anim="jscare_transition" x="131" y="50"/>
+	<anim name="loop_jumpscare" anim="jscare_loop" x="131" y="50" loop="true"/>
+</character>

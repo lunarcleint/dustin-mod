@@ -1,10 +1,15 @@
 //
+import funkin.editors.charter.Charter;
+import funkin.backend.system.framerate.Framerate;
+
 import flixel.text.FlxTextBorderStyle;
 import flixel.effects.FlxFlicker;
 
+var target_flip:Int = -1;
 var target:FlxSprite;
 var target_choice:FlxSprite;
 var target_text:FlxText;
+var assFramerate:Bool;
 
 public var flickerSprite:FlxSprite;
 public var warp:CustomShader;
@@ -35,15 +40,12 @@ function postCreate() {
     target_choice.visible = false;
     insert(9999, target_choice);
 
-    target_text = new FlxText(0, 0, 0, "PRESS SPACE!");
+    target_text = textCrispy(new FlxText(0, 0, 0, "PRESS SPACE!"));
     target_text.setFormat(Paths.font("DTM-Mono.ttf"), 16, fullColor);
 
     target_text.borderStyle = FlxTextBorderStyle.OUTLINE;
     target_text.borderSize = 2;
     target_text.borderColor = 0xFF000000;
-
-    target_text.textField.antiAliasType = 0/*ADVANCED*/;
-    target_text.textField.sharpness = 400/*MAX ON OPENFL*/;
 
     target_text.alpha = 0;
     target_text.cameras = [camHUD];
@@ -54,7 +56,8 @@ function postCreate() {
     flickerSprite.zoomFactor = 0;
     flickerSprite.cameras = [camHUD2];
     flickerSprite.alpha = 0;
-    add(flickerSprite);
+    if(!FlxG.save.data.antiFlash)
+        add(flickerSprite);
 
     chromWarp = new CustomShader("chromaticWarp");
     chromWarp.distortion = 0;
@@ -65,13 +68,21 @@ function postCreate() {
     impact = new CustomShader("impact_frames");
     impact.threshold = -1;
 
-    if (Options.gameplayShaders && FlxG.save.data.impact) camGame.addShader(impact);
-    if (Options.gameplayShaders && FlxG.save.data.warp) camGame.addShader(warp);
-    if (Options.gameplayShaders && FlxG.save.data.chromwarp) camGame.addShader(chromWarp);
-    camGame.removeShader(bloom_new);
-    if (Options.gameplayShaders && FlxG.save.data.bloom) camGame.addShader(bloom_new);
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.impact) camGame.addShader(impact);
+        if (FlxG.save.data.warp) camGame.addShader(warp);
+        if (FlxG.save.data.chromwarp) camGame.addShader(chromWarp);
+        if (FlxG.save.data.bloom) {
+            camGame.removeShader(bloom_new);
+            camGame.addShader(bloom_new);
+        }
+    }
 
     FlxFlicker.flicker(flickerSprite, 9999999, 0.01);
+
+    if (!FlxG.save.data.scrollSpeedChange) {
+        PlayState.instance.scrollSpeed = 3.2;
+    }
 }
 
 public var didDamage:Bool = false;
@@ -82,9 +93,12 @@ var desiredY:Float = 15;
 var targetDesiredX:Float = 0;
 var inAttack:Bool = false;
 function doAttack() {
-    if (inAttack) return;
+    if (inAttack || (PlayState.chartingMode && Charter.startHere && FlxG.sound.music.time < Charter.startTime)) return;
     inAttack = true;
-    targetDesiredX = -.5; judgeRating = JUDGE_MISS;
+    attackerSpeed = FlxG.random.float(0.98, 1.25);
+    target_flip *= -1;
+    targetDesiredX = -.5;
+    judgeRating = JUDGE_MISS;
 
     target_choice.visible = false;
     target_choice.animation.stop();
@@ -148,16 +162,13 @@ var JUDGE_YELLOW:Int = 1;
 var JUDGE_GREEN:Int = 2;
 
 var judgeRating = JUDGE_MISS;
-function judgeInput():Int { // epic code cause i lowkey have like 2 days left -lunar >:D
-    if (target_choice.x >= 615 && target_choice.x <= 660)
-        return JUDGE_GREEN;
-    if (target_choice.x >= 533 && target_choice.x <= 734)
-        return JUDGE_YELLOW;
-    if (target_choice.x >= 420 && target_choice.x <= 844)
-        return JUDGE_RED;
+function judgeInput():Int { // looking at the difference in github desktop, there's no correlation but it works??
+    var cx = target_choice.x + target_choice.width/2;
+    if (cx >= 615 && cx <= 660) return JUDGE_GREEN;
+    if (cx >= 533 && cx <= 734) return JUDGE_YELLOW;
+    if (cx >= 420 && cx <= 844) return JUDGE_RED;
     return JUDGE_MISS;
 }
-
 function judgeHealth():Float {
     if (!FlxG.save.data.mechanics) return;
     return switch (judgeRating) {
@@ -237,7 +248,7 @@ function undertale_update(elapsed:Float) {
     target.x = FlxG.width/2 - target.width/2;
     target.y = dustinHealthBar.y - 89.5 + (tY = FlxMath.lerp(tY, desiredY, FlxEase.sineIn(.42)));
 
-    target_choice.x = target.x + (target.frameWidth*targetDesiredX) - target_choice.width/2;
+    target_choice.x = target.x + (target.frameWidth*(targetDesiredX * target_flip)) - target_choice.width/2;
     target_choice.y = target.y;
 
     target_text.x = target.x - target_text.fieldWidth/2;
@@ -260,10 +271,13 @@ var frameNum:Int = 0;
 function update(elapsed:Float) {
     if (!justPressedZ && FlxG.keys.justPressed.SPACE) justPressedZ = true;
 
+    if (assFramerate != (assFramerate = Framerate.fpsCounter.lastFPS < 30))
+        flickerSprite.cameras = [assFramerate ? camGame : camHUD2];
+
     undertaleFrameCounter += elapsed;
-    if (undertaleFrameCounter > undertaleFrameTime) {
+    if (assFramerate || (undertaleFrameCounter > undertaleFrameTime)) {
+        undertale_update(undertaleFrameCounter);
         undertaleFrameCounter = 0;
-        undertale_update(undertaleFrameTime);
 
         justPressedZ = false;
     }

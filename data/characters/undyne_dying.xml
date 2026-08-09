@@ -1,1 +1,8 @@
-<!DOCTYPE codename-engine-character><character y="-150" sprite="cornered/Undying" scale="1.1" camy="50" camx="-260" icon="cornered-sans" color="#20247F" holdTime="3"><anim name="idle" anim="idle"/><anim name="singLEFT" anim="right" x="116" y="-94"/><anim name="singDOWN" anim="down" x="57" y="-31"/><anim name="singUP" anim="up" x="7" y="110"/><anim name="singRIGHT" anim="left" x="-9" y="-5"/></character>
+<!DOCTYPE codename-engine-character>
+<character y="-150" sprite="cornered/Undying" scale="1.1" camx="-260" camy="50" icon="undying" color="#0E4693" holdTime="3">
+	<anim name="idle" anim="idle"/>
+	<anim name="singLEFT" anim="right" x="116" y="-94"/>
+	<anim name="singDOWN" anim="down" x="57" y="-31"/>
+	<anim name="singUP" anim="up" x="7" y="110"/>
+	<anim name="singRIGHT" anim="left" x="-9" y="-5"/>
+</character>

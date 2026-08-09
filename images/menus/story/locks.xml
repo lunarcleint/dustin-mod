@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 DEV https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="locks.png" width="2590" height="184" spritePadding="3" borderPadding="1">
+	<SubTexture name="wrath0000" x="629" y="1" width="154" height="173" frameX="-19" frameY="-11" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="wrath0001" x="786" y="1" width="154" height="173" frameX="-19" frameY="-11" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="wrath0002" x="1414" y="1" width="154" height="174" frameX="-19" frameY="-10" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="wrath0003" x="1571" y="1" width="193" height="177" frameX="-1" frameY="-6" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="mirror0000" x="943" y="1" width="154" height="173" frameX="-19" frameY="-11" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="mirror0001" x="1100" y="1" width="154" height="173" frameX="-19" frameY="-11" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="mirror0002" x="1257" y="1" width="154" height="173" frameX="-19" frameY="-11" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="mirror0003" x="2413" y="1" width="176" height="182" frameX="-5" frameY="0" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="virus0000" x="1767" y="1" width="154" height="181" frameX="-19" frameY="-2" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="virus0001" x="1924" y="1" width="154" height="181" frameX="-19" frameY="-2" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="virus0002" x="2081" y="1" width="154" height="181" frameX="-19" frameY="-2" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="virus0003" x="2238" y="1" width="172" height="181" frameX="-1" frameY="-3" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="guilty0000" x="1" y="1" width="154" height="172" frameX="-19" frameY="-11" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="guilty0001" x="158" y="1" width="154" height="172" frameX="-19" frameY="-11" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="guilty0002" x="315" y="1" width="154" height="172" frameX="-19" frameY="-11" frameWidth="195" frameHeight="184"/>
+	<SubTexture name="guilty0003" x="472" y="1" width="154" height="172" frameX="-19" frameY="-11" frameWidth="195" frameHeight="184"/>
+</TextureAtlas>

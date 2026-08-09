@@ -1,23 +1,45 @@
 //
+// I promise to polish up this code, or someelse if they wanna - higg
+
+
 import flixel.addons.effects.FlxTrail;
 import flixel.util.FlxGradient;
+import funkin.backend.utils.FlxInterpolateColor;
+import flixel.text.FlxText.FlxTextBorderStyle;
 
 var papsBODY:Character;
 
-var dadCircularMotion:Bool = false;
-var dadOrbitTime:Float = 0;
-var dadOrbitRadius:Float = 150;
-var dadStartX:Float = 5000;
-var dadStartY:Float = 5000;
-var dadEndX:Float = 1000;
-var dadBaseY:Float = 300; // BASE PAPS
+var dadBody:Dynamic = {
+    circularMotion: false,
+    orbit: {
+        time: 0,
+        radius: 150
+    },
+    start: {
+        x: 5000,
+        y: 5000
+    },
+    endX: 1000,
+    baseY: 300
+}
 
 var ogTimeCol = [];
 var ogCol1;
 
 var gradient;
 
+var ratio:Float;
+var holdCircle:FlxSprite;
+var skipText:FunkinText;
+var skipColor:FlxInterpolateColor = new FlxInterpolateColor(0xffffffff);
+var alphaTween:FlxTween;
+var alphaTimer:Float = 0.0;
+var holdTime:Float = 0.0;
+
+function onCountdown(countdown) countdown.cancel();
+
 function create() {
+    introLength = 2;
     doHealthbarFade = false;
     papsBODY = new Character(0, 0, 'phantom_paps_br_body');
     papsBODY.scrollFactor.set(1, 1);
@@ -49,15 +71,111 @@ function create() {
 function postCreate() {
     ogTimeCol = timeBarColors;
     ogCol1 = healthBarColors[0];
+
+    add(skipText = textCrispy(new FunkinText(-28, FlxG.height - 50 - 6, FlxG.width, "Hold SPACE/LEFT CLICK to skip...").setFormat(Paths.font('8bit-jve.ttf'), 32, 0xffffffff, "right", FlxTextBorderStyle.OUTLINE, 0xff000000)));
+    skipText.scrollFactor.set();
+    skipText.borderSize = 3;
+    skipText.cameras = [videoCam];
+    skipText.visible = false;
+
+    add(holdCircle = new FlxSprite());
+    holdCircle.frames = Paths.getFrames(Paths.image("menus/holdCircle"), true);
+    holdCircle.animation.addByPrefix("idle", "hold", ratio = ((holdCircle.frames.frames.length - 1) / 2), false);
+    holdCircle.animation.frameIndex = 0;
+    holdCircle.setGraphicSize(33 * (FlxG.width / 1280), 33 * (FlxG.width / 1280));
+    holdCircle.updateHitbox();
+    holdCircle.setPosition(FlxG.width - holdCircle.width - skipText.textField.textWidth - 40 - 8, FlxG.height - holdCircle.height - 10 - 10);
+    holdCircle.cameras = [videoCam];
+    holdCircle.visible = false;
+
+    ratio /= 360;  // before i forger  - Nex
+}
+
+function doAlphaTween() {
+    alphaTween?.cancel();
+    alphaTween = FlxTween.tween(skipText, {alpha: 0}, 0.5);
 }
 
 var lock24FPS:Array<{sprite:FlxSprite, x:Float, y:Float, anim:String}> = [];
 var dad24FPS:{x:Float, y:Float, anim:String} = null;
 var head24FPS:{x:Float, y:Float, anim:String} = null;
 public var __coolTimer:Float = 0;
+
+var canSkip:Bool = false;
+function skipCutscene() {
+    if(inst.time < 32901) {
+        vocals.pause(); inst.pause();
+        curVideo?.bitmap?.time = inst.time = vocals.time = 32901;
+        vocals.resume(); inst.resume();
+    }
+    canSkip = false;
+}
+
+function onSongStart() {
+    canSkip = true;
+}
+function onEvent(_) {
+    var params:Array = _.event.params;
+    if (_.event.name == "Video Cutscene") {
+        if (_.event.time == 0) {
+            for (spr in [skipText, holdCircle]) {
+                spr.visible = true;
+            }
+        }
+    }
+}
+
 function update(elapsed:Float) {
+    canSkip = inst.time < 32901;
+    if(canSkip && holdCircle.visible) {
+        remove(holdCircle, true);
+        insert(9999, holdCircle);
+        remove(skipText, true);
+        insert(9999, skipText);
+        if (!FlxG.mouse.pressed && !FlxG.keys.pressed.SPACE) {  // i cant use accept cuz we dont have acept_hold, only in dev still sob  - Nex
+            holdTime = 0;
+            holdCircle.animation.stop();
+            holdCircle.animation.frameIndex = 0;
+
+            skipColor.color = 0xffffffff;
+
+            if (alphaTimer > 1) doAlphaTween();
+            else alphaTimer += elapsed;
+        } else if (curVideo != null) {
+            alphaTween?.cancel();
+            skipText.alpha = 1;
+            alphaTimer = 0;
+            holdCircle.animation.play("idle", false, false, 1);
+
+            skipText.color = skipColor.fpsLerpTo(0xffff0000, ratio);
+
+            if ((holdTime += elapsed) > 2)
+                skipCutscene();
+        }
+        holdCircle.color = skipText.color = skipColor.color;
+        holdCircle.alpha = skipText.alpha;
+    } else if (!canSkip && holdCircle != null && holdCircle.visible) {
+        titleCard.visible = false;
+
+        holdCircle.destroy();
+        skipText.destroy();
+
+        holdCircle = null;
+        skipText = null;
+    }
+
     __coolTimer += elapsed;
 
+    updateBody(elapsed);
+
+    if ((curStep >= 1664 && curStep <= 3308) && curCameraTarget == 0) {
+        camAngleOffset = .6;
+    } else {
+        camAngleOffset = .3;
+    }
+}
+
+function updateBody(elapsed:Float) {
     for (info in lock24FPS) {
         var sprite = info.sprite;
         if (sprite.animation.frameName != info.anim) {
@@ -72,32 +190,32 @@ function update(elapsed:Float) {
         var bobX = Math.sin(waveSpeed) * 50;
         var bobY = Math.cos(waveSpeed * 0.8) * 40 + Math.sin(waveSpeed * 1.5) * 10;
 
-        dad24FPS.x = dadStartX + bobX - (dadCircularMotion ? 50 : 0);
-        dad24FPS.y = dadStartY + bobY;
+        dad24FPS.x = dadBody.start.x + bobX - (dadBody.circularMotion ? 50 : 0);
+        dad24FPS.y = dadBody.start.y + bobY;
     }
 
     if (head24FPS != null) {
-        dadOrbitTime += elapsed * 1.5;
+        dadBody.orbit.time += elapsed * 1.5;
 
-        var orbitSpeed = dadOrbitTime * 1.7;
+        var orbitSpeed = dadBody.orbit.time * 1.7;
         var t = (Math.sin(orbitSpeed*.8) * 0.5) + .5;
         t += Math.sin(orbitSpeed * 0.5) * 0.15;
         t += Math.cos(orbitSpeed * 1.7) * 0.1;
 
         var easedT = Math.sin(t * Math.PI * 0.5);
 
-        var mainArc = Math.sin(t * Math.PI) * -dadOrbitRadius * 1.6;
+        var mainArc = Math.sin(t * Math.PI) * -dadBody.orbit.radius * 1.6;
         var tilt = Math.cos(orbitSpeed * 1.2) * 25;
         var sway = Math.sin(orbitSpeed * 3.5) * 15;
         var pulse = Math.sin(orbitSpeed * 0.5) * 10;
 
-        head24FPS.x = FlxMath.lerp(dadStartX, dadEndX, easedT) + tilt + pulse;
-        head24FPS.y = dadBaseY + mainArc + sway + pulse + tilt;
+        head24FPS.x = FlxMath.lerp(dadBody.start.x, dadBody.endX, easedT) + tilt + pulse;
+        head24FPS.y = dadBody.baseY + mainArc + sway + pulse + tilt;
 
         // var papSpin = Math.sin(orbitSpeed/4) * 360;
         // papSpin += Math.sin(orbitSpeed * 0.3) * 90;
         // papSpin += Math.sin(orbitSpeed * .3) * 30;
-        // papSpin += Math.cos(dadOrbitTime) * 45;
+        // papSpin += Math.cos(dadBody.orbit.time) * 45;
 
         // head24FPS.angle = papSpin;
     }
@@ -108,23 +226,18 @@ function update(elapsed:Float) {
             var scale = FlxMath.bound(1.3 + .2 + (.2 * FlxMath.fastSin(__coolTimer + (i * FlxG.random.float((Conductor.stepCrochet / 1000) * 0.5, (Conductor.stepCrochet / 1000) * 1.2)))), 0.9, 999);
             trail.scale.set(scale, scale);
 
-            if (dadCircularMotion) 
+            if (dadBody.circularMotion) 
                 trail.centerOrigin();
         }
     }
 
-    if (dadCircularMotion) {
+    if (dadBody.circularMotion) {
         dad.centerOrigin();
-    }
-
-    if ((curStep >= 1664 && curStep <= 3308) && curCameraTarget == 0) {
-        camAngleOffset = .6;
-    } else {
-        camAngleOffset = .3;
     }
 }
 
 function stepHit(step:Int) {
+
     switch(step) {
         case 176:
             showTitleCard();
@@ -133,47 +246,45 @@ function stepHit(step:Int) {
         case 849:
             createDadClone(dadPos, 1.15);
         case 1664:
-            lightShader.lightcol = [255., 0., 0.];
             lightShader.bright = .2;
             dust.BRIGHT = 0;
 
-            stage.getSprite("ground").visible = false;
-            stage.getSprite("fg").visible = false;
             dadClone.visible = false;
 
-            stage.getSprite("paps_bg").visible = true;
-            stage.getSprite("paps_fg").visible = true;
-
             remove(dad);
-            insert(members.indexOf(stage.stageSprites["paps_fg"]), dad);
+            insert(members.indexOf(stage.stageSprites["light"]) + 1, dad);
 
-            dadStartX = dad.x;
-            dadStartY = dad.y;
+            dustiniconP1.loadGraphicFromSprite(createHealthIcon(boyfriend.getIcon() + "-red", true));
+            dustiniconP1.updateHitbox();
+            updateIconXml(dustiniconP1, boyfriend.getIcon() + "-red");
 
-            dad24FPS = {sprite: dad, x: dadStartX, y: dadStartY, anim: dad.animation.frameName};
+            changeColors(-1,0,0,-1);
+            ogHealthColors[0] = healthBarColors[0] = archivedHealthColors[0];
+
+            dadBody.start.x = dad.x;
+            dadBody.start.y = dad.y;
+
+            dad24FPS = {sprite: dad, x: dadBody.start.x, y: dadBody.start.y, anim: dad.animation.frameName};
             lock24FPS.push(dad24FPS);
             spawnPapsTrail(dad);
-
-            bfPos = 400;
-            createBFClone(bfPos, 1.25);
 
             controlDad = false;
             timeBarColors = [0xFFFF0000, 0xFF000000];
         case 2669:
             papsBODY.visible = true;
 
-            dadCircularMotion = true;
-            dad.x = dadStartX;
-            dad.y = dadBaseY;
-            dadOrbitTime = 0;
+            dadBody.circularMotion = true;
+            dad.x = dadBody.start.x;
+            dad.y = dadBody.baseY;
+            dadBody.orbit.time = 0;
 
             lock24FPS = [];
 
-            dad24FPS = {sprite: papsBODY, x: dadStartX, y: dadStartY, anim: papsBODY.animation.frameName};
+            dad24FPS = {sprite: papsBODY, x: dadBody.start.x, y: dadBody.start.y, anim: papsBODY.animation.frameName};
             lock24FPS.push(dad24FPS);
             dad24FPS = lock24FPS[papsBODY];
 
-            head24FPS = {sprite: dad, x: dadStartX, y: dadStartY, angle: 0, anim: dad.animation.frameName};
+            head24FPS = {sprite: dad, x: dadBody.start.x, y: dadBody.start.y, angle: 0, anim: dad.animation.frameName};
             lock24FPS.push(head24FPS);
 
             clearTrails();
@@ -182,18 +293,18 @@ function stepHit(step:Int) {
             spawnPapsTrail(papsBODY);
         case 3005:
             papsBODY.visible = false;
-            dadCircularMotion = false;
+            dadBody.circularMotion = false;
 
             lock24FPS = [];
             
             clearTrails();
             spawnPapsTrail(dad);
 
-            dad24FPS = {sprite: dad, x: dadStartX, y: dadStartY, anim: dad.animation.frameName};
+            dad24FPS = {sprite: dad, x: dadBody.start.x, y: dadBody.start.y, anim: dad.animation.frameName};
             lock24FPS.push(dad24FPS);
-            FlxTween.tween(dad, {x: dadStartX, y: dadStartY}, 1, {ease: FlxEase.quadInOut});
+            FlxTween.tween(dad, {x: dadBody.start.x, y: dadBody.start.y}, 1, {ease: FlxEase.quadInOut});
 
-        case 3321:
+        case 3311:
             lock24FPS = [];
             clearTrails();
 
@@ -203,20 +314,31 @@ function stepHit(step:Int) {
             lightShader.bright = 1;
             dust.BRIGHT = 10;
 
-            stage.getSprite("ground").visible = true;
-            stage.getSprite("fg").visible = true;
+            remove(dad);
+            insert(members.indexOf(stage.stageSprites["fg"]), dad);
 
-            stage.getSprite("paps_bg").visible = false;
-            stage.getSprite("paps_fg").visible = false;
+            resetColors();
+
+            healthBarColors[1] = ogHealthColors[1];
+            dustiniconP1.loadGraphicFromSprite(createHealthIcon(boyfriend.getIcon(), true));
+            dustiniconP1.updateHitbox();
+            updateIconXml(dustiniconP1, boyfriend.getIcon());
 
             bfPos = null;
             createBFClone(bfPos2, 1.25);
             dadClone.visible = true;
 
             timeBarColors = ogTimeCol;
+        case 3330:
+            createDadClone(dadPos, 1.15);
         case 4064:
             bfClone.visible = false;
             healthBarColors[0] = 0x00000000;
+            dustiniconP1.onDraw = (spr) -> {
+                spr.x += spr.width / 2;
+                spr.draw();
+                spr.x -= spr.width / 2;
+            }
             dustiniconP2.alpha = 0;
             dust.BRIGHT = 0;
             for (name => sprite in stage.stageSprites) 
@@ -226,14 +348,13 @@ function stepHit(step:Int) {
             camAngleOffset = 0;
         case 4672:
             bfClone.visible = true;
+            dustiniconP1.onDraw = null;
             healthBarColors[0] = ogCol1;
             dustiniconP2.alpha = 1;
+            dustiniconP2.visible = true;
             dust.BRIGHT = 10;
             for (name => sprite in stage.stageSprites) 
                 sprite.visible = true;
-
-            stage.getSprite("paps_bg").visible = false;
-            stage.getSprite("paps_fg").visible = false;
 
             camMoveOffset = 5;
             camAngleOffset = .3;
@@ -255,6 +376,10 @@ function stepHit(step:Int) {
     }
 }
 
+function createClones() {
+    createDadClone(dadPos, 1);
+    createBFClone(bfPos2, 1.25);
+}
 
 function onDadHit(note:Note):Void {
     if (papsBODY != null && papsBODY.visible == true) {
@@ -268,8 +393,8 @@ public var papCameraNormalizer:Float = .1;
 function onCameraMove(_) {
     // normalize mtt movement a bit
     if (_.strumLine.characters[0].curCharacter == "phantom_paps_br") {
-        _.position.x -= (dad.x - dadStartX)*FlxMath.lerp(.8, 1, papCameraNormalizer);
-        _.position.y -= (dad.y - dadStartY)*FlxMath.lerp(.7, 1, papCameraNormalizer);
+        _.position.x -= (dad.x - dadBody.start.x)*FlxMath.lerp(.8, 1, papCameraNormalizer);
+        _.position.y -= (dad.y - dadBody.start.y)*FlxMath.lerp(.7, 1, papCameraNormalizer);
     }
 }
 
@@ -306,10 +431,8 @@ var imageCine:Int = 0;
 function cineHit() {
     imageCine++;
     stage.stageSprites['cine' + Std.string(imageCine)].alpha = 1;
-    stage.stageSprites['cine' + Std.string(imageCine)].scale.x = .8;
-    stage.stageSprites['cine' + Std.string(imageCine)].scale.y = .8;
     stage.stageSprites['cine' + Std.string(imageCine)].y += 17;
     FlxG.camera.zoom += 0.12;
     camHUD.zoom += 0.06;
-    FlxTween.tween(stage.stageSprites['cine' + Std.string(imageCine)], {alpha: 0, "scale.x": .7, "scale.y": .7, y: stage.stageSprites['cine' + Std.string(imageCine)].y-17}, (Conductor.stepCrochet / 1000) * 10, {ease: FlxEase.quadOut});
+    FlxTween.tween(stage.stageSprites['cine' + Std.string(imageCine)], {alpha: 0, "scale.x": .9, "scale.y": .9, y: stage.stageSprites['cine' + Std.string(imageCine)].y-17}, (Conductor.stepCrochet / 1000) * 10, {ease: FlxEase.quadOut});
 }

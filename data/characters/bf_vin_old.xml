@@ -1,1 +1,8 @@
-<!DOCTYPE codename-engine-character><character x="-250" sprite="vin/BOYFRIEND-CHARA" flipX="true" camx="-100" camy="-100" isPlayer="true" icon="legacy-bf" color="#E31021"><anim name="idle" anim="BF idle dance"/><anim name="singLEFT" anim="BF NOTE LEFT0" x="-44" y="-6"/><anim name="singDOWN" anim="BF NOTE DOWN0" x="-100" y="-53"/><anim name="singUP" anim="BF NOTE UP0" x="-105" y="31"/><anim name="singRIGHT" anim="BF NOTE RIGHT0" x="-110" y="-5"/></character>
+<!DOCTYPE codename-engine-character>
+<character x="-250" sprite="vin/BOYFRIEND-CHARA" flipX="true" camx="-100" camy="-100" isPlayer="true" icon="legacy-bf" color="#E31021">
+	<anim name="idle" anim="BF idle dance"/>
+	<anim name="singLEFT" anim="BF NOTE LEFT0" x="-44" y="-6"/>
+	<anim name="singDOWN" anim="BF NOTE DOWN0" x="-100" y="-53"/>
+	<anim name="singUP" anim="BF NOTE UP0" x="-105" y="31"/>
+	<anim name="singRIGHT" anim="BF NOTE RIGHT0" x="-110" y="-5"/>
+</character>

@@ -1,6 +1,7 @@
 <!DOCTYPE codename-engine-stage>
 <stage folder="stages/waterfall/" name="waterfall" zoom=".6" noteSkin="cornered" healthBarSkin="waterfall" timeBarSkin="waterfall">
   <sprite scrolly="0.9" x="-756" sprite="rest_of_the_bg_2" y="-157" scrollx="0.7" name="bg"/>
+  <sprite scrolly="0.9" x="-756" sprite="rest_of_the_bg_2_END" y="-157" scrollx="0.7" name="bg_end" alpha="0"/>
   <sprite scrolly="0.95" x="-790" sprite="rest_of_the_bg_1" y="-304" type="beat" scrollx="0.8" name="bg_front"/>
   <sprite x="-950" sprite="walls_part_1" y="-16" scrollx="0.9" scrolly="0.98" name="wall_left"/>
   <sprite x="1252" sprite="walls_part_2" y="-16" scrollx="0.9" scrolly="0.98" name="wall_right"/>
@@ -15,6 +16,7 @@
     <anim name="press" anim="fightbuttonpress" loop="false"/>
   </sprite>
   <sprite x="-1050" sprite="glow_shards_purple" y="-52" name="shards"/>
+  <sprite x="-700" sprite="ilumination_end" y="0" scrollx="1" scrolly="1" name="ilumination_end" scale="1.4" alpha="0"/>
   <sprite name="BLASTER_IMPACT1" x="230" y="250" sprite="undyneimpact1" antialiasing="true" scrollx="1" scrolly="1.2" scale="1.5" alpha=".0"/>
   <sprite name="BLASTER_IMPACT2" x="200" y="230" sprite="undyneimpact2" antialiasing="true" scrollx="1" scrolly="1.2" scale="1.5" alpha=".0"/>
   <sprite name="BLASTER_IMPACT3" x="200" y="230" sprite="undyneimpact3" antialiasing="true" scrollx="1" scrolly="1.2" scale="1.5" alpha=".0"/>

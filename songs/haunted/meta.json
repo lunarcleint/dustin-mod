@@ -1,30 +1,31 @@
 {
-	"beatsPerMeasure": 4,
-	"opponentModeAllowed": true,
-	"coopAllowed": true,
-	"stepsPerBeat": 4,
-	"bpm": 120,
-	"needsVoices": true,
-	"parsedColor": -1,
-	"displayName": "Haunted",
-	"icon": "Icon",
-	"name": "haunted",
-	"color": "#FFFFFF",
 	"customValues": {
 		"customName": "hAunted",
-		"stats": "* PAPYRUS 65 ATK 42 DEF\n* He doesn't act like himself anymore.\n* His eyes make you shiver.",
-		"gameover" :{
-			"quote": "THIS IS NONESENSE, JUST RESET HUMAN.",
-			"sound": "paps",
-			"song": "haunted",
-			"isMonster": false
-		},
 		"titleCardSubtext": "* by Skie",
 		"credits": {
-			"SONG": "SKIE",
-			"SPRITES": "HORRORSPINN, MERRITZ, WILLART-MEI",
+			"CHART": "FROSTIC",
 			"BACKGROUND": "JFLOID",
-			"CHART": "FROSTIC"
-			}
-	}
+			"SPRITES": "YEEZUS (HORRORSPINN), MERRITZ, MEIART",
+			"SONG": "SKIE"
+		},
+		"gameover": {
+			"isMonster": false,
+			"quote": "THIS IS NONESENSE, JUST RESET HUMAN.",
+			"song": "haunted",
+			"sound": "paps"
+		},
+		"stats": "* PAPYRUS - 65 ATK 42 DEF\n* He doesn't act like himself anymore.\n* His eyes make you shiver."
+	},
+	"color": "#FFFFFF",
+	"opponentModeAllowed": true,
+	"icon": "Icon",
+	"difficulties": [
+		"hard"
+	],
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Haunted",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 120
 }

@@ -7,15 +7,8 @@ var vidCam:FlxCamera;
 
 function postCreate() {
     vidCam = new FlxCamera();
-    
-    vidCam.bgColor = camHUD.bgColor;
-    vidCam.zoom = camHUD.zoom;
-    vidCam.alpha = camHUD.alpha;
-    vidCam.angle = camHUD.angle;
-    vidCam.color = camHUD.color;
-    vidCam.visible = camHUD.visible;
-    vidCam.x = camHUD.x;
-    vidCam.y = camHUD.y;
+
+    for (dih in ["bgColor", "zoom", "alpha", "angle", "color", "visible", "x", "y"]) Reflect.setField(vidCam, dih, Reflect.field(camHUD, dih));
     vidCam.setSize(camHUD.width, camHUD.height);
 
 

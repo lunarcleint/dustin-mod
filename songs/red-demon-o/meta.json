@@ -2,9 +2,15 @@
 	"color": "#9271FD",
 	"customValues": {
 		"customName": "red demon O",
-		"titleCardSubtext": "* by Mar Mar\n* Original by Shiina Mota",
 		"character": "overthrone",
-		"mainColor": "#FFFFFF",
+		"titleCardSubtext": "* by Mar Mar\n* Original by Shiina Mota",
+		"mainColor": "#B93B3E",
+		"gameover": {
+			"isMonster": false,
+			"quote": "tch, and don't come back.",
+			"song": "overthrone",
+			"sound": "fellsans"
+		},
 		"stats": "* SANS 58 ATK 15 DEF\n* The demon in red.\n* Burned everyone to ashes."
 	},
 	"opponentModeAllowed": false,

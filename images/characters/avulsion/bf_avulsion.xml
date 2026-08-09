@@ -2,555 +2,555 @@
 <!--
 Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
 -->
-<TextureAtlas imagePath="bf_avulsion.png" width="5505" height="5488">
-	<SubTexture name="down0000" x="4493" y="4440" width="457" height="384" frameX="-2" frameY="-12" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="down0001" x="4493" y="4440" width="457" height="384" frameX="-2" frameY="-12" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="down0002" x="1" y="5094" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="down0003" x="1" y="5094" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="down0004" x="1" y="5094" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="down0005" x="1" y="5094" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="down0006" x="1" y="5094" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="down0007" x="1" y="5094" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="down0008" x="1" y="5094" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="down0009" x="1" y="5094" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
-	<SubTexture name="downmiss0000" x="4493" y="4440" width="457" height="384" frameX="-8" frameY="-10" frameWidth="469" frameHeight="397"/>
-	<SubTexture name="downmiss0001" x="4489" y="3977" width="396" height="460" rotated="true" frameX="-4" frameY="-0" frameWidth="469" frameHeight="397"/>
-	<SubTexture name="downmiss0002" x="4489" y="3977" width="396" height="460" rotated="true" frameX="-4" frameY="-0" frameWidth="469" frameHeight="397"/>
-	<SubTexture name="downmiss0003" x="4629" y="2321" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
-	<SubTexture name="downmiss0004" x="4629" y="2321" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
-	<SubTexture name="downmiss0005" x="4629" y="2321" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
-	<SubTexture name="downmiss0006" x="4629" y="2321" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
-	<SubTexture name="downmiss0007" x="4629" y="2321" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
-	<SubTexture name="extraction0000" x="4953" y="4725" width="445" height="383" rotated="true" frameX="-681" frameY="-665" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0001" x="4953" y="4725" width="445" height="383" rotated="true" frameX="-681" frameY="-665" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0002" x="4953" y="4347" width="450" height="375" rotated="true" frameX="-686" frameY="-662" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0003" x="4953" y="4347" width="450" height="375" rotated="true" frameX="-686" frameY="-662" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0004" x="5131" y="911" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0005" x="5131" y="911" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0006" x="5131" y="1365" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0007" x="5131" y="1365" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0008" x="5131" y="1819" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0009" x="5131" y="1819" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0010" x="5113" y="2273" width="370" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0011" x="5113" y="2273" width="370" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0012" x="3014" y="5067" width="452" height="372" rotated="true" frameX="-688" frameY="-660" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0013" x="3014" y="5067" width="452" height="372" rotated="true" frameX="-688" frameY="-660" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0014" x="1832" y="5094" width="453" height="377" rotated="true" frameX="-683" frameY="-659" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0015" x="1832" y="5094" width="453" height="377" rotated="true" frameX="-683" frameY="-659" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0016" x="459" y="5094" width="455" height="381" rotated="true" frameX="-679" frameY="-657" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0017" x="2521" y="5069" width="455" height="415" rotated="true" frameX="-645" frameY="-657" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0018" x="1" y="2569" width="574" height="550" rotated="true" frameX="-510" frameY="-538" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0019" x="2528" y="1382" width="678" height="649" rotated="true" frameX="-411" frameY="-434" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0020" x="2549" y="1" width="721" height="752" frameX="-339" frameY="-360" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0021" x="1755" y="878" width="770" height="803" frameX="-290" frameY="-309" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0022" x="864" y="1740" width="838" height="805" rotated="true" frameX="-256" frameY="-274" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0023" x="1" y="1740" width="860" height="826" rotated="true" frameX="-235" frameY="-252" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0024" x="1707" y="1" width="839" height="874" frameX="-222" frameY="-238" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0025" x="1" y="891" width="881" height="846" rotated="true" frameX="-215" frameY="-231" frameWidth="1064" frameHeight="1139"/>
+<TextureAtlas imagePath="bf_avulsion.png" width="5560" height="5616">
+	<SubTexture name="down0000" x="5053" y="933" width="457" height="384" frameX="-2" frameY="-12" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="down0001" x="5053" y="933" width="457" height="384" frameX="-2" frameY="-12" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="down0002" x="5055" y="1" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="down0003" x="5055" y="1" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="down0004" x="5055" y="1" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="down0005" x="5055" y="1" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="down0006" x="5055" y="1" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="down0007" x="5055" y="1" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="down0008" x="5055" y="1" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="down0009" x="5055" y="1" width="455" height="393" frameX="-0" frameY="-0" frameWidth="459" frameHeight="396"/>
+	<SubTexture name="downmiss0000" x="5053" y="933" width="457" height="384" frameX="-8" frameY="-10" frameWidth="469" frameHeight="397"/>
+	<SubTexture name="downmiss0001" x="5099" y="2524" width="460" height="396" frameX="-4" frameY="-0" frameWidth="469" frameHeight="397"/>
+	<SubTexture name="downmiss0002" x="5099" y="2524" width="460" height="396" frameX="-4" frameY="-0" frameWidth="469" frameHeight="397"/>
+	<SubTexture name="downmiss0003" x="492" y="3715" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
+	<SubTexture name="downmiss0004" x="492" y="3715" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
+	<SubTexture name="downmiss0005" x="492" y="3715" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
+	<SubTexture name="downmiss0006" x="492" y="3715" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
+	<SubTexture name="downmiss0007" x="492" y="3715" width="468" height="392" frameX="-0" frameY="-5" frameWidth="469" frameHeight="397"/>
+	<SubTexture name="extraction0000" x="5101" y="1776" width="383" height="445" frameX="-681" frameY="-665" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0001" x="5101" y="1776" width="383" height="445" frameX="-681" frameY="-665" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0002" x="5100" y="3547" width="375" height="450" frameX="-686" frameY="-662" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0003" x="5100" y="3547" width="375" height="450" frameX="-686" frameY="-662" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0004" x="745" y="5051" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0005" x="745" y="5051" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0006" x="1117" y="5052" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0007" x="1117" y="5052" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0008" x="1489" y="5052" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0009" x="1489" y="5052" width="369" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0010" x="1" y="5036" width="370" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0011" x="1" y="5036" width="370" height="451" frameX="-691" frameY="-661" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0012" x="5100" y="4000" width="372" height="452" frameX="-688" frameY="-660" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0013" x="5100" y="4000" width="372" height="452" frameX="-688" frameY="-660" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0014" x="5074" y="1320" width="377" height="453" frameX="-683" frameY="-659" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0015" x="5074" y="1320" width="377" height="453" frameX="-683" frameY="-659" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0016" x="5072" y="397" width="381" height="455" frameX="-679" frameY="-657" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0017" x="2675" y="3157" width="415" height="455" frameX="-645" frameY="-657" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0018" x="2533" y="871" width="550" height="574" frameX="-510" frameY="-538" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0019" x="2477" y="2476" width="649" height="678" frameX="-411" frameY="-434" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0020" x="719" y="1774" width="721" height="752" frameX="-339" frameY="-360" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0021" x="1704" y="1753" width="770" height="803" frameX="-290" frameY="-309" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0022" x="1707" y="1" width="805" height="838" frameX="-256" frameY="-274" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0023" x="1704" y="890" width="826" height="860" frameX="-235" frameY="-252" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0024" x="1" y="891" width="839" height="874" frameX="-222" frameY="-238" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0025" x="855" y="890" width="846" height="881" frameX="-215" frameY="-231" frameWidth="1064" frameHeight="1139"/>
 	<SubTexture name="extraction0026" x="855" y="1" width="849" height="886" frameX="-211" frameY="-226" frameWidth="1064" frameHeight="1139"/>
 	<SubTexture name="extraction0027" x="1" y="1" width="851" height="887" frameX="-209" frameY="-225" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0028" x="1705" y="1684" width="796" height="715" rotated="true" frameX="-208" frameY="-224" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0029" x="1705" y="1684" width="796" height="715" rotated="true" frameX="-208" frameY="-224" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0030" x="2549" y="756" width="720" height="623" rotated="true" frameX="-208" frameY="-224" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0031" x="1059" y="2548" width="491" height="535" frameX="-190" frameY="-149" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0032" x="1" y="3122" width="519" height="490" rotated="true" frameX="-154" frameY="-137" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0033" x="2527" y="2509" width="489" height="520" frameX="-125" frameY="-113" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0034" x="523" y="3122" width="517" height="489" rotated="true" frameX="-99" frameY="-93" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0035" x="1059" y="3086" width="491" height="514" frameX="-75" frameY="-77" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0036" x="2951" y="3032" width="490" height="510" frameX="-58" frameY="-64" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0037" x="2042" y="3034" width="489" height="512" frameX="-46" frameY="-52" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0038" x="3019" y="2509" width="490" height="510" frameX="-34" frameY="-43" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0039" x="1" y="3615" width="509" height="491" rotated="true" frameX="-23" frameY="-37" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0040" x="2049" y="3549" width="491" height="508" frameX="-16" frameY="-32" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0041" x="513" y="3615" width="509" height="489" rotated="true" frameX="-14" frameY="-28" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0042" x="1025" y="3614" width="509" height="490" rotated="true" frameX="-10" frameY="-25" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0043" x="3444" y="3022" width="491" height="507" frameX="-6" frameY="-24" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0044" x="3512" y="1023" width="506" height="491" rotated="true" frameX="-4" frameY="-23" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0045" x="2543" y="3547" width="490" height="508" frameX="-5" frameY="-22" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0046" x="1537" y="3603" width="509" height="489" rotated="true" frameX="-5" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0047" x="3530" y="3532" width="491" height="507" frameX="-2" frameY="-22" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0048" x="3036" y="3545" width="491" height="508" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0049" x="3657" y="1" width="490" height="508" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0050" x="1" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0051" x="4024" y="3473" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0052" x="4024" y="3473" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0053" x="1" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0054" x="1" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0055" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0056" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0057" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0058" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0059" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0060" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0061" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0062" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0063" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0064" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0065" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0066" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0067" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0068" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0069" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0070" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0071" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0072" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0073" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0074" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0075" x="505" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0076" x="505" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0077" x="2029" y="4095" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0078" x="2029" y="4095" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0079" x="505" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0080" x="505" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0081" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0082" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0083" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0084" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0085" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0086" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0087" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0088" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0089" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0090" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0091" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0092" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0093" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0094" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0095" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0096" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0097" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0098" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0099" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0100" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0101" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0102" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0103" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0104" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0105" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0106" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0107" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0108" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0109" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0110" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0111" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0112" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0113" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0114" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0115" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0116" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0117" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0118" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0119" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0120" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0121" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0122" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0123" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0124" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0125" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0126" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0127" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0128" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0129" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0130" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0131" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0132" x="1" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0133" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0134" x="506" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0135" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0136" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0137" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0138" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0139" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0140" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0141" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0142" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0143" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0144" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0145" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0146" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0147" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0148" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0149" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0150" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0151" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0152" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0153" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0154" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0155" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0156" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0157" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0158" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0159" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0160" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0161" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0162" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0163" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0164" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0165" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0166" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0167" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0168" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0169" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0170" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0171" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0172" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0173" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0174" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0175" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0176" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0177" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0178" x="1011" y="4107" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0179" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0180" x="1009" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0181" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0182" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0183" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0184" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0185" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0186" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0187" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0188" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0189" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0190" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0191" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0192" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0193" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0194" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0195" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0196" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0197" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0198" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0199" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0200" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0201" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0202" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0203" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0204" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0205" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0206" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0207" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0208" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0209" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0210" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0211" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0212" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0213" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0214" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0215" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0216" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0217" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0218" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0219" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0220" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0221" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0222" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0223" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0224" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0225" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0226" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0227" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0228" x="1513" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0229" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0230" x="2521" y="4060" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0231" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0232" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0233" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0234" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0235" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0236" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0237" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0238" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0239" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0240" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0241" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0242" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0243" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0244" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0245" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0246" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0247" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0248" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0249" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0250" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0251" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0252" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0253" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0254" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0255" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0256" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0257" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0258" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0259" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0260" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0261" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0262" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0263" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0264" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0265" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0266" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0267" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0268" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0269" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0270" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0271" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0272" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0273" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0274" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0275" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0276" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0277" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0278" x="3013" y="4058" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0279" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0280" x="2017" y="4601" width="501" height="490" rotated="true" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0281" x="3505" y="4056" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0282" x="4150" y="1" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0283" x="2521" y="4565" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0284" x="3014" y="4563" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0285" x="4150" y="506" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0286" x="4021" y="1023" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0287" x="3507" y="4561" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0288" x="4000" y="4547" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0289" x="4124" y="1515" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0290" x="4124" y="2007" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0291" x="4024" y="3473" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0292" x="4024" y="3473" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0293" x="1" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0294" x="1" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0295" x="4024" y="3473" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0296" x="4024" y="3473" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0297" x="1" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0298" x="1" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0299" x="4024" y="3473" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0300" x="4024" y="3473" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0301" x="1" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0302" x="1" y="4109" width="502" height="489" rotated="true" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0303" x="4024" y="3473" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0304" x="4526" y="1011" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0305" x="3997" y="4042" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0306" x="3997" y="4042" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0307" x="4526" y="1011" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0308" x="3997" y="4042" width="489" height="502" frameX="-2" frameY="-19" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0309" x="1" y="4109" width="502" height="489" rotated="true" frameX="-2" frameY="-19" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0310" x="3938" y="2968" width="490" height="502" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0311" x="4642" y="1" width="490" height="501" frameX="-2" frameY="-22" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0312" x="1537" y="4095" width="489" height="503" frameX="-4" frameY="-23" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0313" x="3512" y="2461" width="489" height="504" frameX="-4" frameY="-27" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0314" x="3209" y="1517" width="489" height="505" frameX="-3" frameY="-34" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0315" x="3657" y="512" width="488" height="508" frameX="-3" frameY="-47" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0316" x="1553" y="3084" width="486" height="514" frameX="-5" frameY="-67" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0317" x="2039" y="2509" width="485" height="522" frameX="-6" frameY="-100" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0318" x="1553" y="2548" width="483" height="533" frameX="-6" frameY="-149" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0319" x="578" y="2569" width="478" height="550" frameX="-8" frameY="-218" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0320" x="2504" y="2034" width="666" height="472" rotated="true" frameX="-12" frameY="-224" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0321" x="885" y="890" width="867" height="471" rotated="true" frameX="-13" frameY="-224" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0322" x="885" y="1364" width="510" height="320" rotated="true" frameX="-56" frameY="-614" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0323" x="4948" y="2727" width="406" height="368" rotated="true" frameX="-29" frameY="-729" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0324" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0325" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0326" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0327" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0328" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0329" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0330" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0331" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0332" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0333" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0334" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0335" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0336" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0337" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0338" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0339" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0340" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0341" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0342" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0343" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0344" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0345" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0346" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0347" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0348" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0349" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0350" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0351" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0352" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0353" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0354" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0355" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0356" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0357" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0358" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0359" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0360" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0361" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0362" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0363" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0364" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0365" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0366" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0367" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0368" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0369" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0370" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0371" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0372" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0373" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0374" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0375" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0376" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0377" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0378" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0379" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0380" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0381" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0382" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0383" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0384" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0385" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0386" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0387" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0388" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0389" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0390" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0391" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0392" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0393" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0394" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0395" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0396" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0397" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0398" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0399" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0400" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0401" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0402" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0403" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0404" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0405" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0406" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0407" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0408" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0409" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0410" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0411" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0412" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0413" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0414" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0415" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0416" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0417" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0418" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0419" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0420" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0421" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0422" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0423" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0424" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0425" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0426" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0427" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0428" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0429" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0430" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0431" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0432" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0433" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0434" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0435" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0436" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0437" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0438" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0439" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0440" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0441" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0442" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0443" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0444" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0445" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0446" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0447" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0448" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0449" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0450" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0451" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0452" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0453" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0454" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0455" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0456" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0457" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0458" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0459" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0460" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0461" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0462" x="4913" y="5111" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="extraction0463" x="3701" y="2024" width="418" height="338" rotated="true" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
-	<SubTexture name="idle0000" x="4888" y="3893" width="368" height="451" frameX="-2" frameY="-4" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0001" x="4888" y="3893" width="368" height="451" frameX="-2" frameY="-4" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0002" x="4458" y="5051" width="452" height="366" rotated="true" frameX="-3" frameY="-3" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0003" x="4458" y="5051" width="452" height="366" rotated="true" frameX="-3" frameY="-3" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0004" x="3507" y="5065" width="453" height="368" rotated="true" frameX="-1" frameY="-2" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0005" x="3507" y="5065" width="453" height="368" rotated="true" frameX="-1" frameY="-2" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0006" x="917" y="5094" width="455" height="370" rotated="true" frameX="-0" frameY="-0" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0007" x="917" y="5094" width="455" height="370" rotated="true" frameX="-0" frameY="-0" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0008" x="1375" y="5094" width="454" height="370" rotated="true" frameX="-0" frameY="-1" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0009" x="1375" y="5094" width="454" height="370" rotated="true" frameX="-0" frameY="-1" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0010" x="5135" y="1" width="369" height="452" frameX="-1" frameY="-3" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0011" x="5135" y="1" width="369" height="452" frameX="-1" frameY="-3" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0012" x="5135" y="456" width="369" height="452" frameX="-1" frameY="-3" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="idle0013" x="5135" y="456" width="369" height="452" frameX="-1" frameY="-3" frameWidth="370" frameHeight="456"/>
-	<SubTexture name="left0000" x="2534" y="3032" width="414" height="512" rotated="true" frameX="-0" frameY="-9" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="left0001" x="2534" y="3032" width="414" height="512" rotated="true" frameX="-0" frameY="-9" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="left0002" x="3173" y="2034" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="left0003" x="3173" y="2034" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="left0004" x="3173" y="2034" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="left0005" x="3173" y="2034" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="left0006" x="3173" y="2034" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="left0007" x="3173" y="2034" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="left0008" x="3173" y="2034" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="left0009" x="3173" y="2034" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
-	<SubTexture name="leftmiss0000" x="2534" y="3032" width="414" height="512" rotated="true" frameX="-0" frameY="-9" frameWidth="519" frameHeight="424"/>
-	<SubTexture name="leftmiss0001" x="4629" y="1515" width="499" height="420" frameX="-19" frameY="-0" frameWidth="519" frameHeight="424"/>
-	<SubTexture name="leftmiss0002" x="4629" y="1515" width="499" height="420" frameX="-19" frameY="-0" frameWidth="519" frameHeight="424"/>
-	<SubTexture name="leftmiss0003" x="3701" y="1517" width="420" height="504" rotated="true" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
-	<SubTexture name="leftmiss0004" x="3701" y="1517" width="420" height="504" rotated="true" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
-	<SubTexture name="leftmiss0005" x="3701" y="1517" width="420" height="504" rotated="true" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
-	<SubTexture name="leftmiss0006" x="3701" y="1517" width="420" height="504" rotated="true" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
-	<SubTexture name="leftmiss0007" x="3701" y="1517" width="420" height="504" rotated="true" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
-	<SubTexture name="right0000" x="4004" y="2499" width="425" height="465" rotated="true" frameX="-3" frameY="-3" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="right0001" x="4004" y="2499" width="425" height="465" rotated="true" frameX="-3" frameY="-3" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="right0002" x="4517" y="3431" width="428" height="459" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="right0003" x="4517" y="3431" width="428" height="459" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="right0004" x="4517" y="3431" width="428" height="459" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="right0005" x="4517" y="3431" width="428" height="459" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="right0006" x="4517" y="3431" width="428" height="459" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="right0007" x="4517" y="3431" width="428" height="459" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="right0008" x="4517" y="3431" width="428" height="459" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="right0009" x="4517" y="3431" width="428" height="459" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
-	<SubTexture name="rightmiss0000" x="4004" y="2499" width="425" height="465" rotated="true" frameX="-6" frameY="-4" frameWidth="471" frameHeight="429"/>
-	<SubTexture name="rightmiss0001" x="4000" y="5051" width="455" height="429" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
-	<SubTexture name="rightmiss0002" x="4000" y="5051" width="455" height="429" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
-	<SubTexture name="rightmiss0003" x="4431" y="2967" width="429" height="461" rotated="true" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
-	<SubTexture name="rightmiss0004" x="4431" y="2967" width="429" height="461" rotated="true" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
-	<SubTexture name="rightmiss0005" x="4431" y="2967" width="429" height="461" rotated="true" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
-	<SubTexture name="rightmiss0006" x="4431" y="2967" width="429" height="461" rotated="true" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
-	<SubTexture name="rightmiss0007" x="4431" y="2967" width="429" height="461" rotated="true" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
-	<SubTexture name="up0000" x="3273" y="1" width="381" height="512" frameX="-1" frameY="-0" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="up0001" x="3273" y="1" width="381" height="512" frameX="-1" frameY="-0" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="up0002" x="4642" y="505" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="up0003" x="4642" y="505" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="up0004" x="4642" y="505" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="up0005" x="4642" y="505" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="up0006" x="4642" y="505" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="up0007" x="4642" y="505" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="up0008" x="4642" y="505" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="up0009" x="4642" y="505" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="upmiss0000" x="3273" y="1" width="381" height="512" frameX="-2" frameY="-0" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="upmiss0001" x="4629" y="1938" width="481" height="380" rotated="true" frameX="-0" frameY="-31" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="upmiss0002" x="4629" y="1938" width="481" height="380" rotated="true" frameX="-0" frameY="-31" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="upmiss0003" x="3273" y="516" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="upmiss0004" x="3273" y="516" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="upmiss0005" x="3273" y="516" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="upmiss0006" x="3273" y="516" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
-	<SubTexture name="upmiss0007" x="3273" y="516" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="extraction0028" x="1" y="1768" width="715" height="796" frameX="-208" frameY="-224" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0029" x="1" y="1768" width="715" height="796" frameX="-208" frameY="-224" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0030" x="2477" y="1753" width="623" height="720" frameX="-208" frameY="-224" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0031" x="1" y="2567" width="491" height="535" frameX="-190" frameY="-149" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0032" x="2989" y="1" width="490" height="519" frameX="-154" frameY="-137" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0033" x="3086" y="523" width="489" height="520" frameX="-125" frameY="-113" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0034" x="3103" y="1571" width="489" height="517" frameX="-99" frameY="-93" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0035" x="3129" y="2091" width="491" height="514" frameX="-75" frameY="-77" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0036" x="1" y="3105" width="490" height="510" frameX="-58" frameY="-64" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0037" x="3129" y="2608" width="489" height="512" frameX="-46" frameY="-52" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0038" x="1194" y="3095" width="490" height="510" frameX="-34" frameY="-43" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0039" x="3129" y="3123" width="491" height="509" frameX="-23" frameY="-37" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0040" x="1687" y="3095" width="491" height="508" frameX="-16" frameY="-32" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0041" x="3482" y="1" width="489" height="509" frameX="-14" frameY="-28" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0042" x="3621" y="2608" width="490" height="509" frameX="-10" frameY="-25" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0043" x="3574" y="1046" width="491" height="507" frameX="-6" frameY="-24" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0044" x="1687" y="3606" width="491" height="506" frameX="-4" frameY="-23" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0045" x="3623" y="2066" width="490" height="508" frameX="-5" frameY="-22" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0046" x="3578" y="513" width="489" height="509" frameX="-5" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0047" x="3595" y="1556" width="491" height="507" frameX="-2" frameY="-22" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0048" x="2181" y="3157" width="491" height="508" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0049" x="3623" y="3120" width="490" height="508" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0050" x="985" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0051" x="4114" y="2577" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0052" x="4114" y="2577" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0053" x="985" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0054" x="985" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0055" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0056" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0057" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0058" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0059" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0060" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0061" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0062" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0063" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0064" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0065" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0066" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0067" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0068" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0069" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0070" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0071" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0072" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0073" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0074" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0075" x="4089" y="1529" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0076" x="4089" y="1529" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0077" x="1969" y="4174" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0078" x="1969" y="4174" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0079" x="4089" y="1529" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0080" x="4089" y="1529" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0081" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0082" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0083" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0084" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0085" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0086" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0087" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0088" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0089" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0090" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0091" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0092" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0093" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0094" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0095" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0096" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0097" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0098" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0099" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0100" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0101" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0102" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0103" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0104" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0105" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0106" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0107" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0108" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0109" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0110" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0111" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0112" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0113" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0114" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0115" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0116" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0117" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0118" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0119" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0120" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0121" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0122" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0123" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0124" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0125" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0126" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0127" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0128" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0129" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0130" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0131" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0132" x="4068" y="1025" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0133" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0134" x="1477" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0135" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0136" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0137" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0138" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0139" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0140" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0141" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0142" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0143" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0144" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0145" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0146" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0147" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0148" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0149" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0150" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0151" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0152" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0153" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0154" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0155" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0156" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0157" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0158" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0159" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0160" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0161" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0162" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0163" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0164" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0165" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0166" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0167" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0168" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0169" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0170" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0171" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0172" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0173" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0174" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0175" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0176" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0177" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0178" x="4607" y="2537" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0179" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0180" x="4116" y="2033" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0181" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0182" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0183" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0184" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0185" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0186" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0187" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0188" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0189" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0190" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0191" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0192" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0193" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0194" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0195" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0196" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0197" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0198" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0199" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0200" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0201" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0202" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0203" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0204" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0205" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0206" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0207" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0208" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0209" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0210" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0211" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0212" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0213" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0214" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0215" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0216" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0217" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0218" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0219" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0220" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0221" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0222" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0223" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0224" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0225" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0226" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0227" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0228" x="3974" y="1" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0229" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0230" x="4561" y="1009" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0231" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0232" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0233" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0234" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0235" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0236" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0237" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0238" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0239" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0240" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0241" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0242" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0243" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0244" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0245" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0246" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0247" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0248" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0249" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0250" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0251" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0252" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0253" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0254" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0255" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0256" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0257" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0258" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0259" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0260" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0261" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0262" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0263" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0264" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0265" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0266" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0267" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0268" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0269" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0270" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0271" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0272" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0273" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0274" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0275" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0276" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0277" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0278" x="4582" y="1514" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0279" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0280" x="4070" y="505" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0281" x="4609" y="2019" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0282" x="4563" y="1" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0283" x="4115" y="3631" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0284" x="4116" y="3081" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0285" x="4608" y="3585" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0286" x="4609" y="3042" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0287" x="4115" y="4135" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0288" x="3168" y="4139" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0289" x="4608" y="4090" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0290" x="4608" y="4595" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0291" x="4114" y="2577" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0292" x="4114" y="2577" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0293" x="985" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0294" x="985" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0295" x="4114" y="2577" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0296" x="4114" y="2577" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0297" x="985" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0298" x="985" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0299" x="4114" y="2577" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0300" x="4114" y="2577" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0301" x="985" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0302" x="985" y="4115" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0303" x="4114" y="2577" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0304" x="2673" y="4140" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0305" x="3661" y="4639" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0306" x="3661" y="4639" width="489" height="502" frameX="-4" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0307" x="2673" y="4140" width="490" height="501" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0308" x="3661" y="4639" width="489" height="502" frameX="-2" frameY="-19" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0309" x="985" y="4115" width="489" height="502" frameX="-2" frameY="-19" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0310" x="2675" y="3635" width="490" height="502" frameX="-2" frameY="-21" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0311" x="492" y="4115" width="490" height="501" frameX="-2" frameY="-22" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0312" x="2181" y="3668" width="489" height="503" frameX="-4" frameY="-23" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0313" x="983" y="3608" width="489" height="504" frameX="-4" frameY="-27" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0314" x="3623" y="3631" width="489" height="505" frameX="-3" frameY="-34" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0315" x="1" y="3618" width="488" height="508" frameX="-3" frameY="-47" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0316" x="494" y="3198" width="486" height="514" frameX="-5" frameY="-67" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0317" x="3086" y="1046" width="485" height="522" frameX="-6" frameY="-100" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0318" x="1675" y="2559" width="483" height="533" frameX="-6" frameY="-149" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0319" x="1194" y="2529" width="478" height="550" frameX="-8" frameY="-218" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0320" x="719" y="2529" width="472" height="666" frameX="-12" frameY="-224" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0321" x="2515" y="1" width="471" height="867" frameX="-13" frameY="-224" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0322" x="2658" y="5067" width="320" height="510" frameX="-56" frameY="-614" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0323" x="2981" y="5067" width="368" height="406" frameX="-29" frameY="-729" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0324" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0325" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0326" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0327" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0328" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0329" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0330" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0331" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0332" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0333" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0334" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0335" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0336" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0337" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0338" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0339" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0340" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0341" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0342" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0343" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0344" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0345" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0346" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0347" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0348" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0349" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0350" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0351" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0352" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0353" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0354" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0355" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0356" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0357" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0358" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0359" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0360" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0361" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0362" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0363" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0364" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0365" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0366" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0367" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0368" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0369" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0370" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0371" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0372" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0373" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0374" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0375" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0376" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0377" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0378" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0379" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0380" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0381" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0382" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0383" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0384" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0385" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0386" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0387" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0388" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0389" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0390" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0391" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0392" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0393" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0394" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0395" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0396" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0397" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0398" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0399" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0400" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0401" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0402" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0403" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0404" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0405" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0406" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0407" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0408" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0409" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0410" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0411" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0412" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0413" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0414" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0415" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0416" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0417" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0418" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0419" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0420" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0421" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0422" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0423" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0424" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0425" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0426" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0427" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0428" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0429" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0430" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0431" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0432" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0433" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0434" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0435" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0436" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0437" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0438" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0439" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0440" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0441" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0442" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0443" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0444" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0445" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0446" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0447" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0448" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0449" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0450" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0451" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0452" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0453" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0454" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0455" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0456" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0457" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0458" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0459" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0460" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0461" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0462" x="3693" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="extraction0463" x="3352" y="5144" width="338" height="418" frameX="-47" frameY="-715" frameWidth="1064" frameHeight="1139"/>
+	<SubTexture name="idle0000" x="2287" y="5067" width="368" height="451" frameX="-2" frameY="-4" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0001" x="2287" y="5067" width="368" height="451" frameX="-2" frameY="-4" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0002" x="1861" y="5163" width="366" height="452" frameX="-3" frameY="-3" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0003" x="1861" y="5163" width="366" height="452" frameX="-3" frameY="-3" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0004" x="374" y="5047" width="368" height="453" frameX="-1" frameY="-2" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0005" x="374" y="5047" width="368" height="453" frameX="-1" frameY="-2" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0006" x="5101" y="2923" width="370" height="455" frameX="-0" frameY="-0" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0007" x="5101" y="2923" width="370" height="455" frameX="-0" frameY="-0" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0008" x="5100" y="4455" width="370" height="454" frameX="-0" frameY="-1" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0009" x="5100" y="4455" width="370" height="454" frameX="-0" frameY="-1" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0010" x="5100" y="4912" width="369" height="452" frameX="-1" frameY="-3" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0011" x="5100" y="4912" width="369" height="452" frameX="-1" frameY="-3" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0012" x="4537" y="5100" width="369" height="452" frameX="-1" frameY="-3" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="idle0013" x="4537" y="5100" width="369" height="452" frameX="-1" frameY="-3" frameWidth="370" frameHeight="456"/>
+	<SubTexture name="left0000" x="1" y="4619" width="512" height="414" frameX="-0" frameY="-9" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="left0001" x="1" y="4619" width="512" height="414" frameX="-0" frameY="-9" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="left0002" x="4563" y="506" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="left0003" x="4563" y="506" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="left0004" x="4563" y="506" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="left0005" x="4563" y="506" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="left0006" x="4563" y="506" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="left0007" x="4563" y="506" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="left0008" x="4563" y="506" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="left0009" x="4563" y="506" width="506" height="424" frameX="-6" frameY="-0" frameWidth="512" frameHeight="424"/>
+	<SubTexture name="leftmiss0000" x="1" y="4619" width="512" height="414" frameX="-0" frameY="-9" frameWidth="519" frameHeight="424"/>
+	<SubTexture name="leftmiss0001" x="2968" y="4644" width="499" height="420" frameX="-19" frameY="-0" frameWidth="519" frameHeight="424"/>
+	<SubTexture name="leftmiss0002" x="2968" y="4644" width="499" height="420" frameX="-19" frameY="-0" frameWidth="519" frameHeight="424"/>
+	<SubTexture name="leftmiss0003" x="2461" y="4644" width="504" height="420" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
+	<SubTexture name="leftmiss0004" x="2461" y="4644" width="504" height="420" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
+	<SubTexture name="leftmiss0005" x="2461" y="4644" width="504" height="420" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
+	<SubTexture name="leftmiss0006" x="2461" y="4644" width="504" height="420" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
+	<SubTexture name="leftmiss0007" x="2461" y="4644" width="504" height="420" frameX="-13" frameY="-0" frameWidth="519" frameHeight="424"/>
+	<SubTexture name="right0000" x="516" y="4619" width="465" height="425" frameX="-3" frameY="-3" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="right0001" x="516" y="4619" width="465" height="425" frameX="-3" frameY="-3" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="right0002" x="984" y="4620" width="459" height="428" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="right0003" x="984" y="4620" width="459" height="428" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="right0004" x="984" y="4620" width="459" height="428" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="right0005" x="984" y="4620" width="459" height="428" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="right0006" x="984" y="4620" width="459" height="428" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="right0007" x="984" y="4620" width="459" height="428" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="right0008" x="984" y="4620" width="459" height="428" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="right0009" x="984" y="4620" width="459" height="428" frameX="-0" frameY="-0" frameWidth="468" frameHeight="428"/>
+	<SubTexture name="rightmiss0000" x="516" y="4619" width="465" height="425" frameX="-6" frameY="-4" frameWidth="471" frameHeight="429"/>
+	<SubTexture name="rightmiss0001" x="1446" y="4620" width="455" height="429" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
+	<SubTexture name="rightmiss0002" x="1446" y="4620" width="455" height="429" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
+	<SubTexture name="rightmiss0003" x="1" y="4129" width="461" height="429" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
+	<SubTexture name="rightmiss0004" x="1" y="4129" width="461" height="429" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
+	<SubTexture name="rightmiss0005" x="1" y="4129" width="461" height="429" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
+	<SubTexture name="rightmiss0006" x="1" y="4129" width="461" height="429" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
+	<SubTexture name="rightmiss0007" x="1" y="4129" width="461" height="429" frameX="-0" frameY="-0" frameWidth="471" frameHeight="429"/>
+	<SubTexture name="up0000" x="4153" y="4639" width="381" height="512" frameX="-1" frameY="-0" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="up0001" x="4153" y="4639" width="381" height="512" frameX="-1" frameY="-0" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="up0002" x="3661" y="4139" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="up0003" x="3661" y="4139" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="up0004" x="3661" y="4139" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="up0005" x="3661" y="4139" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="up0006" x="3661" y="4139" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="up0007" x="3661" y="4139" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="up0008" x="3661" y="4139" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="up0009" x="3661" y="4139" width="384" height="492" frameX="-0" frameY="-19" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="upmiss0000" x="4153" y="4639" width="381" height="512" frameX="-2" frameY="-0" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="upmiss0001" x="1904" y="4679" width="380" height="481" frameX="-0" frameY="-31" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="upmiss0002" x="1904" y="4679" width="380" height="481" frameX="-0" frameY="-31" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="upmiss0003" x="3168" y="3635" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="upmiss0004" x="3168" y="3635" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="upmiss0005" x="3168" y="3635" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="upmiss0006" x="3168" y="3635" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
+	<SubTexture name="upmiss0007" x="3168" y="3635" width="376" height="489" frameX="-2" frameY="-23" frameWidth="384" frameHeight="513"/>
 </TextureAtlas>

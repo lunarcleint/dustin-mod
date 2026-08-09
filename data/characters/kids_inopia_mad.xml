@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="-700" y="285" sprite="inopia/kids_inopia_red" scale="1.2" flipX="true" camx="650" camy="-30" isPlayer="true" icon="inopia-mad-kids" color="#C82423" gameOverChar="bf_inopia">
+	<anim name="idle" anim="bf_idle" loop="true"/>
+	<anim name="singRIGHT" anim="bf_right" x="-20" y="-30"/>
+	<anim name="singDOWN" anim="bf_down" x="-29" y="-66"/>
+	<anim name="singUP" anim="bf_up" x="-18" y="86"/>
+	<anim name="singLEFT" anim="bf_left" x="127" y="-5"/>
+</character>

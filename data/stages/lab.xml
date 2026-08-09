@@ -1,1 +1,23 @@
-<!DOCTYPE codename-engine-stage><stage folder="stages/lab/" name="waterfall" playerZoom=".56" gfZoom=".7" noteSkin="avulsion" healthBarSkin="avulsion" timeBarSkin="avulsion"><sprite x="0" sprite="bg_main" y="0" name="bg_main" alpha="0" antialiasing="true"/><sprite x="0" sprite="bg_end" y="0" name="bg_end" alpha="0" antialiasing="true"/><sprite x="150" sprite="bg_start" y="100" name="bg_start" alpha="1" antialiasing="true"/><sprite name="bg_monitor" x="750" y="1330" sprite="bg_monitor" scale="1" antialiasing="true"><anim name="Monitor" x="0" y="0" loop="true" fps="24"/></sprite><girlfriend x="1780" scroll="1" y="1100" camyoffset="60" camxoffset="7"/><dad x="820" y="1340" scale="0.95" camxoffset="0" camyoffset="40"/><boyfriend x="2510" y="1670" camxoffset="20" camyoffset="10"/><sprite x="0" sprite="bg_light2" y="0" scrollx="1" scrolly="1" name="bg_light2" alpha="0" antialiasing="true"/><sprite x="0" sprite="bg_light3" y="0" scrollx="1" scrolly="1" name="bg_light3" alpha="0" antialiasing="true"/></stage>
+<!DOCTYPE codename-engine-stage>
+<stage healthBarSkin="avulsion" playerZoom=".56" gfZoom=".7" folder="stages/lab/" timeBarSkin="avulsion" noteSkin="avulsion" name="waterfall">
+	<sprite x="47" sprite="TL_room" y="202" type="none" name="room"/>
+	<sprite x="750" sprite="bg_monitor" y="1330" name="bg_monitor"/>
+	<sprite x="818.368942443616" sprite="TL_floor_Back" y="1746.80314456824" type="none" name="floorLights"/>
+	<sprite x="1203.88767051662" sprite="DTextractor" y="269.000960915675" type="none" scalex="0.955295743904628" scaley="0.955365710280379" name="dt"/>
+	<sprite x="1238.72268135349" sprite="DTextractorLIGHTS" y="352.157611356373" type="none" scalex="0.955967235803258" scaley="0.954332460642583" name="dtLights"/>
+	<sprite x="1769.47811152272" sprite="DTextractorEYES" y="950.594069492881" type="none" scalex="1.01094279328813" scaley="1.00982584475533" name="dtEyes"/>
+	<sprite x="109.33352756941" sprite="TL_floor" y="1747.33294763598" type="none" name="tiledFloor"/>
+	<sprite x="-598.659922304028" scroll="0.7" sprite="wireBACK" y="-119.416097136414" type="none" name="wireBack"/>
+	<sprite x="5.74509613215923e-08" sprite="g_OVER" y="70.4751282286422" type="none" alpha="0.25" name="g_OVER2"/>
+	<sprite x="213.409433701039" sprite="dtOVER" y="257.323873229714" type="none" alpha="0" scalex="1.07578724514942" scaley="1.08170520803407" name="dtOVER"/>
+	<girlfriend camxoffset="7" x="1780" scroll="1" camyoffset="60" y="1100"/>
+	<dad x="820" camyoffset="40" y="1340"/>
+	<boyfriend camxoffset="20" x="2510" camyoffset="10" y="1670"/>
+	<sprite x="419.911970623763" scroll="1.15" sprite="wireFront" y="238.862776734559" type="none" scale="1.1013128211149" name="wireFront"/>
+	<sprite alpha="0" sprite="bg_light2" name="bg_light2"/>
+	<sprite alpha="0" sprite="bg_light3" name="bg_light3"/>
+	<sprite x="1233.16910078397" sprite="lowerGLOW" y="381.795423686856" type="none" name="lowerGLOW"/>
+	<sprite x="5.74509613215923e-08" sprite="g_OVER" y="70.4751282286422" type="none" alpha="0.25" name="g_OVER"/>
+	<sprite x="1222" sprite="bg_start" y="314" alpha="0" name="bg_start"/>
+	<sprite scrolly="0.9" x="-909.37565647729" sprite="drakOVER" y="537.7176183749" type="none" scrollx="0.5" name="drakOVER"/>
+</stage>

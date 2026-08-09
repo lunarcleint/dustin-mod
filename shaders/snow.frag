@@ -128,7 +128,7 @@ void main()
     if (flipY) uvCentered.y *= -1;
 	
 	float meltiness = abs(1.-((pixel.y-snowMeltRect.y)/snowMeltRect.w));
-	if (pixel.y >= snowMeltRect.y + snowMeltRect.w) meltiness = 0;
+	if (pixel.y >= snowMeltRect.y + snowMeltRect.w) meltiness = 0.0;
 
 	if (pixely) uvCentered = floor(uvCentered / 0.009) * 0.009;
 

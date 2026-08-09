@@ -32,24 +32,33 @@ function create() {
 
     FlxG.camera.bgColor = 0x00000000;
 
-    if (Options.gameplayShaders && FlxG.save.data.bloom) tvScreen.addShader(bloom_new);
-    if (Options.gameplayShaders && FlxG.save.data.saturation) tvScreen.addShader(saturation);
-    if (Options.gameplayShaders && FlxG.save.data.saturation) tvScreen.addShader(contrast);
-
     oldstatic = new CustomShader("static");
     oldstatic.time = 0; oldstatic.strength = 7;
-    if (Options.gameplayShaders && FlxG.save.data.static) tvScreen.addShader(oldstatic);
 
     tape_noise = new CustomShader("tapenoise");
     tape_noise.res = [FlxG.width, FlxG.height];
     tape_noise.time = 0; tape_noise.strength = 1;
-    if (Options.gameplayShaders && FlxG.save.data.static) tvScreen.addShader(tape_noise);
 
     screenVignette = new CustomShader("coloredVignette");
     screenVignette.strength = .4; screenVignette.transperency = false;
     screenVignette.amount = .4;
     screenVignette.color = [0.0, 0.0, 0.0];
-    if (Options.gameplayShaders) tvScreen.addShader(screenVignette);
+
+    if (Options.gameplayShaders) {
+        if (FlxG.save.data.bloom) tvScreen.addShader(bloom_new);
+
+        if (FlxG.save.data.saturation) {
+            tvScreen.addShader(saturation);
+            tvScreen.addShader(contrast);
+        }
+
+        if (FlxG.save.data.static) {
+            tvScreen.addShader(oldstatic);
+            tvScreen.addShader(tape_noise);
+        }
+
+        tvScreen.addShader(screenVignette);
+    }
 }
 
 var ogTvWorldWidth:Int = 0;
@@ -140,7 +149,8 @@ function boundTvScreenX() {
 }
 
 function draw(_) {
-    if (!tvScreen.visible) return;
+    if (!camGame.visible || tvScreen == null || curVideo != null || !tvScreen.visible)
+        return;
 
     scaleTVToWorld();
     if (!FlxG.fullScreen) {
@@ -151,9 +161,11 @@ function draw(_) {
 
     for (member in members) {
         if (Std.isOfType(member, FlxSprite) && member.camera == FlxG.camera) {
+            if (member.isOnScreen == null)
+                continue;
             var oldCameras = member.cameras;
 
-            if (member.alpha == 0 || !member.visible || member._frame.type == 2) continue;
+            if (member.alpha == 0 || !member.visible || member._frame?.type == 2) continue;
 
             if (!member.isOnScreen(tvScreen)) continue;
 

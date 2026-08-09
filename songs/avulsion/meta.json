@@ -1,32 +1,34 @@
 {
+	"customValues": {
+		"customName": "avulsiOn",
+		"titleCardSubtext": "* by Mar Mar/pause(0.5)/\n* ft. Chezzar & Skie",
+		"gameover": {
+			"isMonster": false,
+			"quote": "you won't be using this for much longer.",
+			"song": "avulsion",
+			"sound": "sans"
+		},
+		"credits": {
+			"CHART": "GOJIMANPLAYS",
+			"BACKGROUND": "HLOARTS",
+			"SPRITES": "YEEZUS (HORRORSPINN), SAMUEL PASTEL",
+			"SONG": "MAR MAR, CHEZZAR, SKIE"
+		},
+		"stats": "* SANS 91 ATK 76 DEF \n* His look pierces through your mind.\n* He holds a strange remote."
+	},
+	"color": "#000000",
 	"opponentModeAllowed": true,
 	"difficulties": [
 		"hard"
 	],
 	"icon": "Icon",
 	"coopAllowed": true,
-	"name": "avulsion",
-	"color": "#FFFFFF",
-	"customValues": {
-		"customName": "avulsiOn",
-		"gameover": {
-			"quote": "you won't be using this for much longer.",
-			"isMonster": false,
-			"sound": "sans",
-			"song": "avulsion"
-		},
-		"credits": {
-			"SPRITES": "HORRORSPINN, SAMUEL PASTEL",
-			"BACKGROUND": "HLOARTS",
-			"CHART": "GOJIMANPLAYS",
-			"SONG": "MAR MAR, CHEZZAR, SKIE"
-		},
-		"titleCardSubtext": "* by Mar Mar/pause(0.5)/\n* ft. Chezzar & Skie",
-		"stats": "* SANS - 91 ATK 76 DEF \n* His look pierces through your mind.\n* He holds a strange remote."
-	},
 	"stepsPerBeat": 4,
 	"displayName": "Avulsion",
 	"needsVoices": true,
 	"beatsPerMeasure": 4,
+	"variants": [
+		"final hours"
+	],
 	"bpm": 165
 }

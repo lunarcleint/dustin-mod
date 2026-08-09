@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="sixbones/sixbones_1" icon="icon" color="#7C000B" holdTime="6.1">
+	<anim name="idle" anim="idle" loop="true"/>
+	<anim name="singLEFT" anim="left_one"/>
+	<anim name="singDOWN" anim="down_one"/>
+	<anim name="singUP" anim="up_one"/>
+	<anim name="singRIGHT" anim="right_one"/>
+	<anim name="singLEFT-mad" anim="left_two"/>
+	<anim name="singDOWN-mad" anim="down_two"/>
+	<anim name="singRIGHT-mad" anim="right_two"/>
+	<anim name="singUP-mad" anim="up_two"/>
+	<anim name="idle-mad" anim="idle_one"/>
+</character>

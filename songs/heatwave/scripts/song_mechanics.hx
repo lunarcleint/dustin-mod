@@ -66,6 +66,7 @@ var idealBoxAngle:Int = 0;
 var idealBoxSpeed:Float = 1;
 
 public function box_open_animation() {
+    player.ghostTapping = true;
     undertaleUpdateActive = true;
     FlxTween.num(0, 1, 1, null, (val:Float) -> {
         soulSprite.alpha = Math.floor(val*10)/10;
@@ -95,6 +96,7 @@ public function box_close_animation() {
     new FlxTimer().start(.67, function () {
         FlxTween.tween(battleBox, {alpha:0}, .4);
         undertaleUpdateActive = false;
+        player.ghostTapping = Options.ghostTapping;
     });
 }
 
@@ -352,10 +354,12 @@ function update_damage_collisions() {
         if (Std.isOfType(info.object, FlxObject)) {
             if (FlxG.overlap(soulHitbox, info.object)) {
                 deal_damage(info.damage);
+                trace('soul damage', info.damage);
                 break;
             }
         } else {
             if (rect_soul_collision(info.object?.x, info.object?.y, info.object?.w, info.object?.h)) {
+                trace('rect soul damage', info.damage);
                 deal_damage(info.damage);
                 break;
             }

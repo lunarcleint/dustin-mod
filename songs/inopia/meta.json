@@ -1,33 +1,34 @@
 {
-	"beatsPerMeasure": 4,
+	"customValues": {
+		"customName": "inOpia",
+		"titleCardSubtext": "* by Chezzar/pause(0.5)/\n* ft. Ug32T & Skie",
+		"gameover": {
+			"isMonster": false,
+			"quote": "KEVIN, remember our deal sweetie.",
+			"song": "inopia",
+			"sound": "gf"
+		},
+		"credits": {
+			"CHART": "MEIART",
+			"BACKGROUND": "MEIART",
+			"SPRITES": "CHEZZAR",
+			"SONG": "CHEZZAR, UG32T, SKIE"
+		},
+		"stats": "* SANS 1 ATK 1 DEF\n* Hasn't eaten in 7 years.\n* He seems to be in pain."
+	},
+	"color": "#9271FD",
 	"opponentModeAllowed": false,
-	"coopAllowed": false,
-	"stepsPerBeat": 4,
-	"bpm": 132,
 	"difficulties": [
 		"hard"
 	],
-	"needsVoices": true,
-	"parsedColor": -7179779,
-	"displayName": "Inopia",
 	"icon": "face",
-	"name": "inopia",
-	"color": "#9271FD",
-	"customValues": {
-		"customName": "inOpia",
-		"gameover" :{
-			"quote": "KEVIN, remember our deal sweetie.",
-			"sound": "gf",
-			"song": "inopia",
-			"isMonster": false
-		},
-		"credits": {
-			"SONG": "CHEZZAR, UG32T, SKIE",
-			"SPRITES": "CHEZZAR",
-			"BACKGROUND": "WILLART-MEI",
-			"CHART": "WILLART-MEI"
-			},
-		"titleCardSubtext": "* by Chezzar/pause(0.5)/\n* ft. Ug32T & Skie",
-		"stats": "* SANS 1 ATK 1 DEF\n* Hasn't eaten in 7 years.\n* He seems to be in pain."
-	}
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Inopia",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"variants": [
+		"final hours"
+	],
+	"bpm": 132
 }

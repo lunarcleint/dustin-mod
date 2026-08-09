@@ -67,12 +67,9 @@ static function newFunkinTypeText(X:Float = 0, Y:Float = 0, FieldWidth:Float = 0
 		flxtext: null,
 	};
 
-	textObj.flxtext = new FlxText(X, Y, FieldWidth, Text, Size, EmbeddedFont);
+	textObj.flxtext = textCrispy(new FlxText(X, Y, FieldWidth, Text, Size, EmbeddedFont));
 	textObj._finalText = textObj.flxtext.text;
 	textObj.flxtext.text = "";
-
-	textObj.flxtext.textField.antiAliasType = 0/*ADVANCED*/;
-	textObj.flxtext.textField.sharpness = 400/*MAX ON OPENFL*/;
 
 	return textObj;
 }

@@ -1,12 +1,14 @@
 //
 import funkin.backend.MusicBeatState;
+import funkin.savedata.FunkinSave;
 
 var script = importScript("data/scripts/skippableVideoUndertale");
 
 function create() script.call("startVideo", ["intro", () -> {
-    MusicBeatState.skipTransOut = true;
-    FlxG.switchState(new ModState("NewMainMenu"));
-}, "mp4", false]);
+        MusicBeatState.skipTransOut = true;
+        MusicBeatState.skipTransIn = true;
+        FlxG.switchState(new ModState("NewMainMenu"));
+    }, "mp4", false]);
 
 function update() {
     var vid = script.get("vid");

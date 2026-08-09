@@ -2,20 +2,20 @@
 	"customValues": {
 		"characterY": null,
 		"character": null,
-		"titleCardSubtext": "* by Mar Mar, Skie/pause(0.5)/\n* ft. Madhayter, Choma, Chezzar, David0414",
 		"mainColor": null,
+		"credits": {
+			"SPRITES": "YEEZUS (HORRORSPINN), MEIART, ALHAMBRITO119, MERRITZ, CHEZZAR",
+			"BACKGROUND": "WEEDEET",
+			"CHART": "CURIOUS, GOJIMANPLAYS",
+			"SONG": "MAR MAR, SKIE, MADHAYTER, CHOMA, DAVID0414, CHEZZAR"
+		},
+		"customName": "broken Reality",
+		"titleCardSubtext": "* by Mar Mar, Skie/pause(0.5)/\n* ft. Madhayter, Choma, Chezzar, David0414",
 		"gameover": {
 			"isMonster": false,
 			"quote": "i'll be waiting.",
 			"song": "broken-reality",
 			"sound": "sans"
-		},
-		"credits": {
-			"customName": "brOken reality",
-			"SONG": "MAR MAR, SKIE, MADHAYTER, CHOMA, DAVID0414, CHEZZAR",
-			"CHART": "CURIOUS, GOJIMANPLAYS",
-			"BACKGROUND": "WEEDEET",
-			"SPRITES": "HORRORSPINN, WILLART-MEI, ALHAMBRITO119, MERRITZ, CHEZZAR"
 		},
 		"characterX": null,
 		"stats": "* SANS 97 ATK 81 DEF \n* The final battle begins.\n* Moonlight shines through your sins."

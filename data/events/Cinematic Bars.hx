@@ -1,3 +1,6 @@
+//
+import funkin.editors.charter.Charter;
+
 var cinematicBarTween1:FlxTween = null;
 var cinematicBarTween2:FlxTween = null;
 
@@ -41,7 +44,7 @@ function onEvent(eventEvent) {
             }
         }
 
-        if (params[0] == false)
+        if (params[0] == false || (PlayState.chartingMode && Charter.startHere && eventEvent.event.time < Charter.startTime))
             for (bar in [cinematicBar1, cinematicBar2]) {
                 bar.scale.y = ((FlxG.height/2) * params[1] + 0.1);
                 bar.updateHitbox();
