@@ -777,7 +777,8 @@ function changeVariantSelection(amt:Int, ?force:Bool = false) {
                     warningText.text += "\nYAY....";
 
                 FlxTween.num(1, 0, 3, {ease: FlxEase.linear, startDelay: 1.5}, function(num) {
-                    warningText.alpha = num;
+                    if (warningText != null)
+                        warningText.alpha = num;
                 });
                 FlxG.save.data.freeplayWarningLock = false;
                 FlxG.save.data.freeplayWarning = false;

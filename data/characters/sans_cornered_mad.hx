@@ -1,1 +1,0 @@
-forceIsOnScreen = true; // camera doesn't like this sprite for some reason

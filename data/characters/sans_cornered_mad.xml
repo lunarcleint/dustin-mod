@@ -1,1 +1,10 @@
-<!DOCTYPE codename-engine-character><character x="-430" y="-315" sprite="cornered/CorneredSansAlt" scale="0.67" camx="570" camy="210" icon="cornered-sans" color="#20247F" holdTime="6.1"><anim name="idle" anim="idle" x="-538" y="-321"/><anim name="singLEFT" anim="left" x="-220" y="-176"/><anim name="singDOWN" anim="down" x="-416" y="-498"/><anim name="singUP" anim="up" x="-220" y="-176"/><anim name="singRIGHT" anim="right" x="-224" y="-175"/><anim name="wink" anim="wink" x="-190" y="-130"/></character>
+<!DOCTYPE codename-engine-character>
+<character x="70" y="43" sprite="../characters/cornered/CorneredSansAlt" camx="245" camy="44" icon="../icons/cornered-sans" color="#20247F" holdTime="6.1">
+	<anim name="idle" anim="idleoptimized"/>
+	<anim name="singLEFT" anim="leftALT" x="230" y="95"/>
+	<anim name="singDOWN" anim="downALT" x="79" y="-118"/>
+	<anim name="singUP" anim="upALT" x="212" y="97"/>
+	<anim name="singRIGHT" anim="rightALT" x="210" y="98"/>
+	<anim name="wink" anim="wink" x="233" y="129"/>
+	<anim name="wink-loop" anim="wink" x="233" y="129" loop="true" indices="13"/>
+</character>

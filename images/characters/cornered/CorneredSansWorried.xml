@@ -1,243 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
--->
-<TextureAtlas imagePath="CorneredSansWorried.png" width="7847" height="3168">
-	<SubTexture name="WorryBegin instance 10000" x="774" y="1905" width="780" height="1024" frameX="-358" frameY="-190" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10001" x="774" y="1905" width="780" height="1024" frameX="-358" frameY="-190" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10002" x="1557" y="1991" width="780" height="1025" frameX="-358" frameY="-189" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10003" x="1557" y="1991" width="780" height="1025" frameX="-358" frameY="-189" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10004" x="3993" y="999" width="780" height="1014" frameX="-358" frameY="-200" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10005" x="3993" y="999" width="780" height="1014" frameX="-358" frameY="-200" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10006" x="1" y="885" width="772" height="1009" frameX="-358" frameY="-205" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10007" x="1" y="885" width="772" height="1009" frameX="-358" frameY="-205" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10008" x="1" y="885" width="772" height="1009" frameX="-358" frameY="-205" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10009" x="3229" y="992" width="761" height="1012" frameX="-358" frameY="-202" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10010" x="3229" y="992" width="761" height="1012" frameX="-358" frameY="-202" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10011" x="3229" y="992" width="761" height="1012" frameX="-358" frameY="-202" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10012" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10013" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10014" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10015" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10016" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10017" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10018" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10019" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10020" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10021" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10022" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10023" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10024" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10025" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10026" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10027" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10028" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10029" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10030" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10031" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10032" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10033" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10034" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10035" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10036" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10037" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10038" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10039" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10040" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10041" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10042" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10043" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10044" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10045" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10046" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10047" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10048" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10049" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10050" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10051" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10052" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10053" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10054" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10055" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10056" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10057" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10058" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10059" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10060" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10061" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10062" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10063" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10064" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10065" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10066" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10067" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10068" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10069" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10070" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10071" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10072" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10073" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10074" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10075" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10076" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10077" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10078" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10079" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10080" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10081" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10082" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10083" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10084" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10085" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10086" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10087" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10088" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10089" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10090" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10091" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10092" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10093" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10094" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10095" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10096" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10097" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10098" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10099" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10100" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10101" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10102" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10103" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10104" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10105" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10106" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10107" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10108" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10109" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10110" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10111" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10112" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10113" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10114" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10115" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10116" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10117" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10118" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10119" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10120" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10121" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10122" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10123" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10124" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10125" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="WorryBegin instance 10126" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="downWORRY instance 10000" x="1" y="1" width="888" height="881" frameX="-27" frameY="-11" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10001" x="1" y="1" width="888" height="881" frameX="-27" frameY="-11" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10002" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10003" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10004" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10005" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10006" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10007" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10008" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10009" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10010" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10011" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10012" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="downWORRY instance 10013" x="892" y="1" width="888" height="890" frameX="-25" frameY="-1" frameWidth="1197" frameHeight="908"/>
-	<SubTexture name="idleoptimized instance 10000" x="2461" y="986" width="765" height="1010" frameX="-38" frameY="-56" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10001" x="2461" y="986" width="765" height="1010" frameX="-38" frameY="-56" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10002" x="4776" y="1003" width="764" height="1016" frameX="-39" frameY="-51" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10003" x="5543" y="1004" width="765" height="1016" frameX="-42" frameY="-51" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10004" x="6311" y="1012" width="764" height="1021" frameX="-42" frameY="-46" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10005" x="6311" y="1012" width="764" height="1021" frameX="-42" frameY="-46" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10006" x="2340" y="1999" width="768" height="1026" frameX="-43" frameY="-42" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10007" x="2340" y="1999" width="768" height="1026" frameX="-43" frameY="-42" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10008" x="2340" y="1999" width="768" height="1026" frameX="-43" frameY="-42" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10009" x="3111" y="2007" width="769" height="1026" frameX="-43" frameY="-42" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10010" x="3111" y="2007" width="769" height="1026" frameX="-43" frameY="-42" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10011" x="3111" y="2007" width="769" height="1026" frameX="-43" frameY="-42" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10012" x="1" y="1897" width="770" height="1024" frameX="-44" frameY="-43" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10013" x="1" y="1897" width="770" height="1024" frameX="-44" frameY="-43" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10014" x="7078" y="1012" width="768" height="1021" frameX="-44" frameY="-46" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="idleoptimized instance 10015" x="7078" y="1012" width="768" height="1021" frameX="-44" frameY="-46" frameWidth="865" frameHeight="1088"/>
-	<SubTexture name="laugh instance 10000" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10001" x="1705" y="978" width="753" height="1010" frameX="-359" frameY="-204" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10002" x="5981" y="1" width="757" height="1000" frameX="-357" frameY="-214" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10003" x="5981" y="1" width="757" height="1000" frameX="-357" frameY="-214" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10004" x="5214" y="1" width="764" height="999" frameX="-354" frameY="-215" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10005" x="5214" y="1" width="764" height="999" frameX="-354" frameY="-215" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10006" x="5214" y="1" width="764" height="999" frameX="-354" frameY="-215" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10007" x="4442" y="1" width="769" height="995" frameX="-352" frameY="-219" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10008" x="4442" y="1" width="769" height="995" frameX="-352" frameY="-219" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10009" x="4442" y="1" width="769" height="995" frameX="-352" frameY="-219" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10010" x="4630" y="2022" width="741" height="1046" frameX="-371" frameY="-166" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10011" x="4630" y="2022" width="741" height="1046" frameX="-371" frameY="-166" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10012" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10013" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10014" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10015" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10016" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10017" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10018" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10019" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10020" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10021" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10022" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="laugh instance 10023" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10001" x="4630" y="2022" width="741" height="1046" frameX="-371" frameY="-166" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10002" x="4630" y="2022" width="741" height="1046" frameX="-371" frameY="-166" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10003" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10004" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10005" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10006" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10007" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10008" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10009" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10010" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10011" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10012" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10013" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="loop instance 10014" x="3883" y="2016" width="744" height="1033" frameX="-369" frameY="-179" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10000" x="1783" y="1" width="884" height="974" frameX="-214" frameY="-237" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10001" x="1783" y="1" width="884" height="974" frameX="-214" frameY="-237" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10002" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10003" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10004" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10005" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10006" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10007" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10008" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10009" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10010" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10011" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10012" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="leftWORRY instance 10013" x="2670" y="1" width="849" height="982" frameX="-254" frameY="-228" frameWidth="1395" frameHeight="1232"/>
-	<SubTexture name="rightWORRY instance 10000" x="3522" y="1" width="917" height="988" frameX="-289" frameY="-226" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10001" x="3522" y="1" width="917" height="988" frameX="-289" frameY="-226" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10002" x="6741" y="1" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10003" x="6741" y="1" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10004" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10005" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10006" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10007" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10008" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10009" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10010" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10011" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10012" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="rightWORRY instance 10013" x="776" y="894" width="926" height="1008" frameX="-284" frameY="-204" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10000" x="6255" y="2036" width="886" height="1131" frameX="-242" frameY="-85" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10001" x="6255" y="2036" width="886" height="1131" frameX="-242" frameY="-85" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10002" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10003" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10004" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10005" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10006" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10007" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10008" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10009" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10010" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10011" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10012" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
-	<SubTexture name="upWORRY instance 10013" x="5374" y="2023" width="878" height="1105" frameX="-250" frameY="-109" frameWidth="1395" frameHeight="1233"/>
+<TextureAtlas imagePath="sansWorried.png" width="3783" height="2780">
+	<SubTexture name="WorryBegin0002" x="1542" y="2014" width="520" height="685" frameX="-239" frameY="-125" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0003" x="1542" y="2014" width="520" height="685" frameX="-239" frameY="-125" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0004" x="1007" y="1326" width="520" height="677" frameX="-239" frameY="-133" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0005" x="1007" y="1326" width="520" height="677" frameX="-239" frameY="-133" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0006" x="1016" y="651" width="514" height="674" frameX="-239" frameY="-136" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0007" x="1016" y="651" width="514" height="674" frameX="-239" frameY="-136" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0008" x="1016" y="651" width="514" height="674" frameX="-239" frameY="-136" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0009" x="0" y="1263" width="507" height="676" frameX="-239" frameY="-134" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0010" x="0" y="1263" width="507" height="676" frameX="-239" frameY="-134" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0011" x="0" y="1263" width="507" height="676" frameX="-239" frameY="-134" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0012" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0013" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0014" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0015" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0016" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0017" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0018" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0019" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0020" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0021" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0022" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0023" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0024" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0025" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0026" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0027" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0028" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0029" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0030" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0031" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0032" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0033" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0034" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0035" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0036" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0037" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0038" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0039" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0040" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0041" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0042" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0043" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0044" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0045" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0046" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0047" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0048" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0049" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0050" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0051" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0052" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0053" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0054" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0055" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0056" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0057" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0058" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0059" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0060" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0061" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0062" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0063" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0064" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0065" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0066" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0067" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0068" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0069" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0070" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0071" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0072" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0073" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0074" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0075" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0076" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0077" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0078" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0079" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0080" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0081" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0082" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0083" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0084" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0085" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0086" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0087" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0088" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0089" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0090" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0091" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0092" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0093" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0094" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0095" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0096" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0097" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0098" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0099" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0100" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0101" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0102" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0103" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0104" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0105" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0106" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0107" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0108" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0109" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0110" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0111" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0112" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0113" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0114" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0115" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0116" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0117" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0118" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0119" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0120" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0121" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0122" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0123" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0124" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0125" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="WorryBegin0126" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="downWORRY0000" x="0" y="0" width="594" height="588" frameX="-17" frameY="-7" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0001" x="0" y="0" width="594" height="588" frameX="-17" frameY="-7" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0002" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0003" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0004" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0005" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0006" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0007" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0008" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0009" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0010" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0011" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0012" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="downWORRY0013" x="595" y="0" width="593" height="594" frameX="-16" frameY="-0" frameWidth="798" frameHeight="605"/>
+	<SubTexture name="idleoptimized0000" x="1531" y="656" width="510" height="674" frameX="-25" frameY="-37" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0001" x="1531" y="656" width="510" height="674" frameX="-25" frameY="-37" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0002" x="1528" y="1331" width="509" height="678" frameX="-26" frameY="-33" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0003" x="2038" y="1335" width="510" height="678" frameX="-27" frameY="-33" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0004" x="2549" y="1341" width="510" height="682" frameX="-27" frameY="-30" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0005" x="2549" y="1341" width="510" height="682" frameX="-27" frameY="-30" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0006" x="0" y="1953" width="512" height="684" frameX="-28" frameY="-28" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0007" x="0" y="1953" width="512" height="684" frameX="-28" frameY="-28" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0008" x="0" y="1953" width="512" height="684" frameX="-28" frameY="-28" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0009" x="513" y="2004" width="513" height="684" frameX="-28" frameY="-28" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0010" x="513" y="2004" width="513" height="684" frameX="-28" frameY="-28" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0011" x="513" y="2004" width="513" height="684" frameX="-28" frameY="-28" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0012" x="1027" y="2010" width="514" height="684" frameX="-29" frameY="-28" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0013" x="1027" y="2010" width="514" height="684" frameX="-29" frameY="-28" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0014" x="3060" y="1342" width="512" height="682" frameX="-29" frameY="-30" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="idleoptimized0015" x="3060" y="1342" width="512" height="682" frameX="-29" frameY="-30" frameWidth="576" frameHeight="725"/>
+	<SubTexture name="laugh0000" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0001" x="3280" y="666" width="503" height="675" frameX="-239" frameY="-135" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0002" x="0" y="589" width="505" height="667" frameX="-238" frameY="-143" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0003" x="0" y="589" width="505" height="667" frameX="-238" frameY="-143" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0004" x="506" y="595" width="509" height="667" frameX="-236" frameY="-143" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0005" x="506" y="595" width="509" height="667" frameX="-236" frameY="-143" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0006" x="506" y="595" width="509" height="667" frameX="-236" frameY="-143" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0007" x="2960" y="0" width="513" height="665" frameX="-234" frameY="-145" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0008" x="2960" y="0" width="513" height="665" frameX="-234" frameY="-145" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0009" x="2960" y="0" width="513" height="665" frameX="-234" frameY="-145" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0010" x="2063" y="2024" width="494" height="697" frameX="-247" frameY="-111" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0011" x="2063" y="2024" width="494" height="697" frameX="-247" frameY="-111" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0012" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0013" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0014" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0015" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0016" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0017" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0018" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0019" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0020" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0021" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0022" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="laugh0023" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0000" x="1189" y="0" width="590" height="650" frameX="-142" frameY="-158" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0001" x="1189" y="0" width="590" height="650" frameX="-142" frameY="-158" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0002" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0003" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0004" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0005" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0006" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0007" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0008" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0009" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0010" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0011" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0012" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="leftWORRY0013" x="1780" y="0" width="566" height="655" frameX="-169" frameY="-152" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0001" x="2063" y="2024" width="494" height="697" frameX="-247" frameY="-111" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0002" x="2063" y="2024" width="494" height="697" frameX="-247" frameY="-111" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0003" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0004" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0005" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0006" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0007" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0008" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0009" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0010" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0011" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0012" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0013" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="loop0014" x="508" y="1263" width="498" height="689" frameX="-245" frameY="-119" frameWidth="930" frameHeight="821"/>
+	<SubTexture name="rightWORRY0000" x="2347" y="0" width="612" height="659" frameX="-193" frameY="-150" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0001" x="2347" y="0" width="612" height="659" frameX="-193" frameY="-150" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0002" x="2042" y="660" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0003" x="2042" y="660" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0004" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0005" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0006" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0007" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0008" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0009" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0010" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0011" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0012" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="rightWORRY0013" x="2661" y="666" width="618" height="674" frameX="-189" frameY="-135" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0000" x="3145" y="2025" width="591" height="755" frameX="-161" frameY="-56" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0001" x="3145" y="2025" width="591" height="755" frameX="-161" frameY="-56" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0002" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0003" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0004" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0005" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0006" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0007" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0008" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0009" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0010" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0011" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0012" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
+	<SubTexture name="upWORRY0013" x="2558" y="2025" width="586" height="738" frameX="-167" frameY="-72" frameWidth="930" frameHeight="822"/>
 </TextureAtlas>

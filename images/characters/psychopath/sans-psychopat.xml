@@ -2,41 +2,41 @@
 <!--
 Created with Tex-Packer-EX v0.7.1 https://kitzsh.github.io/tex-packer-ex
 -->
-<TextureAtlas imagePath="sans-psychopat.png" width="2879" height="2806">
-  <SubTexture name="sans-psychopat down0000.png" x="983" y="2220"  width="569" height="581" frameX="-0" frameY="-0" frameWidth="569" frameHeight="581"/>
-  <SubTexture name="sans-psychopat down0001.png" x="983" y="2220"  width="569" height="581" frameX="-0" frameY="-0" frameWidth="569" frameHeight="581"/>
-  <SubTexture name="sans-psychopat down0002.png" x="1562" y="2220"  width="569" height="581" frameX="-0" frameY="-0" frameWidth="569" frameHeight="581"/>
-  <SubTexture name="sans-psychopat down0003.png" x="1562" y="2220"  width="569" height="581" frameX="-0" frameY="-0" frameWidth="569" frameHeight="581"/>
-  <SubTexture name="sans-psychopat idle0000.png" x="5" y="1657"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0001.png" x="5" y="1657"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0002.png" x="494" y="1657"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0003.png" x="494" y="1657"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0004.png" x="481" y="5"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0005.png" x="481" y="5"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0006.png" x="481" y="5"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0007.png" x="481" y="753"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0008.png" x="481" y="753"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0009.png" x="481" y="753"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0010.png" x="970" y="5"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0011.png" x="970" y="5"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0012.png" x="970" y="753"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0013.png" x="970" y="753"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0014.png" x="1459" y="753"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0015.png" x="1459" y="753"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0016.png" x="1459" y="753"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0017.png" x="1459" y="5"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0018.png" x="1459" y="5"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat idle0019.png" x="1459" y="5"  width="479" height="738" frameX="-0" frameY="-0" frameWidth="479" frameHeight="738"/>
-  <SubTexture name="sans-psychopat left0000.png" x="2141" y="5"  width="733" height="691" frameX="-0" frameY="-0" frameWidth="733" frameHeight="691"/>
-  <SubTexture name="sans-psychopat left0001.png" x="2141" y="5"  width="733" height="691" frameX="-0" frameY="-0" frameWidth="733" frameHeight="691"/>
-  <SubTexture name="sans-psychopat left0002.png" x="1948" y="706"  width="733" height="691" frameX="-0" frameY="-0" frameWidth="733" frameHeight="691"/>
-  <SubTexture name="sans-psychopat left0003.png" x="1948" y="706"  width="733" height="691" frameX="-0" frameY="-0" frameWidth="733" frameHeight="691"/>
-  <SubTexture name="sans-psychopat right0000.png" x="983" y="1501"  width="695" height="709" frameX="-0" frameY="-0" frameWidth="695" frameHeight="709"/>
-  <SubTexture name="sans-psychopat right0001.png" x="983" y="1501"  width="695" height="709" frameX="-0" frameY="-0" frameWidth="695" frameHeight="709"/>
-  <SubTexture name="sans-psychopat right0002.png" x="1688" y="1501"  width="695" height="709" frameX="-0" frameY="-0" frameWidth="695" frameHeight="709"/>
-  <SubTexture name="sans-psychopat right0003.png" x="1688" y="1501"  width="695" height="709" frameX="-0" frameY="-0" frameWidth="695" frameHeight="709"/>
-  <SubTexture name="sans-psychopat up0000.png" x="5" y="5"  width="466" height="816" frameX="-0" frameY="-0" frameWidth="466" frameHeight="816"/>
-  <SubTexture name="sans-psychopat up0001.png" x="5" y="5"  width="466" height="816" frameX="-0" frameY="-0" frameWidth="466" frameHeight="816"/>
-  <SubTexture name="sans-psychopat up0002.png" x="5" y="831"  width="466" height="816" frameX="-0" frameY="-0" frameWidth="466" frameHeight="816"/>
-  <SubTexture name="sans-psychopat up0003.png" x="5" y="831"  width="466" height="816" frameX="-0" frameY="-0" frameWidth="466" frameHeight="816"/>
+<TextureAtlas imagePath="sans-psychopat.png" width="3963" height="1978">
+  <SubTexture name="sans-psychopat down0000.png" x="2574" y="724" width="569" height="550" rotated="true"  frameX="-10" frameY="-9" frameWidth="569" frameHeight="581"/>
+  <SubTexture name="sans-psychopat down0001.png" x="2574" y="724" width="569" height="550" rotated="true"  frameX="-10" frameY="-9" frameWidth="569" frameHeight="581"/>
+  <SubTexture name="sans-psychopat down0002.png" x="3256" y="705" width="581" height="569" rotated="true"  frameX="-0" frameY="-0" frameWidth="569" frameHeight="581"/>
+  <SubTexture name="sans-psychopat down0003.png" x="3256" y="705" width="581" height="569" rotated="true"  frameX="-0" frameY="-0" frameWidth="569" frameHeight="581"/>
+  <SubTexture name="sans-psychopat idle0000.png" x="470" y="831"  width="455" height="738" frameX="-5" frameY="-0" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0001.png" x="470" y="831"  width="455" height="738" frameX="-5" frameY="-0" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0002.png" x="946" y="5"  width="447" height="736" frameX="-14" frameY="-2" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0003.png" x="946" y="5"  width="447" height="736" frameX="-14" frameY="-2" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0004.png" x="2104" y="5"  width="450" height="722" frameX="-18" frameY="-13" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0005.png" x="2104" y="5"  width="450" height="722" frameX="-18" frameY="-13" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0006.png" x="2104" y="5"  width="450" height="722" frameX="-18" frameY="-13" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0007.png" x="1662" y="1486" width="715" height="460" rotated="true"  frameX="-16" frameY="-18" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0008.png" x="1662" y="1486" width="715" height="460" rotated="true"  frameX="-16" frameY="-18" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0009.png" x="1662" y="1486" width="715" height="460" rotated="true"  frameX="-16" frameY="-18" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0010.png" x="935" y="1498" width="717" height="475" rotated="true"  frameX="-4" frameY="-16" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0011.png" x="935" y="1498" width="717" height="475" rotated="true"  frameX="-4" frameY="-16" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0012.png" x="1406" y="748"  width="467" height="728" frameX="-0" frameY="-8" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0013.png" x="1406" y="748"  width="467" height="728" frameX="-0" frameY="-8" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0014.png" x="935" y="752"  width="461" height="736" frameX="-2" frameY="-2" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0015.png" x="935" y="752"  width="461" height="736" frameX="-2" frameY="-2" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0016.png" x="935" y="752"  width="461" height="736" frameX="-2" frameY="-2" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0017.png" x="477" y="5"  width="459" height="737" frameX="-0" frameY="-1" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0018.png" x="477" y="5"  width="459" height="737" frameX="-0" frameY="-1" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat idle0019.png" x="477" y="5"  width="459" height="737" frameX="-0" frameY="-1" frameWidth="479" frameHeight="738"/>
+  <SubTexture name="sans-psychopat left0000.png" x="1883" y="748" width="681" height="725" rotated="true"  frameX="-1" frameY="-5" frameWidth="733" frameHeight="691"/>
+  <SubTexture name="sans-psychopat left0001.png" x="1883" y="748" width="681" height="725" rotated="true"  frameX="-1" frameY="-5" frameWidth="733" frameHeight="691"/>
+  <SubTexture name="sans-psychopat left0002.png" x="1403" y="5" width="691" height="733" rotated="true"  frameX="-0" frameY="-0" frameWidth="733" frameHeight="691"/>
+  <SubTexture name="sans-psychopat left0003.png" x="1403" y="5" width="691" height="733" rotated="true"  frameX="-0" frameY="-0" frameWidth="733" frameHeight="691"/>
+  <SubTexture name="sans-psychopat right0000.png" x="2564" y="5"  width="682" height="709" frameX="-13" frameY="-0" frameWidth="695" frameHeight="709"/>
+  <SubTexture name="sans-psychopat right0001.png" x="2564" y="5"  width="682" height="709" frameX="-13" frameY="-0" frameWidth="695" frameHeight="709"/>
+  <SubTexture name="sans-psychopat right0002.png" x="3256" y="5" width="702" height="690" rotated="true"  frameX="-0" frameY="-5" frameWidth="695" frameHeight="709"/>
+  <SubTexture name="sans-psychopat right0003.png" x="3256" y="5" width="702" height="690" rotated="true"  frameX="-0" frameY="-5" frameWidth="695" frameHeight="709"/>
+  <SubTexture name="sans-psychopat up0000.png" x="5" y="5"  width="462" height="816" frameX="-0" frameY="-0" frameWidth="466" frameHeight="816"/>
+  <SubTexture name="sans-psychopat up0001.png" x="5" y="5"  width="462" height="816" frameX="-0" frameY="-0" frameWidth="466" frameHeight="816"/>
+  <SubTexture name="sans-psychopat up0002.png" x="5" y="831"  width="455" height="814" frameX="-11" frameY="-2" frameWidth="466" frameHeight="816"/>
+  <SubTexture name="sans-psychopat up0003.png" x="5" y="831"  width="455" height="814" frameX="-11" frameY="-2" frameWidth="466" frameHeight="816"/>
 </TextureAtlas>

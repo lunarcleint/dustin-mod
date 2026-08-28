@@ -162,13 +162,27 @@ var JUDGE_YELLOW:Int = 1;
 var JUDGE_GREEN:Int = 2;
 
 var judgeRating = JUDGE_MISS;
-function judgeInput():Int { // looking at the difference in github desktop, there's no correlation but it works??
-    var cx = target_choice.x + target_choice.width/2;
-    if (cx >= 615 && cx <= 660) return JUDGE_GREEN;
-    if (cx >= 533 && cx <= 734) return JUDGE_YELLOW;
-    if (cx >= 420 && cx <= 844) return JUDGE_RED;
+var GREEN_FRAC:Float = 0.0547;
+var YELLOW_FRAC:Float = 0.1898;
+var RED_FRAC:Float = 0.3942;
+
+/*
+after calculations.. running commands, testing...
+this fuckass immutable bug should die now
+ive been on this shit for like A WHILE now this SHOULD WORK
+AND IF IT DOESNT IM CRASHING THE FUCK OUT
+- HeroEyad
+*/
+function judgeInput():Int {
+    var d = Math.abs((target_choice.x + target_choice.width/2) - (target.x + target.width/2));
+    var w = target.frameWidth * target.scale.x;
+
+    if (d <= w * GREEN_FRAC) return JUDGE_GREEN;
+    if (d <= w * YELLOW_FRAC) return JUDGE_YELLOW;
+    if (d <= w * RED_FRAC) return JUDGE_RED;
     return JUDGE_MISS;
 }
+
 function judgeHealth():Float {
     if (!FlxG.save.data.mechanics) return;
     return switch (judgeRating) {

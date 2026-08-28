@@ -1,1 +1,13 @@
-<!DOCTYPE codename-engine-character><character x="-520" y="-375" sprite="cornered/CorneredSansWorried" scale="0.68" camx="470" camy="130" icon="cornered-sans" color="#20247F" holdTime="6.1"><anim name="idle" anim="idle" x="-538" y="-321"/><anim name="singLEFT" anim="left" x="-214" y="-171"/><anim name="singDOWN" anim="down" x="-421" y="-499"/><anim name="singUP" anim="up" x="-220" y="-173"/><anim name="singRIGHT" anim="right" x="-224" y="-170"/><anim name="laugh" anim="laugh" x="-220" y="-173"/><anim name="worry" anim="Worry" x="-221" y="-174" fps="12"/><anim name="loop" anim="loop" x="-220" y="-173"/></character>
+<!DOCTYPE codename-engine-character>
+<character x="70" y="43" sprite="../characters/cornered/CorneredSansWorried" camx="87" camy="-70" icon="../icons/cornered-sans" color="#20247F" holdTime="6.1">
+	<anim name="idle" anim="idleoptimized"/>
+	<anim name="singLEFT" anim="leftWORRY" x="230" y="95"/>
+	<anim name="singDOWN" anim="downWORRY" x="79" y="-118"/>
+	<anim name="singUP" anim="upWORRY" x="212" y="97"/>
+	<anim name="singRIGHT" anim="rightWORRY" x="210" y="97"/>
+	<anim name="worry" anim="WorryBegin" x="211.3" y="98" indices="2,2,2..12"/>
+	<anim name="worry-loop" anim="WorryBegin" x="211.3" y="98" loop="true" indices="12"/>
+	<anim name="laugh-start" anim="laugh" x="211.3" y="98"/>
+	<anim name="laugh" anim="loop" x="211.3" y="98"/>
+	<anim name="laugh-loop" anim="loop" x="211.3" y="98" indices="3"/>
+</character>

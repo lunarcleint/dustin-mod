@@ -252,7 +252,7 @@ function stepHit(step:Int) {
             dadClone.visible = false;
 
             remove(dad);
-            insert(members.indexOf(stage.stageSprites["light"]) + 1, dad);
+            insert(members.indexOf(stage.stageSprites["fg"]), dad);
 
             dustiniconP1.loadGraphicFromSprite(createHealthIcon(boyfriend.getIcon() + "-red", true));
             dustiniconP1.updateHitbox();

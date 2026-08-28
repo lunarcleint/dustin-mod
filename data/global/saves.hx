@@ -62,6 +62,8 @@ static function load_save() {
 
     load_shop_data();
 
+    FlxG.save.flush();
+
     Options.devMode = false;
 
     // CAUSES ISSUES WITH MEMORY, STREAMED AUDIO IS BROKEN IN CNE <=v1.0.1
@@ -184,6 +186,7 @@ static function load_shop_data() {
 
 static function migrate_save() {
     if (!FlxG.save.data.dustinMigratedV2 || FlxG.save.data.dustinMigratedV2 == null) {
+        FlxG.save.data.dustinMigratedV2 = true;
         trace("No Dustin' V2 PATCH save data found, checking for Dustin' V1 save data...");
         var save2:FlxSave = new FlxSave();
         save2.bind("dustin", "ChezzarCat");
@@ -215,8 +218,7 @@ static function migrate_save() {
 
             var legacySavePath:String = stoageDirect + "YoshiCrafter29/CodenameEngine" + "\\" + "save-default" + ".sol";
             var hotfixSavePath:String = stoageDirect + "ChezzarCat" + "\\" + "save-default" + ".sol";
-            // sorry, I like my spacing in tracing - hig
-            trace("");
+
             for (path in [legacySavePath, hotfixSavePath]) {
                 path = StringTools.replace(path, "//", "/");
                 path = StringTools.replace(path, "\\", "/");
@@ -318,13 +320,14 @@ static function update_dustin_scores(newData, legacyData) {
     if (newData != null) {
         for (song in songsList) {
             var songData = FunkinSave.getSongHighscore(song, "hard");
-            if (songData == null) {     // new data doesn't hard a score, so the old one will fully replace
+            var corrupted:Bool = songData != null && songData.date != null;
+            if (songData == null || corrupted) {     // new data doesn't hard a score, so the old one will fully replace
                 songData = soft_getSongHighscore(legacyData, song, "hard");
                 if (songData?.score != null) {
                     trace(song, songData.score);
                     FunkinSave.setSongHighscore(song, "hard", null, songData, true);
                 }
-            } else {                    // comparing which score is higher
+            } else {                                // comparing which score is higher
                 var oldSongData = soft_getSongHighscore(legacyData, song, "hard");
                 if (oldSongData != null && oldSongData.score > songData.score) {
                     FunkinSave.setSongHighscore(song, "hard", null, oldSongData, true);
